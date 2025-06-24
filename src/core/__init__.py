@@ -1,15 +1,15 @@
 """Core biological components for Code-Snippet system."""
 
-from .codecell_example import CodeCell, CellState
-from .enhanced_codecell import EnhancedCodeCell
 from .advanced_codetissue import AdvancedCodeTissue
-from .stem_cell_system import StemCell, StemCellBank
-from .code_organ import CodeOrgan, OrganType, CompatibilityType
+from .code_organ import CodeOrgan, CompatibilityType, OrganType
 from .code_system import CodeSystem, ConsciousnessLevel
+from .codecell_example import CellState, CodeCell
+from .enhanced_codecell import EnhancedCodeCell
+from .stem_cell_system import StemCell, StemCellBank
 
 __all__ = [
     "CodeCell",
-    "CellState", 
+    "CellState",
     "EnhancedCodeCell",
     "AdvancedCodeTissue",
     "StemCell",
@@ -18,5 +18,5 @@ __all__ = [
     "OrganType",
     "CompatibilityType",
     "CodeSystem",
-    "ConsciousnessLevel"
+    "ConsciousnessLevel",
 ]
