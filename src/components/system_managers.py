@@ -1,4 +1,5 @@
 import asyncio
+import logging
 from datetime import datetime
 from typing import Any, Dict, List, Optional
 from collections import deque
@@ -52,7 +53,7 @@ class SystemBootManager:
     async def _initialize_core(self, system):
         """Initialize core components"""
         # Set initial consciousness
-        from code_system import ConsciousnessLevel
+        from ..core.code_system import ConsciousnessLevel
 
         system.consciousness_level = ConsciousnessLevel.AWAKENING
 
@@ -80,7 +81,7 @@ class SystemBootManager:
 
     async def _verify_health(self, system):
         """Verify system health after boot"""
-        from code_system import ConsciousnessLevel
+        from ..core.code_system import ConsciousnessLevel
 
         # Basic health check
         if len(system.organs) == 0:
@@ -337,7 +338,7 @@ class SystemShutdownManager:
 
     async def shutdown_system(self, system) -> bool:
         """Execute graceful shutdown"""
-        from code_system import ConsciousnessLevel
+        from ..core.code_system import ConsciousnessLevel
 
         logging.info(f"Starting shutdown for system {system.system_name}")
         system.consciousness_level = ConsciousnessLevel.DORMANT

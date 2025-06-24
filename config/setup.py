@@ -71,9 +71,4 @@ setup(
     python_requires=">=3.8",
     install_requires=CORE_REQUIREMENTS,
     extras_require=EXTRAS_REQUIRE,
-    entry_points={
-        "console_scripts": [
-            "biocode=src.cli:main",
-        ],
-    },
 )
