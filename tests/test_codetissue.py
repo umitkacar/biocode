@@ -174,10 +174,10 @@ class TestAdvancedCodeTissue:
         diagnostics = tissue.get_tissue_diagnostics()
 
         assert diagnostics["name"] == "TestTissue"
-        assert diagnostics["cell_count"] == 2
-        assert diagnostics["quarantine_count"] == 0
-        assert "communication_latency" in diagnostics
-        assert "transaction_success" in diagnostics
+        assert diagnostics["metrics"]["active_cells"] == 2
+        assert len(diagnostics["quarantine"]) == 0
+        assert "metrics" in diagnostics
+        assert "cell_states" in diagnostics
 
     def test_lifecycle_hooks(self):
         """Test cell lifecycle hooks"""
