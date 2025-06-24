@@ -76,7 +76,7 @@ all = [
 
 [tool.setuptools]
 package-dir = {"" = "."}
-packages = ["src", "src.core", "src.components", "src.monitoring", "src.security"]
+packages = ["src", "src.core", "src.components", "src.monitoring", "src.security", "src.utils"]
 
 [tool.setuptools.package-data]
 "*" = ["*.md", "*.txt"]

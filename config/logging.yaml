@@ -1,0 +1,66 @@
+# BioCode Logging Configuration
+# This file defines logging settings for different environments
+
+development:
+  level: DEBUG
+  console:
+    enabled: true
+    colorize: true
+  file:
+    enabled: true
+    directory: logs/dev
+    max_size: 10485760  # 10MB
+    backup_count: 3
+  
+production:
+  level: INFO
+  console:
+    enabled: false
+    colorize: false
+  file:
+    enabled: true
+    directory: logs/prod
+    max_size: 52428800  # 50MB
+    backup_count: 10
+  security:
+    separate_file: true
+    retention_days: 90
+  
+testing:
+  level: WARNING
+  console:
+    enabled: true
+    colorize: false
+  file:
+    enabled: false
+  
+# Biological event categories and their log levels
+biological_events:
+  cell_division: DEBUG
+  cell_death: INFO
+  tissue_inflammation: WARNING
+  organ_failure: ERROR
+  system_critical: CRITICAL
+  
+# Component-specific log levels
+components:
+  biocode.core: INFO
+  biocode.security: INFO
+  biocode.monitoring: DEBUG
+  biocode.components: INFO
+  
+# Performance logging settings
+performance:
+  enabled: true
+  interval: 60  # seconds
+  metrics:
+    - memory_usage
+    - cpu_usage
+    - active_cells
+    - operation_rate
+    
+# Log format templates
+formats:
+  default: "{timestamp} | {level:8} | {name} [{context}] | {message}"
+  security: "{timestamp} | SECURITY | {level} | {event} | {details}"
+  performance: "{timestamp} | PERF | {metric}={value} | {context}"

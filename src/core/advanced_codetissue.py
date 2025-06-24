@@ -1,11 +1,11 @@
 import asyncio
-import logging
 from contextlib import contextmanager
 from dataclasses import dataclass
 from datetime import datetime
 from enum import Enum
 from typing import Any, Callable, Dict, List, Optional, Set, Type
 
+from src.utils.logging_config import get_logger, log_tissue_event
 from .codecell_example import CellState, CodeCell
 
 
@@ -66,7 +66,7 @@ class AdvancedCodeTissue:
         }
 
         # Logging
-        self.logger = logging.getLogger(f"Tissue.{tissue_name}")
+        self.logger = get_logger(__name__, tissue_name=tissue_name)
 
     def register_cell_type(self, cell_type: Type[CodeCell]):
         """Yeni cell tipi kaydet"""
@@ -101,7 +101,10 @@ class AdvancedCodeTissue:
     def grow_cell(self, cell_name: str, cell_type: str, **kwargs) -> CodeCell:
         """Gelişmiş cell üretimi with lifecycle management"""
         if cell_type not in self.cell_types:
+            self.logger.error(f"Unknown cell type: {cell_type}")
             raise ValueError(f"Unknown cell type: {cell_type}")
+
+        self.logger.debug(f"Growing new cell: {cell_name} of type {cell_type}")
 
         # Pre-create hooks
         for hook in self.cell_lifecycle_hooks["pre_create"]:
@@ -125,6 +128,8 @@ class AdvancedCodeTissue:
             hook(new_cell)
 
         self._update_metrics()
+        
+        log_tissue_event(self.logger, f"Cell grown: {cell_name}", self.name, cell_type=cell_type)
         return new_cell
 
     def _handle_cell_infection(self, infected_cell: CodeCell):

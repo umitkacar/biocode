@@ -1,12 +1,12 @@
 import asyncio
-import logging
 from collections import defaultdict
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
 from typing import Any, Callable, Dict, List, Optional, Tuple
 
-from ..core.enhanced_codecell import CodeCell
+from ..core.codecell_example import CodeCell
+from ..utils.logging_config import get_logger
 
 
 class ResourceType(Enum):

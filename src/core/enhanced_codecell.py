@@ -7,6 +7,8 @@ from enum import Enum
 from queue import Queue
 from typing import Any, Callable, Dict, List, Optional, Set
 
+from src.utils.logging_config import LoggingMixin, log_cell_event
+
 
 class CellState(Enum):
     """Cell'in yaşam durumları"""
@@ -189,10 +191,13 @@ class Lysosome(Organelle):
         return cleaned
 
 
-class EnhancedCodeCell:
+class EnhancedCodeCell(LoggingMixin):
     """Gelişmiş CodeCell - Full biological features"""
 
     def __init__(self, name: str, cell_type: str = "generic"):
+        # Initialize logging first
+        super().__init__()
+        
         # Temel özellikler
         self.name = name
         self.cell_type = cell_type
@@ -262,14 +267,16 @@ class EnhancedCodeCell:
         if self.stress_level > 50:
             self.state = CellState.STRESSED
 
-    def perform_operation(self, operation_name: str, *args, **kwargs) -> Any:
+    async def perform_operation(self, operation_name: str, *args, **kwargs) -> Any:
         """Cell operasyonu gerçekleştir"""
         try:
             self.operations_count += 1
+            self.logger.debug(f"Cell {self.name} performing operation: {operation_name}")
 
             # Enerji kontrolü
             energy_cost = kwargs.get("energy_cost", 10)
             if self.energy_level < energy_cost:
+                self.logger.warning(f"Cell {self.name} insufficient energy for {operation_name}")
                 raise Exception("Insufficient energy")
 
             self.energy_level -= energy_cost
@@ -280,12 +287,15 @@ class EnhancedCodeCell:
             # Metabolizma
             self._metabolize()
 
+            log_cell_event(self.logger, "Operation completed", self.name, 
+                         operation=operation_name, energy_remaining=self.energy_level)
             return result
 
         except Exception as e:
             self.error_count += 1
             self.last_error = e
             self._handle_error(e)
+            self.logger.error(f"Cell {self.name} operation failed: {operation_name}", exc_info=True)
             raise
 
     def _execute_operation(self, operation_name: str, *args, **kwargs) -> Any:
@@ -316,14 +326,32 @@ class EnhancedCodeCell:
         if self.error_count > 10:
             self.state = CellState.INFLAMED
 
+    def infect(self, error: Exception):
+        """Infect the cell with an error"""
+        self.state = CellState.INFECTED
+        self.error_count += 1
+        self.last_error = error
+        self.health_score = max(0, self.health_score - 20)
+        log_cell_event(self.logger, "Cell infected", self.name, error=str(error))
+
+    def heal(self):
+        """Heal the cell"""
+        if self.state == CellState.INFECTED:
+            self.state = CellState.HEALING
+        self.health_score = min(100, self.health_score + 10)
+        self.stress_level = max(0, self.stress_level - 10)
+        log_cell_event(self.logger, "Cell healing", self.name, health=self.health_score)
+
     def divide(self) -> Optional["EnhancedCodeCell"]:
         """Cell division - mitosis"""
         if self.division_count >= self.max_divisions:
             # Hayflick limit reached
+            self.logger.warning(f"Cell {self.name} reached Hayflick limit")
             return None
 
         if self.state not in [CellState.HEALTHY, CellState.STRESSED]:
             # Unhealthy cells shouldn't divide
+            self.logger.warning(f"Cell {self.name} too unhealthy to divide (state: {self.state.value})")
             return None
 
         self.division_count += 1
@@ -341,6 +369,9 @@ class EnhancedCodeCell:
         self.energy_level /= 2
         daughter.energy_level = self.energy_level
 
+        log_cell_event(self.logger, "Cell division completed", self.name, 
+                      daughter_name=daughter.name, division_count=self.division_count)
+        
         return daughter
 
     def trigger_apoptosis(self):
@@ -348,6 +379,7 @@ class EnhancedCodeCell:
         if self.apoptosis_triggered:
             return
 
+        self.logger.info(f"Cell {self.name} initiating apoptosis")
         self.apoptosis_triggered = True
         self.state = CellState.APOPTOTIC
 
@@ -359,6 +391,7 @@ class EnhancedCodeCell:
 
         # Final state
         self.state = CellState.DEAD
+        log_cell_event(self.logger, "Cell death completed", self.name, cause="apoptosis")
 
     def _cleanup_resources(self):
         """Kaynakları temizle"""

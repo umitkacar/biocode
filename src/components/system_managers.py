@@ -1,7 +1,9 @@
 import asyncio
-import logging
 from datetime import datetime
 from typing import Any, Dict, List, Optional
+from collections import deque
+
+from ..utils.logging_config import get_logger, log_system_event
 
 
 class SystemBootManager:
