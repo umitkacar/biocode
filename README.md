@@ -370,11 +370,12 @@ Using `pyproject.toml` for modern Python packaging:
 
 Comprehensive documentation available:
 
-- **[Quick Start Guide](docs/quickstart.md)** - Get started in 5 minutes
-- **[Tutorial](docs/tutorial.md)** - Build a complete web scraper organism
-- **[Advanced Features](docs/advanced-features.md)** - Neural pathways, consciousness levels, stem cells
-- **[Code Style Guide](docs/development/code-style.md)** - Development standards
-- **[Logging Guide](docs/development/logging-guide.md)** - Using the logging system
+- **[Documentation Home](docs/)** - Complete documentation index
+- **[Quick Start Guide](docs/getting-started/quickstart.md)** - Get started in 5 minutes
+- **[Tutorial](docs/getting-started/tutorial.md)** - Build a complete web scraper organism
+- **[Advanced Features](docs/guides/advanced-features.md)** - Neural pathways, consciousness levels, stem cells
+- **[API Reference](docs/api/)** - Complete API documentation
+- **[Contributing Guide](docs/contributing/)** - How to contribute
 
 ---
 
@@ -446,18 +447,32 @@ biocode/
 │   └── logging.yaml                # Logging configuration
 │
 ├── 📚 docs/                        # Documentation
-│   ├── architecture_diagram.md     # Architecture diagrams
-│   ├── ASYNC_STYLE_GUIDE.md       # Async/Sync guide
-│   ├── biological_features_analysis.md
-│   ├── dashboard_examples.md       # Dashboard examples
-│   ├── INSTALL.md                  # Installation guide
-│   ├── PROJECT_STRUCTURE.md        # Project structure
-│   ├── quickstart.md               # Quick start guide
-│   ├── tutorial.md                 # Complete tutorial
-│   ├── advanced-features.md        # Advanced features
-│   └── development/                # Development guides
-│       ├── code-style.md           # Code style guide
-│       └── logging-guide.md        # Logging guide
+│   ├── README.md                   # Documentation index
+│   ├── getting-started/            # Getting started guides
+│   │   ├── installation.md         # Installation guide
+│   │   ├── quickstart.md           # Quick start guide
+│   │   └── tutorial.md             # Complete tutorial
+│   ├── architecture/               # Architecture documentation
+│   │   ├── architecture_diagram.md # System design
+│   │   ├── biological_features_analysis.md
+│   │   └── project-structure.md    # Code organization
+│   ├── guides/                     # User guides
+│   │   ├── advanced-features.md    # Advanced features
+│   │   └── async-style-guide.md    # Async patterns
+│   ├── api/                        # API reference
+│   │   ├── core.md                 # Core components
+│   │   ├── components.md           # Supporting components
+│   │   └── utils.md                # Utilities
+│   ├── examples/                   # Example documentation
+│   │   ├── dashboard_examples.md   # Dashboard examples
+│   │   └── use-cases.md            # Real-world use cases
+│   ├── development/                # Development guides
+│   │   ├── code-style.md           # Code style guide
+│   │   └── logging-guide.md        # Logging guide
+│   └── contributing/               # Contribution guides
+│       ├── CONTRIBUTING.md         # How to contribute
+│       ├── development-setup.md    # Dev environment
+│       └── testing.md              # Testing guide
 │
 ├── 🔬 examples/                    # Example applications
 │   ├── auth_tissue_demo.py         # Authentication demo
