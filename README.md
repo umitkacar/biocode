@@ -26,6 +26,9 @@
 3. **Organic Communication**: Natural communication between components
 4. **Health Monitoring**: Continuous code health tracking
 5. **Isolation & Recovery**: Isolate and heal faulty components
+6. **Biological Logging**: Context-aware logging with cell/tissue/organ hierarchy
+7. **Quality Assurance**: Built-in testing and code quality tools
+8. **Modern Python**: Type hints, async/await, and latest Python features
 
 ---
 
@@ -289,6 +292,92 @@ print(f"Quarantined: {diagnostics['quarantine']}")
 
 ---
 
+## 🛠️ Development Features
+
+### 📝 Logging System
+
+BioCode includes a comprehensive **biological-themed logging system**:
+
+```python
+from src.utils.logging_config import get_logger
+
+# Get a logger with biological context
+logger = get_logger(__name__, 
+                   cell_id="liver_cell_42",
+                   tissue_name="hepatic_tissue")
+
+# Log biological events
+logger.debug("Cell performing metabolism")  # CELLULAR level
+logger.info("Tissue synchronized")          # TISSUE level
+logger.warning("Organ stress detected")     # ORGAN level
+logger.error("System failure")              # SYSTEM level
+```
+
+**Features:**
+- Hierarchical biological log levels
+- Colored console output
+- Automatic log rotation
+- Specialized security and performance loggers
+- Structured logging with biological context
+
+[📖 See Logging Guide](docs/development/logging-guide.md)
+
+### 🧪 Testing Infrastructure
+
+Comprehensive test suite with biological testing patterns:
+
+```bash
+# Run all tests
+pytest
+
+# Run specific test category
+pytest tests/test_codecell.py
+pytest tests/test_codetissue.py
+
+# Run with coverage
+pytest --cov=src
+
+# Run only fast tests
+pytest -m "not slow"
+```
+
+### 🎨 Code Quality Tools
+
+**Pre-commit hooks** ensure code quality:
+
+```bash
+# Install pre-commit hooks
+pre-commit install
+
+# Run manually
+pre-commit run --all-files
+```
+
+**Included tools:**
+- **Black** - Code formatting
+- **Ruff** - Fast Python linter
+- **MyPy** - Type checking
+- **Bandit** - Security checking
+
+### 📦 Modern Python Packaging
+
+Using `pyproject.toml` for modern Python packaging:
+- PEP 517/518 compliant
+- Dependency groups (dev, test, docs)
+- Tool configurations in one place
+
+### 📚 Documentation
+
+Comprehensive documentation available:
+
+- **[Quick Start Guide](docs/quickstart.md)** - Get started in 5 minutes
+- **[Tutorial](docs/tutorial.md)** - Build a complete web scraper organism
+- **[Advanced Features](docs/advanced-features.md)** - Neural pathways, consciousness levels, stem cells
+- **[Code Style Guide](docs/development/code-style.md)** - Development standards
+- **[Logging Guide](docs/development/logging-guide.md)** - Using the logging system
+
+---
+
 ## 🔮 Future Roadmap
 
 ### Enhanced Features Coming Soon
@@ -311,13 +400,19 @@ cd biocode
 # 2. Install dependencies
 pip install -r config/requirements.txt
 
-# 3. Run the demo
+# 3. Install pre-commit hooks (for development)
+pre-commit install
+
+# 4. Run the demo
 python examples/auth_tissue_demo.py
 
-# 4. Try the basic example
+# 5. Try the basic example
 python examples/basic_usage.py
 
-# 5. Create your own tissue!
+# 6. Run tests
+pytest
+
+# 7. Create your own tissue!
 ```
 
 ### 🎯 Installation via pip (Coming Soon)
@@ -327,6 +422,9 @@ pip install biocode
 
 # With all features
 pip install biocode[all]
+
+# Development installation
+pip install biocode[dev]
 ```
 
 ---
@@ -337,10 +435,15 @@ pip install biocode[all]
 biocode/
 ├── 📄 README.md                    # Main documentation
 ├── 📋 FOLDER_STRUCTURE.md          # Detailed folder structure
+├── 📝 pyproject.toml               # Modern Python packaging
+├── 🧪 pytest.ini                   # Test configuration
+├── 🔧 .pre-commit-config.yaml      # Pre-commit hooks
+├── 📜 LICENSE                      # MIT License
 │
 ├── 🔧 config/                      # Configuration files
 │   ├── requirements.txt            # Python dependencies
-│   └── setup.py                    # Package setup file
+│   ├── setup.py                    # Package setup file
+│   └── logging.yaml                # Logging configuration
 │
 ├── 📚 docs/                        # Documentation
 │   ├── architecture_diagram.md     # Architecture diagrams
@@ -348,11 +451,19 @@ biocode/
 │   ├── biological_features_analysis.md
 │   ├── dashboard_examples.md       # Dashboard examples
 │   ├── INSTALL.md                  # Installation guide
-│   └── PROJECT_STRUCTURE.md        # Project structure
+│   ├── PROJECT_STRUCTURE.md        # Project structure
+│   ├── quickstart.md               # Quick start guide
+│   ├── tutorial.md                 # Complete tutorial
+│   ├── advanced-features.md        # Advanced features
+│   └── development/                # Development guides
+│       ├── code-style.md           # Code style guide
+│       └── logging-guide.md        # Logging guide
 │
 ├── 🔬 examples/                    # Example applications
 │   ├── auth_tissue_demo.py         # Authentication demo
-│   └── basic_usage.py              # Basic usage example
+│   ├── basic_usage.py              # Basic usage example
+│   ├── logging_example.py          # Logging demonstration
+│   └── web_scraper_organism.py     # Complete organism example
 │
 ├── 🧬 src/                         # Source code
 │   ├── core/                       # Core components
@@ -369,11 +480,17 @@ biocode/
 │   ├── monitoring/                 # Monitoring system
 │   │   └── performance_metrics.py  # Metrics & dashboard
 │   │
-│   └── security/                   # Security
-│       └── security_manager.py     # Dynamic security
+│   ├── security/                   # Security
+│   │   └── security_manager.py     # Dynamic security
+│   │
+│   └── utils/                      # Utilities
+│       └── logging_config.py       # Logging system
 │
 └── 🧪 tests/                       # Test suite
-    └── __init__.py
+    ├── __init__.py
+    ├── conftest.py                 # Test configuration
+    ├── test_codecell.py            # Cell tests
+    └── test_codetissue.py          # Tissue tests
 ```
 
 ---
