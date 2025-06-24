@@ -6,34 +6,34 @@
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-## 📋 İçindekiler
-1. [Konsept Tanıtım](#konsept-tanıtım)
-2. [Mimari Yapı](#mimari-yapı)
-3. [Çalışan Örnek](#çalışan-örnek)
-4. [Kullanım Kılavuzu](#kullanım-kılavuzu)
-5. [Gelecek Adımlar](#gelecek-adımlar)
+## 📋 Table of Contents
+1. [Concept Introduction](#concept-introduction)
+2. [Architecture](#architecture)
+3. [Working Example](#working-example)
+4. [Usage Guide](#usage-guide)
+5. [Future Roadmap](#future-roadmap)
 
 ---
 
-## 🧪 Konsept Tanıtım
+## 🧪 Concept Introduction
 
-**BioCode**, yazılım mimarisine **biyolojik organizma** yaklaşımı getiren devrim niteliğinde bir framework'tür. Geleneksel class/module yapısı yerine, kodunuz canlı hücreler (cells), dokular (tissues), organlar (organs) ve sistemler (systems) olarak organize edilir - tıpkı gerçek bir organizma gibi!
+**BioCode** is a revolutionary framework that brings a **biological organism** approach to software architecture. Instead of traditional class/module structures, your code is organized as living cells, tissues, organs, and systems - just like a real organism!
 
-### 🎯 Neden Bu Yaklaşım?
+### 🎯 Why This Approach?
 
-1. **Self-Healing**: Kodun kendini iyileştirme yeteneği
-2. **Dynamic Growth**: Runtime'da yeni özellikler eklenebilmesi
-3. **Organic Communication**: Bileşenler arası doğal iletişim
-4. **Health Monitoring**: Kod sağlığının sürekli takibi
-5. **Isolation & Recovery**: Hatalı bileşenlerin izolasyonu ve iyileştirilmesi
+1. **Self-Healing**: Code that can heal itself
+2. **Dynamic Growth**: Add new features at runtime
+3. **Organic Communication**: Natural communication between components
+4. **Health Monitoring**: Continuous code health tracking
+5. **Isolation & Recovery**: Isolate and heal faulty components
 
 ---
 
-## 🏗️ Mimari Yapı
+## 🏗️ Architecture
 
-### 1️⃣ CodeCell (Temel Birim - Class)
+### 1️⃣ CodeCell (Base Unit - Class)
 ```python
-# Her class bir hücre gibi davranır
+# Each class behaves like a living cell
 class CodeCell:
     - DNA (unique genetic code)
     - Health Score (0-100)
@@ -43,16 +43,16 @@ class CodeCell:
     - Infection & immune response
 ```
 
-**Özellikler:**
-- Her cell'in benzersiz bir DNA'sı var (class source code hash)
-- Health score ile sağlık durumu takibi
-- Mutation'lar kaydediliyor
-- Hata durumunda infection state'e geçiş
-- Self-healing mekanizması
+**Features:**
+- Each cell has unique DNA (class source code hash)
+- Health score tracking
+- Mutation recording
+- Transition to infected state on errors
+- Self-healing mechanism
 
 ### 2️⃣ CodeTissue (Multi-Class Container)
 ```python
-# Birden fazla cell'i organize eden doku yapısı
+# Tissue structure organizing multiple cells
 class AdvancedCodeTissue:
     - Cell registry & type management
     - Inter-cell communication
@@ -62,17 +62,17 @@ class AdvancedCodeTissue:
     - Dependency injection
 ```
 
-**Özellikler:**
-- Runtime'da yeni cell tipleri eklenebilir
-- Cell'ler arası mesajlaşma protokolü
-- Enfekte cell'leri karantinaya alma
-- Atomik operasyonlar için transaction desteği
-- Performans metrikleri (throughput, latency, error rate)
+**Features:**
+- Add new cell types at runtime
+- Cell-to-cell messaging protocol
+- Quarantine infected cells
+- Transaction support for atomic operations
+- Performance metrics (throughput, latency, error rate)
 - Dependency injection container
 
 ### 3️⃣ CodeOrgan (Module)
 ```python
-# Birden fazla tissue'dan oluşan organ
+# Organ composed of multiple tissues
 class CodeOrgan:
     - tissues: Dict[str, AdvancedCodeTissue]
     - data_flow_controller: DataFlowController
@@ -85,16 +85,16 @@ class CodeOrgan:
     def prepare_for_transplant(...)
 ```
 
-**Özellikler:**
-- **DataFlowController**: Kanal bazlı veri akışı, backpressure yönetimi
-- **BloodTypeCompatibility**: Organ uyumluluk kontrolü (A, B, AB, O)
-- **OrganHealth**: Blood flow, oxygen level, toxin level takibi
-- **Hot-swap**: Runtime'da tissue değiştirme
-- **Failure Prediction**: Proaktif hata tahmini
+**Features:**
+- **DataFlowController**: Channel-based data flow, backpressure management
+- **BloodTypeCompatibility**: Organ compatibility control (A, B, AB, O)
+- **OrganHealth**: Blood flow, oxygen level, toxin level tracking
+- **Hot-swap**: Replace tissues at runtime
+- **Failure Prediction**: Proactive error prediction
 
 ### 4️⃣ CodeSystem (System)
 ```python
-# Organların oluşturduğu sistem
+# System composed of organs
 class CodeSystem:
     - organs: Dict[str, CodeOrgan]
     - neural_ai: SystemAI
@@ -108,17 +108,17 @@ class CodeSystem:
     def optimize(...)
 ```
 
-**Özellikler:**
+**Features:**
 - **SystemAI**: Neural pathway learning, pattern recognition
 - **SystemMemory**: Short-term, long-term, working memory
 - **CircadianScheduler**: Peak/off-peak/sleep phase management
 - **ConsciousnessLevel**: Dormant → Awakening → Aware → Focused → Hyperaware → Dreaming
-- **Dream State**: Deep optimization ve memory consolidation
+- **Dream State**: Deep optimization and memory consolidation
 
 ### 🧪 Tissue Components
 ```python
 # ExtracellularMatrix (ECM)
-- Shared resources ve standards
+- Shared resources and standards
 - Security barriers
 - Connective proteins (utilities)
 - Matrix health (integrity, viscosity, permeability)
@@ -136,60 +136,60 @@ class CodeSystem:
 
 ---
 
-## 🚀 Çalışan Örnek: Authentication Tissue
+## 🚀 Working Example: Authentication Tissue
 
-### Kurulum
+### Installation
 ```bash
-# Gerekli bağımlılığı yükle
+# Install dependencies
 pip install -r config/requirements.txt
 
-# Demo'yu çalıştır
+# Run the demo
 python examples/auth_tissue_demo.py
 
-# Veya basit kullanım örneği
+# Or try the basic example
 python examples/basic_usage.py
 ```
 
-### Örnek Senaryo
+### Example Scenario
 
-Authentication Tissue, 3 farklı cell tipinden oluşur:
+Authentication Tissue consists of 3 different cell types:
 
-1. **LoginCell**: Kullanıcı giriş işlemleri
-   - Username/password doğrulama
+1. **LoginCell**: User authentication
+   - Username/password validation
    - Failed attempt tracking
-   - Account lockout mekanizması
+   - Account lockout mechanism
 
-2. **TokenCell**: JWT token yönetimi
-   - Token üretimi
-   - Token doğrulama
-   - Token iptal etme
+2. **TokenCell**: JWT token management
+   - Token generation
+   - Token validation
+   - Token revocation
 
-3. **PermissionCell**: Yetki kontrolü
+3. **PermissionCell**: Authorization control
    - Role-based permissions
    - Permission checking
 
-### Demo Akışı
+### Demo Flow
 
 ```python
-# 1. Tissue oluştur
+# 1. Create tissue
 auth_tissue = AdvancedCodeTissue("AuthenticationTissue")
 
-# 2. Cell tiplerini kaydet
+# 2. Register cell types
 auth_tissue.register_cell_type(LoginCell)
 auth_tissue.register_cell_type(TokenCell)
 auth_tissue.register_cell_type(PermissionCell)
 
-# 3. Cell'leri grow et
+# 3. Grow cells
 login_cell = auth_tissue.grow_cell("main_login", "LoginCell")
 token_cell = auth_tissue.grow_cell("jwt_handler", "TokenCell")
 perm_cell = auth_tissue.grow_cell("permission_checker", "PermissionCell")
 
-# 4. Cell'leri bağla
+# 4. Connect cells
 auth_tissue.connect_cells("main_login", "jwt_handler")
 auth_tissue.connect_cells("jwt_handler", "permission_checker")
 ```
 
-### Demo Çıktısı
+### Demo Output
 ```
 🧬 Authentication Tissue Demo Starting...
 
@@ -215,9 +215,9 @@ Cell States: {'main_login': 'infected', 'jwt_handler': 'healthy', ...}
 
 ---
 
-## 📚 Kullanım Kılavuzu
+## 📚 Usage Guide
 
-### 1. Yeni Cell Tipi Oluşturma
+### 1. Creating a New Cell Type
 
 ```python
 from src.core.enhanced_codecell import EnhancedCodeCell
@@ -225,39 +225,39 @@ from src.core.enhanced_codecell import EnhancedCodeCell
 class MyCustomCell(EnhancedCodeCell):
     def __init__(self, name: str, **kwargs):
         super().__init__(name)
-        # Cell'e özel özellikler
+        # Cell-specific properties
         
     async def my_operation(self, data: Any) -> Any:
         try:
-            # İşlem yap
+            # Perform operation
             return result
         except Exception as e:
-            self.infect(e)  # Hata durumunda enfekte ol
+            self.infect(e)  # Infect on error
             raise
 ```
 
-### 2. Tissue'ya Cell Ekleme
+### 2. Adding Cells to Tissue
 
 ```python
 from src.core.advanced_codetissue import AdvancedCodeTissue
 
-# Tissue oluştur
+# Create tissue
 my_tissue = AdvancedCodeTissue("MyTissue")
 
-# Cell tipini kaydet
+# Register cell type
 my_tissue.register_cell_type(MyCustomCell)
 
-# Dependency inject et (opsiyonel)
+# Inject dependencies (optional)
 my_tissue.inject_dependency('db_connection', db)
 
-# Cell grow et
+# Grow cell
 cell = my_tissue.grow_cell("cell_1", "MyCustomCell")
 ```
 
-### 3. Cell'ler Arası İletişim
+### 3. Inter-Cell Communication
 
 ```python
-# Sinyal gönder
+# Send signal
 await my_tissue.send_signal(
     from_cell="cell_1",
     to_cell="cell_2", 
@@ -265,16 +265,16 @@ await my_tissue.send_signal(
 )
 ```
 
-### 4. Transaction Kullanımı
+### 4. Using Transactions
 
 ```python
 with my_tissue.transaction("critical_operation") as tx:
-    # Atomik operasyonlar
+    # Atomic operations
     tx.affected_cells.add("cell_1")
     tx.affected_cells.add("cell_2")
     
-    # Operasyonları gerçekleştir
-    # Hata durumunda otomatik rollback
+    # Perform operations
+    # Automatic rollback on error
 ```
 
 ### 5. Health Monitoring
@@ -289,97 +289,87 @@ print(f"Quarantined: {diagnostics['quarantine']}")
 
 ---
 
-## 🔮 Gelecek Adımlar
+## 🔮 Future Roadmap
 
-### CodeOrgan İmplementasyonu
-- Multiple tissue coordination
-- Organ-level health monitoring
-- Hot-swappable organs
-- Inter-organ communication protocols
-
-### CodeSystem İmplementasyonu
-- System-wide consciousness
-- Memory consolidation
-- Background optimization (dream states)
-- Self-learning capabilities
-
-### CodeHuman (Production API)
-- Complete organism
-- Personality traits
-- Social intelligence (multi-API coordination)
-- Experience-based learning
+### Enhanced Features Coming Soon
+- **CodeOrgan**: Complete implementation with advanced features
+- **CodeSystem**: Full system consciousness and learning
+- **CodeHuman**: Production-ready API layer
+- **Visual Dashboard**: Real-time organism health monitoring
+- **Plugin Ecosystem**: Extend with custom cell types
+- **Cloud Native**: Kubernetes operators for organism deployment
 
 ---
 
-## 🏃 Hızlı Başlangıç
+## 🏃 Quick Start
 
 ```bash
-# 1. Projeyi klonla
-git clone https://github.com/umityigitbsrn/biocode.git
+# 1. Clone the repository
+git clone https://github.com/umitkacar/biocode.git
 cd biocode
 
-# 2. Bağımlılıkları yükle
+# 2. Install dependencies
 pip install -r config/requirements.txt
 
-# 3. Demo'yu çalıştır
+# 3. Run the demo
 python examples/auth_tissue_demo.py
 
-# 4. Basit örneği dene
+# 4. Try the basic example
 python examples/basic_usage.py
 
-# 5. Kendi tissue'nu oluştur!
+# 5. Create your own tissue!
 ```
 
-### 🎯 Pip ile Kurulum (Yakında)
+### 🎯 Installation via pip (Coming Soon)
 
 ```bash
 pip install biocode
 
-# Tüm özelliklerle
+# With all features
 pip install biocode[all]
 ```
 
 ---
 
-## 📁 Dosya Yapısı
+## 📁 Project Structure
 
 ```
-Code-Snippet/
-├── 📄 README.md                    # Ana dokümantasyon
-├── 📋 FOLDER_STRUCTURE.md          # Detaylı klasör yapısı
+biocode/
+├── 📄 README.md                    # Main documentation
+├── 📋 FOLDER_STRUCTURE.md          # Detailed folder structure
 │
-├── 🔧 config/                      # Konfigürasyon dosyaları
-│   ├── requirements.txt            # Python bağımlılıkları
-│   └── setup.py                    # Paket kurulum dosyası
+├── 🔧 config/                      # Configuration files
+│   ├── requirements.txt            # Python dependencies
+│   └── setup.py                    # Package setup file
 │
-├── 📚 docs/                        # Dokümantasyon
-│   ├── architecture_diagram.md     # Mimari diyagramlar
-│   ├── ASYNC_STYLE_GUIDE.md       # Async/Sync rehberi
+├── 📚 docs/                        # Documentation
+│   ├── architecture_diagram.md     # Architecture diagrams
+│   ├── ASYNC_STYLE_GUIDE.md       # Async/Sync guide
 │   ├── biological_features_analysis.md
-│   ├── dashboard_examples.md       # Dashboard örnekleri
-│   ├── INSTALL.md                  # Kurulum kılavuzu
-│   └── PROJECT_STRUCTURE.md        # Proje yapısı
+│   ├── dashboard_examples.md       # Dashboard examples
+│   ├── INSTALL.md                  # Installation guide
+│   └── PROJECT_STRUCTURE.md        # Project structure
 │
-├── 🔬 examples/                    # Örnek uygulamalar
+├── 🔬 examples/                    # Example applications
 │   ├── auth_tissue_demo.py         # Authentication demo
-│   └── basic_usage.py              # Basit kullanım örneği
+│   └── basic_usage.py              # Basic usage example
 │
-├── 🧬 src/                         # Kaynak kodlar
-│   ├── core/                       # Çekirdek bileşenler
+├── 🧬 src/                         # Source code
+│   ├── core/                       # Core components
 │   │   ├── enhanced_codecell.py    # CodeCell
 │   │   ├── advanced_codetissue.py  # CodeTissue
 │   │   ├── stem_cell_system.py     # Stem cells
 │   │   ├── code_organ.py           # CodeOrgan
 │   │   └── code_system.py          # CodeSystem
 │   │
-│   ├── components/                 # Destek bileşenleri
+│   ├── components/                 # Supporting components
 │   │   ├── tissue_components.py    # ECM, Homeostasis
 │   │   └── system_managers.py      # System managers
 │   │
-│   ├── monitoring/                 # İzleme sistemi
+│   ├── monitoring/                 # Monitoring system
 │   │   └── performance_metrics.py  # Metrics & dashboard
 │   │
-│   └── security/                   # Güvenlik
+│   └── security/                   # Security
 │       └── security_manager.py     # Dynamic security
 │
 └── 🧪 tests/                       # Test suite
@@ -388,33 +378,33 @@ Code-Snippet/
 
 ---
 
-## 🎯 Sonuç
+## 🎯 Conclusion
 
-**BioCode** ile kodunuz artık sadece statik bir yapı değil - yaşayan, nefes alan, kendini iyileştiren bir organizma! Cell'ler hastalanabilir, iyileşebilir, birbirleriyle iletişim kurabilir ve tissue olarak organize bir şekilde çalışabilir.
+With **BioCode**, your code is no longer just a static structure - it's a living, breathing, self-healing organism! Cells can get sick, heal, communicate with each other, and work together as organized tissue.
 
 **"We don't write code, we grow it!"** 🌱
 
 ---
 
-## 🤝 Katkıda Bulunun
+## 🤝 Contributing
 
-BioCode açık kaynaklı bir projedir ve katkılarınızı bekliyoruz!
+BioCode is an open-source project and we welcome your contributions!
 
-1. Fork edin
-2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
-3. Değişikliklerinizi commit edin (`git commit -m 'Add some amazing feature'`)
-4. Branch'e push edin (`git push origin feature/amazing-feature`)
-5. Pull Request açın
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-## 📝 Lisans
+## 📝 License
 
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakın.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙏 Teşekkürler
+## 🙏 Acknowledgments
 
-- Biyolojik sistem mimarisi için ilham veren doğaya
-- Açık kaynak topluluğuna
-- Tüm katkıda bulunanlara
+- Nature for inspiring the biological system architecture
+- The open-source community
+- All contributors
 
 ---
 
