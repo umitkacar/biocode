@@ -1,17 +1,66 @@
 # 🧬 BioCode - Living Code Architecture
 
+## 🚀 Modern Domain-Driven Design Architecture
+
+[![Python Version](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/downloads/)
+[![License](https://img.shields.io/badge/license-Proprietary-red)](LICENSE)
+[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![API Status](https://img.shields.io/badge/API-Running-success)](http://localhost:8000/docs)
+
 ### *Where Code Comes Alive*
 
-[![Python Version](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Code Style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+## ⚠️ CRITICAL SAFETY WARNING
+
+**This is LIVING CODE** - a biological software architecture that exhibits autonomous behaviors:
+
+### 🧬 This Code Can:
+- **GROW** - Automatically expand and evolve
+- **REPRODUCE** - Create copies and spawn new instances  
+- **DIE** - Experience failures and system death
+- **MUTATE** - Change behavior unexpectedly
+- **SPREAD** - Propagate across systems if not contained
+
+### 🛡️ Safety Requirements:
+- **ALWAYS** test in isolated, secure environments
+- **NEVER** run in production without proper containment
+- **MONITOR** continuously for unexpected behaviors
+- **IMPLEMENT** emergency shutdown procedures
+- **UNDERSTAND** that Umit Kacar, PhD is NOT responsible for ANY damages
+
+**By using this code, you accept FULL RESPONSIBILITY for all risks and consequences.**
 
 ## 📋 Table of Contents
-1. [Concept Introduction](#concept-introduction)
-2. [Architecture](#architecture)
-3. [Working Example](#working-example)
-4. [Usage Guide](#usage-guide)
-5. [Future Roadmap](#future-roadmap)
+1. [What's New](#whats-new)
+2. [Concept Introduction](#concept-introduction)
+3. [Architecture](#architecture)
+4. [Quick Start](#quick-start)
+5. [API Documentation](#api-documentation)
+6. [Working Example](#working-example)
+7. [Development Guide](#development-guide)
+8. [Project Status](#project-status)
+
+---
+
+## 🎉 What's New
+
+### Recent Updates (v0.2.0)
+- ✅ **Domain-Driven Design Migration**: Complete architectural overhaul
+- ✅ **FastAPI Integration**: RESTful API with automatic documentation
+- ✅ **Python 3.11 Support**: Using latest Python features
+- ✅ **Conda Environment**: Professional development setup
+- ✅ **Fixed Critical Issues**: Resolved duplicate methods, memory leaks, routing logic
+- ✅ **Working Demo**: Cell → Tissue → Organ → System flow operational
+
+### Project Structure
+```
+src/biocode/
+├── domain/         # Core business logic (Entities, Value Objects)
+├── application/    # Use cases and application services
+├── infrastructure/ # External concerns (DB, monitoring, messaging)
+└── interfaces/     # User interfaces (API, CLI, Dashboard)
+```
+
+See [docs/architecture/](docs/architecture/) for detailed architecture documentation.
 
 ---
 
@@ -21,526 +70,337 @@
 
 ### 🎯 Why This Approach?
 
-1. **Self-Healing**: Code that can heal itself
+1. **Self-Healing**: Code that can detect and recover from errors
 2. **Dynamic Growth**: Add new features at runtime
-3. **Organic Communication**: Natural communication between components
-4. **Health Monitoring**: Continuous code health tracking
-5. **Isolation & Recovery**: Isolate and heal faulty components
-6. **Biological Logging**: Context-aware logging with cell/tissue/organ hierarchy
-7. **Quality Assurance**: Built-in testing and code quality tools
-8. **Modern Python**: Type hints, async/await, and latest Python features
+3. **Organic Communication**: Natural message passing between components
+4. **Health Monitoring**: Continuous system health tracking
+5. **Evolution**: Systems that learn and adapt over time
+6. **Consciousness Levels**: Dynamic resource allocation based on load
 
 ---
 
 ## 🏗️ Architecture
 
-### 1️⃣ CodeCell (Base Unit - Class)
+### 1️⃣ CodeCell (Base Unit)
 ```python
-# Each class behaves like a living cell
 class CodeCell:
-    - DNA (unique genetic code)
-    - Health Score (0-100)
-    - Mutations tracking
-    - Self-healing ability
-    - Cell division (instance creation)
-    - Infection & immune response
-```
-
-**Features:**
-- Each cell has unique DNA (class source code hash)
-- Health score tracking
-- Mutation recording
-- Transition to infected state on errors
-- Self-healing mechanism
-
-### 2️⃣ CodeTissue (Multi-Class Container)
-```python
-# Tissue structure organizing multiple cells
-class AdvancedCodeTissue:
-    - Cell registry & type management
-    - Inter-cell communication
-    - Quarantine system
-    - Transaction support
-    - Performance metrics
-    - Dependency injection
-```
-
-**Features:**
-- Add new cell types at runtime
-- Cell-to-cell messaging protocol
-- Quarantine infected cells
-- Transaction support for atomic operations
-- Performance metrics (throughput, latency, error rate)
-- Dependency injection container
-
-### 3️⃣ CodeOrgan (Module)
-```python
-# Organ composed of multiple tissues
-class CodeOrgan:
-    - tissues: Dict[str, AdvancedCodeTissue]
-    - data_flow_controller: DataFlowController
-    - compatibility_type: CompatibilityType
-    - health_monitoring: OrganHealth
+    """Basic unit of life in BioCode"""
+    - name: str                    # Cell identifier
+    - dna: str                     # Unique genetic code (hash)
+    - health_score: float          # 0-100 health indicator
+    - state: CellState            # HEALTHY, INFECTED, HEALING, etc.
+    - mutations: List[Mutation]    # Tracked changes
     
-    def add_tissue(...)
-    def predict_failure(...)
-    def hot_swap_tissue(...)
-    def prepare_for_transplant(...)
+    def perform_operation(self, operation: Any) -> Any
+    def heal(self) -> None
+    def divide(self) -> CodeCell
 ```
 
-**Features:**
-- **DataFlowController**: Channel-based data flow, backpressure management
-- **BloodTypeCompatibility**: Organ compatibility control (A, B, AB, O)
-- **OrganHealth**: Blood flow, oxygen level, toxin level tracking
-- **Hot-swap**: Replace tissues at runtime
-- **Failure Prediction**: Proactive error prediction
-
-### 4️⃣ CodeSystem (System)
+### 2️⃣ AdvancedCodeTissue (Cell Container)
 ```python
-# System composed of organs
+class AdvancedCodeTissue:
+    """Container for multiple cells working together"""
+    - cells: Dict[str, CodeCell]
+    - connections: Dict[str, List[str]]
+    - quarantine: Set[str]
+    
+    async def execute_coordinated_operation(operation: Callable)
+    def get_tissue_diagnostics() -> Dict[str, Any]
+```
+
+### 3️⃣ CodeOrgan (Functional Unit)
+```python
+class CodeOrgan:
+    """Multiple tissues forming a functional unit"""
+    - tissues: Dict[str, AdvancedCodeTissue]
+    - organ_type: OrganType  # SENSORY, PROCESSING, STORAGE, etc.
+    - compatibility_type: CompatibilityType  # A, B, AB, O
+    - health: OrganHealth
+    
+    def add_tissue(tissue: AdvancedCodeTissue, role: str)
+    def predict_failure() -> float
+    async def process_request(request: Dict) -> Dict
+```
+
+### 4️⃣ CodeSystem (Complete Organism)
+```python
 class CodeSystem:
+    """The complete living system"""
     - organs: Dict[str, CodeOrgan]
+    - consciousness_level: ConsciousnessLevel
     - neural_ai: SystemAI
     - memory: SystemMemory
-    - circadian: CircadianScheduler
-    - consciousness_level: ConsciousnessLevel
     
-    def add_organ(...)
-    def broadcast(...)
-    def self_diagnose(...)
-    def optimize(...)
-```
-
-**Features:**
-- **SystemAI**: Neural pathway learning, pattern recognition
-- **SystemMemory**: Short-term, long-term, working memory
-- **CircadianScheduler**: Peak/off-peak/sleep phase management
-- **ConsciousnessLevel**: Dormant → Awakening → Aware → Focused → Hyperaware → Dreaming
-- **Dream State**: Deep optimization and memory consolidation
-
-### 🧪 Tissue Components
-```python
-# ExtracellularMatrix (ECM)
-- Shared resources and standards
-- Security barriers
-- Connective proteins (utilities)
-- Matrix health (integrity, viscosity, permeability)
-
-# HomeostasisController
-- Parameter balance maintenance
-- Feedback loops
-- Auto-regulation
-
-# VascularizationSystem
-- Resource distribution channels
-- Flow rate control
-- Pressure management
+    async def boot()
+    def add_organ(organ: CodeOrgan) -> bool
+    async def process_request(request: Dict) -> Dict
+    def evolve(selection_pressure: str)
 ```
 
 ---
 
-## 🚀 Working Example: Authentication Tissue
+## 🚀 Quick Start
+
+### ⚠️ Pre-Installation Safety Notice
+**IMPORTANT**: Before proceeding, ensure you:
+1. Are working in an **isolated environment** (VM or container recommended)
+2. Have **backup** of your system
+3. Understand this is **LIVING CODE** that can grow, mutate, and die
+4. Accept **full responsibility** for any consequences
+
+### Prerequisites
+- Python 3.11+
+- Conda (recommended) or virtualenv
+- **Isolated test environment**
 
 ### Installation
+
 ```bash
-# Install dependencies
-pip install -r config/requirements.txt
+# 1. Clone the repository
+git clone https://github.com/yourusername/biocode.git
+cd biocode
 
-# Run the demo
-python examples/auth_tissue_demo.py
+# 2. Create conda environment
+conda create -n biocode python=3.11
+conda activate biocode
 
-# Or try the basic example
-python examples/basic_usage.py
+# 3. Install dependencies
+pip install -e .
+# or
+poetry install
+
+# 4. Start the API server
+python -m uvicorn biocode.interfaces.api.main:app --reload
+
+# 5. Open API documentation
+# Visit http://localhost:8000/docs
 ```
 
-### Example Scenario
+### Run the Demo
 
-Authentication Tissue consists of 3 different cell types:
-
-1. **LoginCell**: User authentication
-   - Username/password validation
-   - Failed attempt tracking
-   - Account lockout mechanism
-
-2. **TokenCell**: JWT token management
-   - Token generation
-   - Token validation
-   - Token revocation
-
-3. **PermissionCell**: Authorization control
-   - Role-based permissions
-   - Permission checking
-
-### Demo Flow
-
-```python
-# 1. Create tissue
-auth_tissue = AdvancedCodeTissue("AuthenticationTissue")
-
-# 2. Register cell types
-auth_tissue.register_cell_type(LoginCell)
-auth_tissue.register_cell_type(TokenCell)
-auth_tissue.register_cell_type(PermissionCell)
-
-# 3. Grow cells
-login_cell = auth_tissue.grow_cell("main_login", "LoginCell")
-token_cell = auth_tissue.grow_cell("jwt_handler", "TokenCell")
-perm_cell = auth_tissue.grow_cell("permission_checker", "PermissionCell")
-
-# 4. Connect cells
-auth_tissue.connect_cells("main_login", "jwt_handler")
-auth_tissue.connect_cells("jwt_handler", "permission_checker")
+```bash
+# Run the complete Cell → Tissue → Organ → System demo
+python demo_biocode_flow.py
 ```
 
-### Demo Output
+Expected output:
 ```
-🧬 Authentication Tissue Demo Starting...
+🧬 BioCode Demo: Building a Living System
+==================================================
 
-✅ Tissue Created Successfully!
-Active Cells: 3
+1️⃣ Creating Cells...
+   ✅ Created neuron_0 - Health: 100%
+   ✅ Created neuron_1 - Health: 100%
+   ...
 
-🔐 Testing Authentication Flow...
-Login Result: {'success': True, 'user_id': '123', ...}
-Token Generated: eyJ0eXAiOiJKV1QiLCJhbGc...
-Token Verification: Valid=True
-Can Delete: True
-User Permissions: ['admin', 'write', 'delete', 'read']
+2️⃣ Creating Brain Tissue...
+   ✅ Created tissue 'cortex' with 5 cells
+   📊 Coordination result: 5 cells responded
 
-🦠 Testing Error Handling...
-Attempt 1-3: Invalid credentials
-Attempt 4: Account locked!
+3️⃣ Creating Brain Organ...
+   ✅ Created organ 'brain' with 1 tissue(s)
+   💚 Organ health: 99.2%
 
-📊 Tissue Diagnostics:
-Health Score: 100.0
-Infected Cells: 1 (login cell infected due to errors)
-Cell States: {'main_login': 'infected', 'jwt_handler': 'healthy', ...}
+4️⃣ Creating Organism System...
+   ✅ System booted - Consciousness: aware
+   
+... and more!
 ```
 
 ---
 
-## 📚 Usage Guide
+## 📡 API Documentation
 
-### 1. Creating a New Cell Type
+### FastAPI Server
+The project includes a full RESTful API built with FastAPI:
 
-```python
-from src.core.enhanced_codecell import EnhancedCodeCell
+- **API Base URL**: `http://localhost:8000`
+- **Swagger UI**: `http://localhost:8000/docs`
+- **ReDoc**: `http://localhost:8000/redoc`
 
-class MyCustomCell(EnhancedCodeCell):
-    def __init__(self, name: str, **kwargs):
-        super().__init__(name)
-        # Cell-specific properties
-        
-    async def my_operation(self, data: Any) -> Any:
-        try:
-            # Perform operation
-            return result
-        except Exception as e:
-            self.infect(e)  # Infect on error
-            raise
+### Key Endpoints
+
+```bash
+# Health Check
+GET /
+
+# Cell Operations
+POST   /api/v1/cells          # Create a new cell
+GET    /api/v1/cells/{id}     # Get cell by ID
+GET    /api/v1/cells          # List all cells
+DELETE /api/v1/cells/{id}     # Delete a cell
+
+# Tissue Operations
+POST   /api/v1/tissues        # Create tissue
+GET    /api/v1/tissues/{id}   # Get tissue
+POST   /api/v1/tissues/{id}/add-cell    # Add cell to tissue
+
+# Organ Operations
+POST   /api/v1/organs         # Create organ
+GET    /api/v1/organs/{id}    # Get organ
+POST   /api/v1/organs/{id}/add-tissue   # Add tissue to organ
+
+# System Operations
+POST   /api/v1/system         # Create system
+GET    /api/v1/system/{id}    # Get system
+POST   /api/v1/system/{id}/process      # Process request
 ```
 
-### 2. Adding Cells to Tissue
+---
+
+## 💻 Working Example
+
+### Create a Simple Authentication System
 
 ```python
-from src.core.advanced_codetissue import AdvancedCodeTissue
+import asyncio
+from biocode.domain.entities import Cell, Tissue, Organ, System
+from biocode.domain.entities.organ import OrganType, CompatibilityType
 
-# Create tissue
-my_tissue = AdvancedCodeTissue("MyTissue")
-
-# Register cell type
-my_tissue.register_cell_type(MyCustomCell)
-
-# Inject dependencies (optional)
-my_tissue.inject_dependency('db_connection', db)
-
-# Grow cell
-cell = my_tissue.grow_cell("cell_1", "MyCustomCell")
-```
-
-### 3. Inter-Cell Communication
-
-```python
-# Send signal
-await my_tissue.send_signal(
-    from_cell="cell_1",
-    to_cell="cell_2", 
-    signal={'type': 'data', 'content': 'Hello'}
-)
-```
-
-### 4. Using Transactions
-
-```python
-with my_tissue.transaction("critical_operation") as tx:
-    # Atomic operations
-    tx.affected_cells.add("cell_1")
-    tx.affected_cells.add("cell_2")
+async def create_auth_system():
+    # 1. Create cells
+    login_cell = Cell("login_handler")
+    token_cell = Cell("token_generator")
     
-    # Perform operations
-    # Automatic rollback on error
-```
+    # 2. Create tissue and add cells
+    auth_tissue = Tissue("authentication")
+    auth_tissue.cells["login"] = login_cell
+    auth_tissue.cells["token"] = token_cell
+    
+    # 3. Create organ
+    auth_organ = Organ(
+        "auth_processor",
+        OrganType.PROCESSING,
+        CompatibilityType.TYPE_O  # Universal donor
+    )
+    auth_organ.add_tissue(auth_tissue)
+    
+    # 4. Create system
+    system = System("auth_system")
+    await system.boot()
+    system.add_organ(auth_organ)
+    
+    # 5. Process authentication request
+    request = {
+        "type": "processing",
+        "operation": "authenticate",
+        "data": {"username": "user", "password": "pass"}
+    }
+    
+    response = await system.process_request(request)
+    print(f"Auth response: {response}")
+    
+    # 6. Check system health
+    metrics = system.get_system_metrics()
+    print(f"System health: {metrics['total_health']:.1f}%")
 
-### 5. Health Monitoring
-
-```python
-# Tissue diagnostics
-diagnostics = my_tissue.get_tissue_diagnostics()
-print(f"Health: {diagnostics['metrics']['health_score']}")
-print(f"Error Rate: {diagnostics['metrics']['error_rate']}")
-print(f"Quarantined: {diagnostics['quarantine']}")
+# Run the example
+asyncio.run(create_auth_system())
 ```
 
 ---
 
-## 🛠️ Development Features
+## 🛠️ Development Guide
 
-### 📝 Logging System
-
-BioCode includes a comprehensive **biological-themed logging system**:
-
-```python
-from src.utils.logging_config import get_logger
-
-# Get a logger with biological context
-logger = get_logger(__name__, 
-                   cell_id="liver_cell_42",
-                   tissue_name="hepatic_tissue")
-
-# Log biological events
-logger.debug("Cell performing metabolism")  # CELLULAR level
-logger.info("Tissue synchronized")          # TISSUE level
-logger.warning("Organ stress detected")     # ORGAN level
-logger.error("System failure")              # SYSTEM level
+### Project Structure
+```
+biocode/
+├── src/biocode/
+│   ├── domain/          # Core business entities
+│   ├── application/     # Use cases & services
+│   ├── infrastructure/  # External integrations
+│   └── interfaces/      # API, CLI, UI
+├── tests/               # Test suite
+├── docs/               # Documentation
+├── examples/           # Example code
+└── archive/            # Old code for reference
 ```
 
-**Features:**
-- Hierarchical biological log levels
-- Colored console output
-- Automatic log rotation
-- Specialized security and performance loggers
-- Structured logging with biological context
-
-[📖 See Logging Guide](docs/development/logging-guide.md)
-
-### 🧪 Testing Infrastructure
-
-Comprehensive test suite with biological testing patterns:
+### Running Tests
 
 ```bash
 # Run all tests
 pytest
 
-# Run specific test category
-pytest tests/test_codecell.py
-pytest tests/test_codetissue.py
-
 # Run with coverage
-pytest --cov=src
+pytest --cov=biocode --cov-report=html
 
-# Run only fast tests
-pytest -m "not slow"
+# Run specific test file
+pytest tests/unit/domain/entities/test_system.py -v
 ```
 
-### 🎨 Code Quality Tools
-
-**Pre-commit hooks** ensure code quality:
+### Code Quality
 
 ```bash
-# Install pre-commit hooks
-pre-commit install
+# Format code
+black src tests
 
-# Run manually
-pre-commit run --all-files
-```
+# Lint code
+ruff check src tests
 
-**Included tools:**
-- **Black** - Code formatting
-- **Ruff** - Fast Python linter
-- **MyPy** - Type checking
-- **Bandit** - Security checking
-
-### 📦 Modern Python Packaging
-
-Using `pyproject.toml` for modern Python packaging:
-- PEP 517/518 compliant
-- Dependency groups (dev, test, docs)
-- Tool configurations in one place
-
-### 📚 Documentation
-
-Comprehensive documentation available:
-
-- **[Documentation Home](docs/)** - Complete documentation index
-- **[Quick Start Guide](docs/getting-started/quickstart.md)** - Get started in 5 minutes
-- **[Tutorial](docs/getting-started/tutorial.md)** - Build a complete web scraper organism
-- **[Advanced Features](docs/guides/advanced-features.md)** - Neural pathways, consciousness levels, stem cells
-- **[API Reference](docs/api/)** - Complete API documentation
-- **[Contributing Guide](docs/contributing/)** - How to contribute
-
----
-
-## 🔮 Future Roadmap
-
-### Enhanced Features Coming Soon
-- **CodeOrgan**: Complete implementation with advanced features
-- **CodeSystem**: Full system consciousness and learning
-- **CodeHuman**: Production-ready API layer
-- **Visual Dashboard**: Real-time organism health monitoring
-- **Plugin Ecosystem**: Extend with custom cell types
-- **Cloud Native**: Kubernetes operators for organism deployment
-
----
-
-## 🏃 Quick Start
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/umitkacar/biocode.git
-cd biocode
-
-# 2. Install dependencies
-pip install -r config/requirements.txt
-
-# 3. Install pre-commit hooks (for development)
-pre-commit install
-
-# 4. Run the demo
-python examples/auth_tissue_demo.py
-
-# 5. Try the basic example
-python examples/basic_usage.py
-
-# 6. Run tests
-pytest
-
-# 7. Create your own tissue!
-```
-
-### 🎯 Installation via pip (Coming Soon)
-
-```bash
-pip install biocode
-
-# With all features
-pip install biocode[all]
-
-# Development installation
-pip install biocode[dev]
+# Type checking
+mypy src
 ```
 
 ---
 
-## 📁 Project Structure
+## 📊 Project Status
 
-```
-biocode/
-├── 📄 README.md                    # Main documentation
-├── 📋 FOLDER_STRUCTURE.md          # Detailed folder structure
-├── 📝 pyproject.toml               # Modern Python packaging
-├── 🧪 pytest.ini                   # Test configuration
-├── 🔧 .pre-commit-config.yaml      # Pre-commit hooks
-├── 📜 LICENSE                      # MIT License
-│
-├── 🔧 config/                      # Configuration files
-│   ├── requirements.txt            # Python dependencies
-│   ├── setup.py                    # Package setup file
-│   └── logging.yaml                # Logging configuration
-│
-├── 📚 docs/                        # Documentation
-│   ├── README.md                   # Documentation index
-│   ├── getting-started/            # Getting started guides
-│   │   ├── installation.md         # Installation guide
-│   │   ├── quickstart.md           # Quick start guide
-│   │   └── tutorial.md             # Complete tutorial
-│   ├── architecture/               # Architecture documentation
-│   │   ├── architecture_diagram.md # System design
-│   │   ├── biological_features_analysis.md
-│   │   └── project-structure.md    # Code organization
-│   ├── guides/                     # User guides
-│   │   ├── advanced-features.md    # Advanced features
-│   │   └── async-style-guide.md    # Async patterns
-│   ├── api/                        # API reference
-│   │   ├── core.md                 # Core components
-│   │   ├── components.md           # Supporting components
-│   │   └── utils.md                # Utilities
-│   ├── examples/                   # Example documentation
-│   │   ├── dashboard_examples.md   # Dashboard examples
-│   │   └── use-cases.md            # Real-world use cases
-│   ├── development/                # Development guides
-│   │   ├── code-style.md           # Code style guide
-│   │   └── logging-guide.md        # Logging guide
-│   └── contributing/               # Contribution guides
-│       ├── CONTRIBUTING.md         # How to contribute
-│       ├── development-setup.md    # Dev environment
-│       └── testing.md              # Testing guide
-│
-├── 🔬 examples/                    # Example applications
-│   ├── auth_tissue_demo.py         # Authentication demo
-│   ├── basic_usage.py              # Basic usage example
-│   ├── logging_example.py          # Logging demonstration
-│   └── web_scraper_organism.py     # Complete organism example
-│
-├── 🧬 src/                         # Source code
-│   ├── core/                       # Core components
-│   │   ├── enhanced_codecell.py    # CodeCell
-│   │   ├── advanced_codetissue.py  # CodeTissue
-│   │   ├── stem_cell_system.py     # Stem cells
-│   │   ├── code_organ.py           # CodeOrgan
-│   │   └── code_system.py          # CodeSystem
-│   │
-│   ├── components/                 # Supporting components
-│   │   ├── tissue_components.py    # ECM, Homeostasis
-│   │   └── system_managers.py      # System managers
-│   │
-│   ├── monitoring/                 # Monitoring system
-│   │   └── performance_metrics.py  # Metrics & dashboard
-│   │
-│   ├── security/                   # Security
-│   │   └── security_manager.py     # Dynamic security
-│   │
-│   └── utils/                      # Utilities
-│       └── logging_config.py       # Logging system
-│
-└── 🧪 tests/                       # Test suite
-    ├── __init__.py
-    ├── conftest.py                 # Test configuration
-    ├── test_codecell.py            # Cell tests
-    └── test_codetissue.py          # Tissue tests
-```
+### Current State (v0.2.0)
+- ✅ **Core Architecture**: Complete DDD migration
+- ✅ **Basic Functionality**: Cell, Tissue, Organ, System working
+- ✅ **API Layer**: FastAPI with full documentation
+- ✅ **Test Coverage**: 88% for core components
+- ⚠️ **Advanced Features**: In progress (evolution, consciousness)
+- 🚧 **Dashboard**: Coming soon
 
----
+### Known Limitations
+1. `perform_operation` in Cell is simplified
+2. Evolution system needs more sophisticated implementation
+3. Memory consolidation is basic
+4. Event system needs activation
 
-## 🎯 Conclusion
-
-With **BioCode**, your code is no longer just a static structure - it's a living, breathing, self-healing organism! Cells can get sick, heal, communicate with each other, and work together as organized tissue.
-
-**"We don't write code, we grow it!"** 🌱
+### Roadmap
+- [ ] Enhanced cell operations with real processing
+- [ ] Active event-driven architecture
+- [ ] Real-time monitoring dashboard
+- [ ] Kubernetes operators for cloud deployment
+- [ ] Plugin system for custom cell types
 
 ---
 
 ## 🤝 Contributing
 
-BioCode is an open-source project and we welcome your contributions!
+We welcome contributions! Please see our [Contributing Guide](docs/contributing/CONTRIBUTING.md) for details.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+---
+
 ## 📝 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is the proprietary software of **Umit Kacar, PhD**. All rights reserved.
+
+- **Commercial Use**: Requires explicit written permission. Please contact for licensing.
+- **Academic/Research Use**: May be permitted with prior written approval.
+- See the [LICENSE](LICENSE) file for full details.
+
+---
 
 ## 🙏 Acknowledgments
 
-- Nature for inspiring the biological system architecture
-- The open-source community
-- All contributors
+- Inspired by biological systems and nature
+- Built with modern Python best practices
+- Powered by FastAPI, Pydantic, and AsyncIO
 
 ---
 
 <p align="center">
-  Made with ❤️ by the BioCode Team<br>
-  <em>Where Code Comes Alive</em>
+  Created by <strong>Umit Kacar, PhD</strong><br>
+  <em>Where Code Comes Alive</em> 🧬<br>
+  <small>© 2024 All Rights Reserved</small>
 </p>

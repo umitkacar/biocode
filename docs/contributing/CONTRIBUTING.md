@@ -1,10 +1,22 @@
 # Contributing to BioCode
 
-First off, thank you for considering contributing to BioCode! It's people like you that make BioCode such a great tool.
+## Important Notice
+
+BioCode is proprietary software owned by **Umit Kacar, PhD**. All rights reserved.
+
+### Contribution Policy
+
+While we appreciate interest in the BioCode project, please note:
+
+1. **Commercial Use**: Any commercial use requires explicit written permission from Umit Kacar, PhD.
+2. **Academic/Research Use**: May be permitted with prior written approval.
+3. **Contributions**: By submitting contributions, you agree to transfer all rights to Umit Kacar, PhD.
+
+For licensing inquiries or permission requests, please contact the copyright holder.
 
 ## Code of Conduct
 
-This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code.
+This project and everyone participating in it is governed by our Code of Conduct. By participating, you are expected to uphold this code and respect the proprietary nature of this software.
 
 ## How Can I Contribute?
 

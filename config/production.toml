@@ -1,0 +1,9 @@
+[app]
+debug = false
+
+[database]
+pool_size = 20
+max_overflow = 0
+
+[api]
+workers = 4

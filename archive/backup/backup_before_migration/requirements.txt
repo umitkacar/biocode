@@ -1,0 +1,26 @@
+# BioCode Agent Requirements
+
+# Core dependencies
+numpy==1.24.4
+psutil==5.9.8
+
+# Web dashboard
+flask==3.0.0
+flask-socketio==5.3.6
+flask-cors==4.0.0
+python-socketio==5.11.0
+
+# Environment variables
+python-dotenv==1.0.0
+
+# JWT for auth demos
+pyjwt==2.8.0
+
+# Development tools (optional)
+pytest==7.4.4
+black==23.12.1
+flake8==7.0.0
+
+# Testing coverage
+pytest-cov==4.1.0
+pytest-asyncio==0.21.1

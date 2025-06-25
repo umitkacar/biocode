@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioCode Agent Reports</title>
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <style>
+        .report-list {
+            background: var(--card-bg);
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .report-item {
+            background: #222;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .report-item:hover {
+            background: #333;
+            transform: translateX(5px);
+        }
+        .report-content {
+            background: #0a0a0a;
+            border: 1px solid #333;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: monospace;
+            white-space: pre-wrap;
+            max-height: 600px;
+            overflow-y: auto;
+        }
+        .back-btn {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧬 BioCode Agent Reports</h1>
+            <p class="subtitle">Analysis reports from completed agents</p>
+        </header>
+        
+        <button class="back-btn" onclick="window.location.href='/'">← Back to Dashboard</button>
+        
+        <div class="report-list">
+            <h2>Available Reports</h2>
+            <div id="report-list-container">
+                <p>Loading reports...</p>
+            </div>
+        </div>
+        
+        <div id="report-viewer" style="display: none;">
+            <h2 id="report-title">Report Details</h2>
+            <div id="report-content" class="report-content"></div>
+            <button onclick="hideReport()">Close Report</button>
+        </div>
+    </div>
+    
+    <script>
+    // Load reports on page load
+    document.addEventListener('DOMContentLoaded', loadReports);
+    
+    function loadReports() {
+        fetch('/api/reports')
+            .then(response => response.json())
+            .then(reports => {
+                const container = document.getElementById('report-list-container');
+                
+                if (reports.length === 0) {
+                    container.innerHTML = '<p>No reports available</p>';
+                    return;
+                }
+                
+                container.innerHTML = '';
+                
+                reports.forEach(report => {
+                    const item = document.createElement('div');
+                    item.className = 'report-item';
+                    
+                    const date = new Date(report.timestamp * 1000);
+                    
+                    item.innerHTML = `
+                        <strong>${report.filename}</strong><br>
+                        <small>Agent: ${report.agent_id}</small><br>
+                        <small>Date: ${date.toLocaleString()}</small><br>
+                        <small>Size: ${(report.size / 1024).toFixed(1)} KB</small>
+                    `;
+                    
+                    item.onclick = () => viewReport(report.filename);
+                    container.appendChild(item);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading reports:', error);
+                document.getElementById('report-list-container').innerHTML = 
+                    '<p style="color: var(--danger-color)">Error loading reports</p>';
+            });
+    }
+    
+    function viewReport(filename) {
+        fetch(`/api/report/${filename}`)
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('report-title').textContent = `Report: ${filename}`;
+                document.getElementById('report-content').textContent = JSON.stringify(data, null, 2);
+                document.getElementById('report-viewer').style.display = 'block';
+                
+                // Scroll to report
+                document.getElementById('report-viewer').scrollIntoView({ behavior: 'smooth' });
+            })
+            .catch(error => {
+                console.error('Error loading report:', error);
+                alert('Error loading report');
+            });
+    }
+    
+    function hideReport() {
+        document.getElementById('report-viewer').style.display = 'none';
+    }
+    </script>
+</body>
+</html>

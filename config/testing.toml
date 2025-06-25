@@ -1,0 +1,8 @@
+[app]
+debug = false
+
+[database]
+url = "sqlite:///:memory:"
+
+[api]
+port = 8001

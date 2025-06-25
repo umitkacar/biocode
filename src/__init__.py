@@ -1,9 +1,9 @@
-"""Code-Snippet: A biological-inspired code organization system."""
+"""BioCode: A biological-inspired code organization system."""
 
-__version__ = "0.1.0"
-__author__ = "Code-Snippet Team"
+__version__ = "0.2.0"
+__author__ = "BioCode Team"
 
-# Make imports easier
-from . import components, core, monitoring, security
+# Only import existing modules
+from . import biocode
 
-__all__ = ["core", "components", "monitoring", "security"]
+__all__ = ["biocode"]
