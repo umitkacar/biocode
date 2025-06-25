@@ -1,21 +1,58 @@
-MIT License
+PROPRIETARY LICENSE
 
-Copyright (c) 2024 BioCode Contributors
+Copyright (c) 2024 Umit Kacar, PhD
+All Rights Reserved
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+This software and associated documentation files (the "BioCode Framework") are the exclusive property of Umit Kacar, PhD. All rights are reserved.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+NO PERMISSION is granted to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software without explicit written permission from the copyright holder.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+COMMERCIAL USE:
+For any commercial use, licensing inquiries, or permission requests, please contact:
+Umit Kacar, PhD
+Email: [Contact information to be provided]
+
+ACADEMIC/RESEARCH USE:
+Limited use for academic and research purposes may be permitted with prior written approval.
+
+DISCLAIMER AND LIABILITY:
+THIS SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL UMIT KACAR, PHD BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+IMPORTANT SAFETY WARNING:
+This is LIVING CODE - a biological software architecture that can:
+- GROW and evolve autonomously
+- REPRODUCE and create new instances
+- DIE and experience system failures
+- MUTATE and change behavior unexpectedly
+- SPREAD across systems if not properly contained
+
+USER RESPONSIBILITIES:
+1. The user assumes ALL RISKS and FULL RESPONSIBILITY for:
+   - Any damage, loss, or harm resulting from the use of this software
+   - Security measures and containment of the code
+   - Testing in isolated, secure environments
+   - Preventing unintended reproduction or spread
+   - Monitoring for mutations and unexpected behaviors
+
+2. Users MUST:
+   - Test this code in SECURE, ISOLATED environments only
+   - Implement proper containment measures
+   - Monitor system behavior continuously
+   - Have emergency shutdown procedures in place
+   - Understand the self-healing and self-modifying nature of the code
+
+3. Umit Kacar, PhD is NOT responsible for:
+   - Any direct or indirect damages
+   - Loss of data or system integrity
+   - Unintended code propagation
+   - Security breaches or vulnerabilities
+   - Any consequences of the code's autonomous behavior
+
+BIOLOGICAL CODE WARNING:
+This software implements biological concepts including cells that can divide, tissues that can grow, organs that can fail, and systems that can evolve. Like biological organisms, this code can exhibit unpredictable emergent behaviors. Users must treat this software with the same caution as handling biological specimens.
+
+By accessing, viewing, or using this software, you acknowledge that:
+1. You have read, understood, and agree to be bound by the terms of this license
+2. You understand the living, self-modifying nature of this code
+3. You accept full responsibility for all risks and consequences
+4. You will implement appropriate safety measures before execution

@@ -1,0 +1,8 @@
+[app]
+debug = true
+
+[database]
+echo = true
+
+[api]
+reload = true

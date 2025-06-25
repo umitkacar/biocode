@@ -1,0 +1,14 @@
+[app]
+name = "BioCode"
+version = "0.2.0"
+
+[api]
+host = "0.0.0.0"
+port = 8000
+
+[database]
+url = "sqlite:///./biocode.db"
+
+[monitoring]
+enabled = true
+port = 9090

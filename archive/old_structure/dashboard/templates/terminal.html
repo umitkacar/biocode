@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioCode Agent Terminal</title>
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+    <style>
+        .terminal-container {
+            background: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            padding: 15px;
+            height: 80vh;
+            overflow-y: auto;
+            border: 2px solid #0f0;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .terminal-line {
+            margin: 2px 0;
+            white-space: pre-wrap;
+        }
+        .terminal-header {
+            color: #0ff;
+            border-bottom: 1px solid #0f0;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .level-error { color: #f00; }
+        .level-warning { color: #ff0; }
+        .level-success { color: #0ff; }
+        .level-debug { color: #888; }
+        .level-info { color: #0f0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🖥️ BioCode Agent Terminal</h1>
+            <p class="subtitle">Real-time agent activity stream</p>
+        </header>
+        
+        <button onclick="window.location.href='/'">← Back to Dashboard</button>
+        <button onclick="clearTerminal()">Clear</button>
+        <button onclick="downloadLogs()">Download Logs</button>
+        
+        <div class="terminal-container" id="terminal">
+            <div class="terminal-header">
+                BioCode Agent Terminal v1.0
+                ============================
+                Monitoring agent activities in real-time...
+            </div>
+        </div>
+    </div>
+    
+    <script>
+    const socket = io();
+    let allLogs = [];
+    
+    socket.on('connect', function() {
+        addTerminalLine('Connected to server', 'success');
+    });
+    
+    socket.on('terminal_update', function(data) {
+        if (data.logs) {
+            data.logs.forEach(log => {
+                addLog(log);
+            });
+        }
+    });
+    
+    // Also fetch logs via API
+    function loadLogs() {
+        fetch('/api/terminal_logs')
+            .then(response => response.json())
+            .then(logs => {
+                logs.forEach(log => addLog(log));
+            });
+    }
+    
+    function addLog(log) {
+        // Avoid duplicates
+        if (allLogs.some(l => l.timestamp === log.timestamp && l.agent_id === log.agent_id)) {
+            return;
+        }
+        
+        allLogs.push(log);
+        
+        const terminal = document.getElementById('terminal');
+        const line = document.createElement('div');
+        line.className = 'terminal-line level-' + log.level;
+        
+        const timestamp = new Date(log.timestamp).toLocaleTimeString();
+        line.textContent = `[${timestamp}] [${log.agent_id}] ${log.message}`;
+        
+        terminal.appendChild(line);
+        
+        // Auto-scroll
+        terminal.scrollTop = terminal.scrollHeight;
+        
+        // Limit lines
+        while (terminal.children.length > 1000) {
+            terminal.removeChild(terminal.children[1]); // Keep header
+        }
+    }
+    
+    function addTerminalLine(text, level = 'info') {
+        const terminal = document.getElementById('terminal');
+        const line = document.createElement('div');
+        line.className = 'terminal-line level-' + level;
+        line.textContent = text;
+        terminal.appendChild(line);
+    }
+    
+    function clearTerminal() {
+        const terminal = document.getElementById('terminal');
+        terminal.innerHTML = `
+            <div class="terminal-header">
+                BioCode Agent Terminal v1.0
+                ============================
+                Terminal cleared.
+            </div>
+        `;
+        allLogs = [];
+    }
+    
+    function downloadLogs() {
+        const text = allLogs.map(log => 
+            `[${new Date(log.timestamp).toISOString()}] [${log.agent_id}] [${log.level}] ${log.message}`
+        ).join('\n');
+        
+        const blob = new Blob([text], {type: 'text/plain'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `biocode_terminal_${new Date().toISOString()}.log`;
+        a.click();
+    }
+    
+    // Load initial logs and start periodic updates
+    loadLogs();
+    setInterval(loadLogs, 2000);
+    </script>
+</body>
+</html>

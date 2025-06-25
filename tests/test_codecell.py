@@ -6,7 +6,7 @@ import pytest
 # Add parent directory to path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from src.core.enhanced_codecell import CellState, EnhancedCodeCell
+from biocode.domain.entities.cell import CellState, EnhancedCodeCell
 
 
 class TestEnhancedCodeCell:

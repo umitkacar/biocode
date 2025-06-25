@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioCode Agent Colony Dashboard</title>
+    <link rel="stylesheet" href="/static/dashboard.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🧬 BioCode Agent Colony Dashboard</h1>
+            <p class="subtitle">Real-time monitoring and analytics for living code agents</p>
+            <span id="connection-status" class="status-indicator status-dead" title="Disconnected"></span>
+        </header>
+        
+        <div class="controls">
+            <button onclick="launchAgent()">🚀 Launch Agent</button>
+            <button onclick="killAllAgents()">💀 Kill All Agents</button>
+            <button onclick="viewReports()">📊 View Reports</button>
+            <button onclick="viewTerminal()">🖥️ Terminal</button>
+            <button onclick="location.reload()">🔄 Refresh</button>
+        </div>
+        
+        <div class="dashboard-grid">
+            <div class="card">
+                <h2>Colony Metrics</h2>
+                <div class="metric">
+                    <span>Active Agents:</span>
+                    <span class="metric-value" id="metric-active_agents">0</span>
+                </div>
+                <div class="metric">
+                    <span>Total Created:</span>
+                    <span class="metric-value" id="metric-total_agents_created">0</span>
+                </div>
+                <div class="metric">
+                    <span>Peak Colony Size:</span>
+                    <span class="metric-value" id="metric-peak_colony_size">0</span>
+                </div>
+                <div class="metric">
+                    <span>Files Analyzed:</span>
+                    <span class="metric-value" id="metric-total_files_analyzed">0</span>
+                </div>
+                <div class="metric">
+                    <span>Patterns Found:</span>
+                    <span class="metric-value" id="metric-total_patterns_discovered">0</span>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Active Agents</h2>
+                <div id="agent-list" class="agent-list">
+                    <p>No active agents</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <h2>Colony Activity</h2>
+                <canvas id="colony-chart" width="400" height="200"></canvas>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>Real-time Logs</h2>
+            <div id="log-container" style="max-height: 200px; overflow-y: auto;">
+                <div class="log-entry live-indicator">Dashboard initialized...</div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/static/dashboard.js"></script>
+</body>
+</html>

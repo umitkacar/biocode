@@ -1,0 +1,468 @@
+openapi: 3.0.0
+info:
+  title: BioCode API
+  description: |
+    BioCode Agent Colony API - Control and monitor your digital organisms.
+    
+    ## Overview
+    BioCode provides a comprehensive REST API for managing agent colonies, monitoring their behavior, and accessing colony intelligence.
+    
+    ## Authentication
+    Currently, the API does not require authentication for local usage. Production deployments should implement proper auth.
+    
+    ## WebSocket Events
+    Real-time updates are available via WebSocket connection to the dashboard.
+  version: 1.0.0
+  contact:
+    name: BioCode Team
+    url: https://github.com/yourusername/biocode
+  license:
+    name: MIT
+    url: https://opensource.org/licenses/MIT
+
+servers:
+  - url: http://localhost:5000/api
+    description: Local development server
+  - url: https://api.biocode.dev/v1
+    description: Production server (future)
+
+tags:
+  - name: Colony
+    description: Colony-wide operations and status
+  - name: Agents
+    description: Individual agent management
+  - name: Dashboard
+    description: Dashboard data and metrics
+  - name: Knowledge
+    description: Colony knowledge base access
+
+paths:
+  /status:
+    get:
+      summary: Get colony status
+      description: Returns current status of the entire agent colony including active agents and metrics
+      tags:
+        - Colony
+      responses:
+        '200':
+          description: Colony status retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ColonyStatus'
+              example:
+                active_agents: 5
+                total_knowledge_entries: 1247
+                blacklisted_files: 3
+                agents:
+                  - id: "alpha_7c3f"
+                    generation: 0
+                    health: 85.5
+                    location: "/tmp/biocode_sandbox_alpha_7c3f"
+                  - id: "beta_9d2a"
+                    generation: 1
+                    health: 92.0
+                    location: "/tmp/biocode_sandbox_beta_9d2a"
+
+  /launch_agent:
+    post:
+      summary: Launch a new agent
+      description: Creates and starts a new BioCode agent to monitor a project
+      tags:
+        - Agents
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/LaunchAgentRequest'
+            example:
+              project_path: "/home/user/my-project"
+              config:
+                scan_frequency: 5.0
+                lifespan: 3600
+                can_replicate: true
+                can_evolve: true
+                aggressive_monitoring: false
+      responses:
+        '200':
+          description: Agent launched successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/LaunchAgentResponse'
+        '400':
+          description: Invalid project path or configuration
+        '500':
+          description: Server error during agent creation
+
+  /kill_agent/{agent_id}:
+    post:
+      summary: Terminate an agent
+      description: Initiates programmed death (apoptosis) for a specific agent
+      tags:
+        - Agents
+      parameters:
+        - name: agent_id
+          in: path
+          required: true
+          description: Unique identifier of the agent
+          schema:
+            type: string
+            example: "alpha_7c3f"
+      responses:
+        '200':
+          description: Agent terminated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  message:
+                    type: string
+        '404':
+          description: Agent not found
+
+  /dashboard:
+    get:
+      summary: Get dashboard data
+      description: Returns comprehensive dashboard data including metrics and real-time information
+      tags:
+        - Dashboard
+      responses:
+        '200':
+          description: Dashboard data retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/DashboardData'
+
+  /reports:
+    get:
+      summary: List available reports
+      description: Returns a list of generated agent reports
+      tags:
+        - Dashboard
+      parameters:
+        - name: limit
+          in: query
+          description: Maximum number of reports to return
+          schema:
+            type: integer
+            default: 50
+            maximum: 100
+      responses:
+        '200':
+          description: Reports list retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ReportSummary'
+
+  /report/{filename}:
+    get:
+      summary: Get specific report
+      description: Returns the detailed content of a specific report
+      tags:
+        - Dashboard
+      parameters:
+        - name: filename
+          in: path
+          required: true
+          description: Report filename
+          schema:
+            type: string
+            example: "ear_segmentation_analysis_alpha_7c3f.json"
+      responses:
+        '200':
+          description: Report retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AgentReport'
+        '404':
+          description: Report not found
+
+  /colony_knowledge:
+    get:
+      summary: Access colony knowledge
+      description: Returns collective knowledge entries from all agents
+      tags:
+        - Knowledge
+      parameters:
+        - name: entry_type
+          in: query
+          description: Filter by entry type
+          schema:
+            type: string
+            enum: [heartbeat, pattern, error, discovery]
+        - name: limit
+          in: query
+          description: Maximum entries to return
+          schema:
+            type: integer
+            default: 20
+            maximum: 100
+      responses:
+        '200':
+          description: Knowledge entries retrieved successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ColonyKnowledge'
+
+  /terminal_logs:
+    get:
+      summary: Get terminal logs
+      description: Returns recent terminal output from all agents
+      tags:
+        - Dashboard
+      parameters:
+        - name: last_n
+          in: query
+          description: Number of recent logs to retrieve
+          schema:
+            type: integer
+            default: 100
+            maximum: 500
+      responses:
+        '200':
+          description: Terminal logs retrieved successfully
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/TerminalLog'
+
+components:
+  schemas:
+    ColonyStatus:
+      type: object
+      properties:
+        active_agents:
+          type: integer
+          description: Number of currently active agents
+        total_knowledge_entries:
+          type: integer
+          description: Total entries in colony knowledge base
+        blacklisted_files:
+          type: integer
+          description: Number of files marked as problematic
+        agents:
+          type: array
+          items:
+            $ref: '#/components/schemas/AgentInfo'
+
+    AgentInfo:
+      type: object
+      properties:
+        id:
+          type: string
+          description: Unique agent identifier
+        generation:
+          type: integer
+          description: Agent generation (0 for original)
+        health:
+          type: number
+          format: float
+          description: Agent health percentage (0-100)
+        location:
+          type: string
+          description: Agent working directory
+
+    LaunchAgentRequest:
+      type: object
+      required:
+        - project_path
+      properties:
+        project_path:
+          type: string
+          description: Path to project to monitor
+        config:
+          $ref: '#/components/schemas/AgentConfig'
+
+    AgentConfig:
+      type: object
+      properties:
+        scan_frequency:
+          type: number
+          format: float
+          default: 5.0
+          description: Seconds between scans
+        lifespan:
+          type: integer
+          default: 3600
+          description: Agent lifespan in seconds
+        can_replicate:
+          type: boolean
+          default: false
+          description: Allow agent reproduction
+        can_evolve:
+          type: boolean
+          default: true
+          description: Allow trait evolution
+        can_communicate:
+          type: boolean
+          default: true
+          description: Enable inter-agent communication
+        aggressive_monitoring:
+          type: boolean
+          default: false
+          description: Enable detailed monitoring
+
+    LaunchAgentResponse:
+      type: object
+      properties:
+        success:
+          type: boolean
+        agent_id:
+          type: string
+          description: ID of newly created agent
+        message:
+          type: string
+
+    DashboardData:
+      type: object
+      properties:
+        performance_metrics:
+          $ref: '#/components/schemas/PerformanceMetrics'
+        real_time_data:
+          type: array
+          items:
+            $ref: '#/components/schemas/RealTimeDataPoint'
+        pattern_analytics:
+          type: object
+          additionalProperties:
+            type: integer
+        active_colonies:
+          type: object
+
+    PerformanceMetrics:
+      type: object
+      properties:
+        total_agents_created:
+          type: integer
+        total_files_analyzed:
+          type: integer
+        total_patterns_discovered:
+          type: integer
+        total_errors_detected:
+          type: integer
+        avg_agent_lifespan:
+          type: number
+        peak_colony_size:
+          type: integer
+
+    RealTimeDataPoint:
+      type: object
+      properties:
+        timestamp:
+          type: string
+          format: date-time
+        active_agents:
+          type: integer
+        knowledge_entries:
+          type: integer
+        agents:
+          type: array
+          items:
+            $ref: '#/components/schemas/AgentInfo'
+
+    ReportSummary:
+      type: object
+      properties:
+        filename:
+          type: string
+        agent_id:
+          type: string
+        timestamp:
+          type: number
+          description: Unix timestamp
+        size:
+          type: integer
+          description: File size in bytes
+
+    AgentReport:
+      type: object
+      properties:
+        agent_id:
+          type: string
+        generation:
+          type: integer
+        parent_id:
+          type: string
+          nullable: true
+        birth_time:
+          type: string
+          format: date-time
+        death_time:
+          type: string
+          format: date-time
+        lifespan:
+          type: number
+        health_at_death:
+          type: number
+        statistics:
+          type: object
+          properties:
+            files_scanned:
+              type: integer
+            errors_detected:
+              type: integer
+            performance_samples:
+              type: integer
+            replications:
+              type: integer
+            communications_sent:
+              type: integer
+        memory:
+          type: object
+          properties:
+            learned_patterns:
+              type: object
+              additionalProperties:
+                type: integer
+            error_summary:
+              type: array
+              items:
+                type: object
+
+    ColonyKnowledge:
+      type: object
+      properties:
+        total_entries:
+          type: integer
+        recent_entries:
+          type: array
+          items:
+            type: object
+        entry_patterns:
+          type: object
+          additionalProperties:
+            type: integer
+
+    TerminalLog:
+      type: object
+      properties:
+        timestamp:
+          type: string
+          format: date-time
+        agent_id:
+          type: string
+        level:
+          type: string
+          enum: [info, debug, warning, error, success]
+        message:
+          type: string
+
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: API key for production use (not required for local development)

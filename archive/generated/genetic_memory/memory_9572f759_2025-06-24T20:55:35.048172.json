@@ -1,0 +1,21 @@
+{
+  "cell_id": "9572f759",
+  "dna": {
+    "behavior": "cooperative",
+    "metabolism": "adaptive",
+    "reproduction": "fragmentation",
+    "resilience": 0.13901766460022488,
+    "mutation_rate": 0.09491136875425987,
+    "lifespan": 36
+  },
+  "generation": 0,
+  "lineage": "c48fb3a9",
+  "mutations": [],
+  "death_time": "2025-06-24T20:55:35.048205",
+  "death_signals": [
+    "DNA hasar\u0131",
+    "Oksijen eksikli\u011fi",
+    "Toksin maruziyeti"
+  ],
+  "offspring_count": 0
+}
