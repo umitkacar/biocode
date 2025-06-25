@@ -3,21 +3,24 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "biocode"
+name = "biocode-swarm-intelligence"
 version = "0.2.0"
-description = "BioCode Framework - A proprietary biological architecture framework with self-healing capabilities"
+description = "BioCode Swarm Intelligence - Autonomous Problem-Solving Framework with biological architecture"
 authors = ["Umit Kacar, PhD <[Contact information to be provided]>"]
 maintainers = ["Umit Kacar, PhD <[Contact information to be provided]>"]
 readme = "README.md"
-repository = "https://github.com/umitkacar/biocode"
+repository = "https://github.com/umitkacar/biocode-swarm-intelligence"
 documentation = "https://biocode.readthedocs.io"
 license = "Proprietary"
 keywords = [
-    "architecture", 
-    "biology", 
-    "domain-driven-design", 
-    "framework",
+    "swarm-intelligence",
+    "autonomous-agents",
+    "problem-solving",
+    "biological-computing", 
     "self-healing",
+    "colony-intelligence",
+    "adaptive-systems",
+    "domain-driven-design",
     "asyncio"
 ]
 classifiers = [

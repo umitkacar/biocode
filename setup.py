@@ -45,14 +45,14 @@ EXTRAS_REQUIRE = {
 }
 
 setup(
-    name="biocode",
+    name="biocode-swarm-intelligence",
     version="0.2.0",
     author="Umit Kacar, PhD",
     author_email="[Contact information to be provided]",
-    description="BioCode Framework - A proprietary biological approach to software architecture with self-healing capabilities",
+    description="BioCode Swarm Intelligence - Autonomous Problem-Solving Framework with biological architecture",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/umitkacar/biocode",
+    url="https://github.com/umitkacar/biocode-swarm-intelligence",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     classifiers=[
