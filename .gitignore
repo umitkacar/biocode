@@ -150,3 +150,21 @@ Thumbs.db
 cell_banks/
 *.state
 *.log
+
+# Logs directory
+logs/
+
+# Data directory
+data/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Archive generated files
+archive/generated/*
+!archive/generated/.gitkeep
+
+# Benchmarks results
+benchmarks/results/

@@ -1,0 +1,1784 @@
+{
+  "timestamp": "2025-06-26T21:35:34.869023",
+  "project_path": "/home/umit/CLAUDE_PROJECT/Ear-segmentation-ai",
+  "health_score": 100.0,
+  "metrics": {
+    "CodeAnalyzer": {
+      "total_files": 39,
+      "total_lines": 7721,
+      "total_code_lines": 5594,
+      "total_classes": 53,
+      "total_functions": 309,
+      "complexity": [
+        {
+          "function": "process_single_image",
+          "file": "examples/basic/basic_usage.py",
+          "complexity": 4
+        },
+        {
+          "function": "process_image_directory",
+          "file": "examples/basic/basic_usage.py",
+          "complexity": 2
+        },
+        {
+          "function": "process_webcam",
+          "file": "examples/basic/basic_usage.py",
+          "complexity": 3
+        },
+        {
+          "function": "process_with_custom_threshold",
+          "file": "examples/basic/basic_usage.py",
+          "complexity": 2
+        },
+        {
+          "function": "process_from_url",
+          "file": "examples/basic/basic_usage.py",
+          "complexity": 2
+        },
+        {
+          "function": "main",
+          "file": "examples/basic/basic_usage.py",
+          "complexity": 1
+        },
+        {
+          "function": "frame_callback",
+          "file": "examples/basic/basic_usage.py",
+          "complexity": 2
+        },
+        {
+          "function": "get_memory_info",
+          "file": "scripts/benchmarks/profile_memory.py",
+          "complexity": 2
+        },
+        {
+          "function": "profile_single_image_memory",
+          "file": "scripts/benchmarks/profile_memory.py",
+          "complexity": 3
+        },
+        {
+          "function": "profile_batch_memory",
+          "file": "scripts/benchmarks/profile_memory.py",
+          "complexity": 5
+        },
+        {
+          "function": "detailed_memory_profile",
+          "file": "scripts/benchmarks/profile_memory.py",
+          "complexity": 2
+        },
+        {
+          "function": "profile_model_loading",
+          "file": "scripts/benchmarks/profile_memory.py",
+          "complexity": 1
+        },
+        {
+          "function": "main",
+          "file": "scripts/benchmarks/profile_memory.py",
+          "complexity": 5
+        },
+        {
+          "function": "benchmark_single_image",
+          "file": "scripts/benchmarks/run_benchmarks.py",
+          "complexity": 3
+        },
+        {
+          "function": "benchmark_batch_processing",
+          "file": "scripts/benchmarks/run_benchmarks.py",
+          "complexity": 3
+        },
+        {
+          "function": "benchmark_image_sizes",
+          "file": "scripts/benchmarks/run_benchmarks.py",
+          "complexity": 3
+        },
+        {
+          "function": "benchmark_memory_usage",
+          "file": "scripts/benchmarks/run_benchmarks.py",
+          "complexity": 3
+        },
+        {
+          "function": "main",
+          "file": "scripts/benchmarks/run_benchmarks.py",
+          "complexity": 8
+        },
+        {
+          "function": "benchmark_model_config",
+          "file": "scripts/benchmarks/compare_models.py",
+          "complexity": 3
+        },
+        {
+          "function": "compare_architectures",
+          "file": "scripts/benchmarks/compare_models.py",
+          "complexity": 3
+        },
+        {
+          "function": "compare_input_sizes",
+          "file": "scripts/benchmarks/compare_models.py",
+          "complexity": 3
+        },
+        {
+          "function": "compare_quantization",
+          "file": "scripts/benchmarks/compare_models.py",
+          "complexity": 1
+        },
+        {
+          "function": "main",
+          "file": "scripts/benchmarks/compare_models.py",
+          "complexity": 6
+        },
+        {
+          "function": "run_command",
+          "file": "scripts/release/prepare_release.py",
+          "complexity": 3
+        },
+        {
+          "function": "check_git_status",
+          "file": "scripts/release/prepare_release.py",
+          "complexity": 2
+        },
+        {
+          "function": "run_tests",
+          "file": "scripts/release/prepare_release.py",
+          "complexity": 3
+        },
+        {
+          "function": "run_linting",
+          "file": "scripts/release/prepare_release.py",
+          "complexity": 3
+        },
+        {
+          "function": "check_version",
+          "file": "scripts/release/prepare_release.py",
+          "complexity": 3
+        },
+        {
+          "function": "build_package",
+          "file": "scripts/release/prepare_release.py",
+          "complexity": 3
+        },
+        {
+          "function": "check_documentation",
+          "file": "scripts/release/prepare_release.py",
+          "complexity": 3
+        },
+        {
+          "function": "create_release_notes",
+          "file": "scripts/release/prepare_release.py",
+          "complexity": 1
+        },
+        {
+          "function": "main",
+          "file": "scripts/release/prepare_release.py",
+          "complexity": 5
+        },
+        {
+          "function": "test_model_download",
+          "file": "scripts/development/test_model_download.py",
+          "complexity": 4
+        },
+        {
+          "function": "test_cli_download",
+          "file": "scripts/development/test_model_download.py",
+          "complexity": 3
+        },
+        {
+          "function": "test_different_devices",
+          "file": "scripts/development/test_model_download.py",
+          "complexity": 4
+        },
+        {
+          "function": "test_legacy_imports",
+          "file": "scripts/development/test_backward_compat.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_legacy_ear_model",
+          "file": "scripts/development/test_backward_compat.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_legacy_cli_commands",
+          "file": "scripts/development/test_backward_compat.py",
+          "complexity": 4
+        },
+        {
+          "function": "test_deprecation_warnings",
+          "file": "scripts/development/test_backward_compat.py",
+          "complexity": 3
+        },
+        {
+          "function": "test_migration_guide",
+          "file": "scripts/development/test_backward_compat.py",
+          "complexity": 3
+        },
+        {
+          "function": "compare_outputs",
+          "file": "scripts/development/test_backward_compat.py",
+          "complexity": 4
+        },
+        {
+          "function": "test_image",
+          "file": "tests/conftest.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_mask",
+          "file": "tests/conftest.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_batch_images",
+          "file": "tests/conftest.py",
+          "complexity": 2
+        },
+        {
+          "function": "temp_dir",
+          "file": "tests/conftest.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_config",
+          "file": "tests/conftest.py",
+          "complexity": 1
+        },
+        {
+          "function": "mock_model",
+          "file": "tests/conftest.py",
+          "complexity": 2
+        },
+        {
+          "function": "mock_model_manager",
+          "file": "tests/conftest.py",
+          "complexity": 1
+        },
+        {
+          "function": "sample_image_files",
+          "file": "tests/conftest.py",
+          "complexity": 2
+        },
+        {
+          "function": "sample_video_file",
+          "file": "tests/conftest.py",
+          "complexity": 2
+        },
+        {
+          "function": "cleanup_gpu",
+          "file": "tests/conftest.py",
+          "complexity": 2
+        },
+        {
+          "function": "disable_logging",
+          "file": "tests/conftest.py",
+          "complexity": 1
+        },
+        {
+          "function": "__init__",
+          "file": "tests/conftest.py",
+          "complexity": 1
+        },
+        {
+          "function": "forward",
+          "file": "tests/conftest.py",
+          "complexity": 2
+        },
+        {
+          "function": "__init__",
+          "file": "tests/conftest.py",
+          "complexity": 1
+        },
+        {
+          "function": "load_model",
+          "file": "tests/conftest.py",
+          "complexity": 1
+        },
+        {
+          "function": "runner",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_version_command",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_help_command",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_image_help",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_download_model_command",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_image_single_file",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_image_directory",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_process_video_command",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_webcam_command",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_benchmark_command",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_error_handling_invalid_file",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_backward_compatibility_aliases",
+          "file": "tests/integration/test_cli.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_process_single_image_file",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_numpy_array",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_directory",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_list_of_images",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_return_probability_map",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_return_visualization",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_save_results",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_save_batch_results",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_error_handling_invalid_path",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_error_handling_empty_directory",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_different_image_formats",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_processing_result_methods",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_batch_result_methods",
+          "file": "tests/integration/test_api_image.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_video_file",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_with_output",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_camera",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_process_with_callback",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_frame_skipping",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_temporal_smoothing",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 4
+        },
+        {
+          "function": "test_stream_url",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_error_handling_invalid_video",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_stats_calculation",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_display_overlay",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "frame_callback",
+          "file": "tests/integration/test_api_video.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_default_values",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_architecture_validation",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_custom_values",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_default_values",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_device_validation",
+          "file": "tests/unit/test_config.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_input_size_validation",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_default_values",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_fps_validation",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_default_values",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_directory_creation",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_model_path_property",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_from_yaml",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_to_yaml",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_yaml_file_not_found",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_get_set_config",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_load_config",
+          "file": "tests/unit/test_config.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_initialization",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_predict_single_image",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_predict_with_probability",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_predict_batch",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_predict_empty_batch",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_set_threshold",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_warmup",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_resize_mask",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_error_handling",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_initialization",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_predict_frame_no_skip",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_predict_frame_with_skip",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_predict_frame_with_probability",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_temporal_smoothing",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_reset",
+          "file": "tests/unit/test_predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_initialization",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_basic_transform",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_grayscale_input",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_rgba_input",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_with_mask",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_no_normalization",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_with_augmentation",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_inverse_transform",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_inverse_transform_batch",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_initialization",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_batch_processing",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_custom_transform",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_collate_fn",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_create_light_augmentation",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_create_medium_augmentation",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 3
+        },
+        {
+          "function": "test_create_heavy_augmentation",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 3
+        },
+        {
+          "function": "test_invalid_strength",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_augmentation_with_mask",
+          "file": "tests/unit/test_transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "reset_singleton",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_singleton_pattern",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_device_selection_cpu",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_device_fallback_to_cpu",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_device_string",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_download_model",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_download_model_failure",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_verify_model_exists",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_verify_model_not_exists",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_create_model",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_get_model_info",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_clear_cache_gpu",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_clear_cache_cpu",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_set_device",
+          "file": "tests/unit/test_model.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_valid_image_path",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_image_path",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_directory_as_image_path",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_unsupported_image_format",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_valid_video_path",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_video_path",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_unsupported_video_format",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_valid_directory",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_create_directory",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_non_existent_directory",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_file_as_directory",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_valid_image_array",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_type",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_empty_array",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_dimensions",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_channels",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_valid_binary_mask",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_type",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_empty_mask",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_dimensions",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_multi_class_mask",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_class_values",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_cpu_device",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_cuda_device",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 2
+        },
+        {
+          "function": "test_invalid_cuda_format",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_device",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_valid_batch_size",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_type",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_negative_batch_size",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_zero_batch_size",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_valid_integer_camera_id",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_negative_camera_id",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_device_path_camera_id",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_url_camera_id",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_invalid_camera_id_type",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_get_image_files",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_empty_directory",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "test_mixed_files",
+          "file": "tests/unit/test_validators.py",
+          "complexity": 1
+        },
+        {
+          "function": "process_image_mode",
+          "file": "src/earsegmentationai/compat.py",
+          "complexity": 4
+        },
+        {
+          "function": "process_camera_mode",
+          "file": "src/earsegmentationai/compat.py",
+          "complexity": 1
+        },
+        {
+          "function": "migrate_v1_to_v2",
+          "file": "src/earsegmentationai/compat.py",
+          "complexity": 1
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/compat.py",
+          "complexity": 1
+        },
+        {
+          "function": "download_models",
+          "file": "src/earsegmentationai/compat.py",
+          "complexity": 2
+        },
+        {
+          "function": "load_model",
+          "file": "src/earsegmentationai/compat.py",
+          "complexity": 2
+        },
+        {
+          "function": "predict",
+          "file": "src/earsegmentationai/compat.py",
+          "complexity": 5
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 3
+        },
+        {
+          "function": "predict",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 5
+        },
+        {
+          "function": "predict_batch",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 5
+        },
+        {
+          "function": "_predict_batch",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 5
+        },
+        {
+          "function": "_resize_mask",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 3
+        },
+        {
+          "function": "set_threshold",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 2
+        },
+        {
+          "function": "warmup",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 3
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "predict_frame",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 11
+        },
+        {
+          "function": "reset",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 1
+        },
+        {
+          "function": "__new__",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 2
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 2
+        },
+        {
+          "function": "device",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 2
+        },
+        {
+          "function": "model",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 2
+        },
+        {
+          "function": "_get_device",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 7
+        },
+        {
+          "function": "_download_model",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 7
+        },
+        {
+          "function": "_verify_model",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 5
+        },
+        {
+          "function": "_create_model",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 3
+        },
+        {
+          "function": "load_model",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 11
+        },
+        {
+          "function": "reload_model",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 1
+        },
+        {
+          "function": "set_device",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 4
+        },
+        {
+          "function": "get_model_info",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 2
+        },
+        {
+          "function": "clear_cache",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 2
+        },
+        {
+          "function": "get_config",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 2
+        },
+        {
+          "function": "set_config",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 1
+        },
+        {
+          "function": "load_config",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 1
+        },
+        {
+          "function": "validate_architecture",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 2
+        },
+        {
+          "function": "validate_device",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 3
+        },
+        {
+          "function": "validate_input_size",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 3
+        },
+        {
+          "function": "validate_fps",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 3
+        },
+        {
+          "function": "create_directories",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 1
+        },
+        {
+          "function": "from_yaml",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 2
+        },
+        {
+          "function": "to_yaml",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 5
+        },
+        {
+          "function": "model_path",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 1
+        },
+        {
+          "function": "convert_for_yaml",
+          "file": "src/earsegmentationai/core/config.py",
+          "complexity": 5
+        },
+        {
+          "function": "setup_logging",
+          "file": "src/earsegmentationai/utils/logging.py",
+          "complexity": 4
+        },
+        {
+          "function": "get_logger",
+          "file": "src/earsegmentationai/utils/logging.py",
+          "complexity": 1
+        },
+        {
+          "function": "format",
+          "file": "src/earsegmentationai/utils/logging.py",
+          "complexity": 1
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 1
+        },
+        {
+          "function": "process",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 7
+        },
+        {
+          "function": "process_video_file",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 2
+        },
+        {
+          "function": "process_camera",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 3
+        },
+        {
+          "function": "process_stream",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 3
+        },
+        {
+          "function": "_process_video_capture",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 21
+        },
+        {
+          "function": "_process_frame",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 3
+        },
+        {
+          "function": "_add_overlay",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 3
+        },
+        {
+          "function": "set_skip_frames",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 1
+        },
+        {
+          "function": "set_smooth_masks",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 1
+        },
+        {
+          "function": "process",
+          "file": "src/earsegmentationai/api/image.py",
+          "complexity": 7
+        },
+        {
+          "function": "_process_single_file",
+          "file": "src/earsegmentationai/api/image.py",
+          "complexity": 2
+        },
+        {
+          "function": "_process_single_array",
+          "file": "src/earsegmentationai/api/image.py",
+          "complexity": 6
+        },
+        {
+          "function": "_process_directory",
+          "file": "src/earsegmentationai/api/image.py",
+          "complexity": 2
+        },
+        {
+          "function": "_process_list",
+          "file": "src/earsegmentationai/api/image.py",
+          "complexity": 11
+        },
+        {
+          "function": "_save_result",
+          "file": "src/earsegmentationai/api/image.py",
+          "complexity": 3
+        },
+        {
+          "function": "_save_batch_results",
+          "file": "src/earsegmentationai/api/image.py",
+          "complexity": 2
+        },
+        {
+          "function": "process_from_url",
+          "file": "src/earsegmentationai/api/image.py",
+          "complexity": 6
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 5
+        },
+        {
+          "function": "process",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "set_threshold",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "set_device",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "get_info",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "warmup",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "clear_cache",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 2
+        },
+        {
+          "function": "has_ear",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "ear_area",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "ear_percentage",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "get_bounding_box",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 2
+        },
+        {
+          "function": "get_center",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 2
+        },
+        {
+          "function": "to_dict",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "__len__",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "__getitem__",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "__iter__",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "detection_rate",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 2
+        },
+        {
+          "function": "average_ear_area",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 2
+        },
+        {
+          "function": "filter_by_detection",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "get_summary",
+          "file": "src/earsegmentationai/api/base.py",
+          "complexity": 1
+        },
+        {
+          "function": "version",
+          "file": "src/earsegmentationai/cli/app.py",
+          "complexity": 1
+        },
+        {
+          "function": "process_image",
+          "file": "src/earsegmentationai/cli/app.py",
+          "complexity": 10
+        },
+        {
+          "function": "process_video",
+          "file": "src/earsegmentationai/cli/app.py",
+          "complexity": 8
+        },
+        {
+          "function": "webcam",
+          "file": "src/earsegmentationai/cli/app.py",
+          "complexity": 1
+        },
+        {
+          "function": "benchmark",
+          "file": "src/earsegmentationai/cli/app.py",
+          "complexity": 6
+        },
+        {
+          "function": "download_model",
+          "file": "src/earsegmentationai/cli/app.py",
+          "complexity": 2
+        },
+        {
+          "function": "validate_image_path",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 6
+        },
+        {
+          "function": "validate_video_path",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 6
+        },
+        {
+          "function": "validate_directory",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 4
+        },
+        {
+          "function": "validate_image_array",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 7
+        },
+        {
+          "function": "validate_mask_array",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 9
+        },
+        {
+          "function": "validate_device_string",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 8
+        },
+        {
+          "function": "validate_batch_size",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 4
+        },
+        {
+          "function": "validate_camera_id",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 9
+        },
+        {
+          "function": "get_image_files",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 3
+        },
+        {
+          "function": "create_augmentation_pipeline",
+          "file": "src/earsegmentationai/preprocessing/transforms.py",
+          "complexity": 4
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/preprocessing/transforms.py",
+          "complexity": 2
+        },
+        {
+          "function": "_build_transform",
+          "file": "src/earsegmentationai/preprocessing/transforms.py",
+          "complexity": 3
+        },
+        {
+          "function": "__call__",
+          "file": "src/earsegmentationai/preprocessing/transforms.py",
+          "complexity": 7
+        },
+        {
+          "function": "inverse_transform",
+          "file": "src/earsegmentationai/preprocessing/transforms.py",
+          "complexity": 4
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/preprocessing/transforms.py",
+          "complexity": 2
+        },
+        {
+          "function": "__call__",
+          "file": "src/earsegmentationai/preprocessing/transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "collate_fn",
+          "file": "src/earsegmentationai/preprocessing/transforms.py",
+          "complexity": 1
+        },
+        {
+          "function": "create_grid_visualization",
+          "file": "src/earsegmentationai/postprocessing/visualization.py",
+          "complexity": 6
+        },
+        {
+          "function": "__init__",
+          "file": "src/earsegmentationai/postprocessing/visualization.py",
+          "complexity": 2
+        },
+        {
+          "function": "visualize_mask",
+          "file": "src/earsegmentationai/postprocessing/visualization.py",
+          "complexity": 8
+        },
+        {
+          "function": "visualize_probability",
+          "file": "src/earsegmentationai/postprocessing/visualization.py",
+          "complexity": 2
+        },
+        {
+          "function": "visualize_comparison",
+          "file": "src/earsegmentationai/postprocessing/visualization.py",
+          "complexity": 2
+        },
+        {
+          "function": "_add_contours",
+          "file": "src/earsegmentationai/postprocessing/visualization.py",
+          "complexity": 3
+        },
+        {
+          "function": "_add_legend",
+          "file": "src/earsegmentationai/postprocessing/visualization.py",
+          "complexity": 4
+        },
+        {
+          "function": "_add_text",
+          "file": "src/earsegmentationai/postprocessing/visualization.py",
+          "complexity": 1
+        }
+      ],
+      "imports": {
+        "pathlib": 16,
+        "cv2": 16,
+        "numpy": 23,
+        "earsegmentationai": 77,
+        "gc": 1,
+        "os": 3,
+        "typing": 16,
+        "psutil": 2,
+        "torch": 15,
+        "memory_profiler": 1,
+        "json": 3,
+        "time": 5,
+        "tqdm": 3,
+        "subprocess": 3,
+        "sys": 6,
+        "traceback": 3,
+        "warnings": 2,
+        "io": 2,
+        "shutil": 1,
+        "tempfile": 1,
+        "pytest": 9,
+        "logging": 2,
+        "typer": 2,
+        "unittest": 10,
+        "yaml": 2,
+        "hashlib": 1,
+        "requests": 2,
+        "segmentation_models_pytorch": 1,
+        "urllib": 2,
+        "pydantic": 1,
+        "rich": 7,
+        "abc": 1,
+        "albumentations": 2
+      },
+      "patterns": {
+        "abstract_class": 1
+      },
+      "average_complexity": 2.24,
+      "most_complex": [
+        {
+          "function": "_process_video_capture",
+          "file": "src/earsegmentationai/api/video.py",
+          "complexity": 21
+        },
+        {
+          "function": "predict_frame",
+          "file": "src/earsegmentationai/core/predictor.py",
+          "complexity": 11
+        },
+        {
+          "function": "load_model",
+          "file": "src/earsegmentationai/core/model.py",
+          "complexity": 11
+        },
+        {
+          "function": "_process_list",
+          "file": "src/earsegmentationai/api/image.py",
+          "complexity": 11
+        },
+        {
+          "function": "process_image",
+          "file": "src/earsegmentationai/cli/app.py",
+          "complexity": 10
+        },
+        {
+          "function": "validate_mask_array",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 9
+        },
+        {
+          "function": "validate_camera_id",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 9
+        },
+        {
+          "function": "main",
+          "file": "scripts/benchmarks/run_benchmarks.py",
+          "complexity": 8
+        },
+        {
+          "function": "process_video",
+          "file": "src/earsegmentationai/cli/app.py",
+          "complexity": 8
+        },
+        {
+          "function": "validate_device_string",
+          "file": "src/earsegmentationai/preprocessing/validators.py",
+          "complexity": 8
+        }
+      ],
+      "languages": {
+        "python": 39
+      },
+      "primary_language": "python",
+      "frameworks": [],
+      "analysis_time": 0.2051243782043457
+    },
+    "AIModelAnalyzer": {
+      "model_files": {
+        "count": 0,
+        "files": [],
+        "total_size": 0,
+        "frameworks_detected": []
+      },
+      "frameworks": {
+        "tensorflow": false,
+        "pytorch": true,
+        "keras": false,
+        "scikit-learn": false,
+        "opencv": true,
+        "pandas": false,
+        "numpy": true
+      },
+      "dataset_analysis": {
+        "data_directories": [
+          ".mypy_cache/3.8/importlib/metadata",
+          ".mypy_cache/3.8/torch/utils/data",
+          ".mypy_cache/3.8/torch/utils/data/datapipes",
+          ".mypy_cache/3.8/torch/utils/data/datapipes/dataframe",
+          "tests/fixtures/images",
+          "assets/images",
+          ".mypy_cache/3.8/numpy/testing",
+          ".mypy_cache/3.8/unittest",
+          ".mypy_cache/3.8/torch/testing",
+          ".pytest_cache",
+          "tests"
+        ],
+        "data_types": {
+          "text": 72
+        },
+        "total_files": 72,
+        "total_size": 1154549,
+        "structure": {}
+      },
+      "training_scripts": [],
+      "preprocessing": {
+        "augmentation": [],
+        "normalization": false,
+        "resize_operations": false,
+        "custom_transforms": []
+      },
+      "architecture": {
+        "type": "autoencoder",
+        "layers_found": [
+          "encoder",
+          "unet",
+          "deeplabv3",
+          "encoder",
+          "encoder",
+          "unet",
+          "encoder"
+        ],
+        "backbone": "resnet",
+        "custom_model": true
+      },
+      "metrics_found": {
+        "classification": [],
+        "segmentation": [
+          "dice",
+          "iou"
+        ],
+        "detection": [
+          "map"
+        ],
+        "regression": []
+      },
+      "deployment": {
+        "api_found": false,
+        "dockerfile": false,
+        "requirements": false,
+        "model_serving": [],
+        "cloud_ready": true
+      },
+      "segmentation_specific": {
+        "mask_format": "binary",
+        "classes_found": [],
+        "annotation_tool": null,
+        "evaluation_metrics": []
+      },
+      "analysis_time": 0.6075513362884521
+    }
+  },
+  "issues": [
+    {
+      "severity": "high",
+      "type": "complexity",
+      "message": "High complexity (21) in _process_video_capture",
+      "file": "src/earsegmentationai/api/video.py"
+    },
+    {
+      "severity": "medium",
+      "type": "complexity",
+      "message": "High complexity (11) in predict_frame",
+      "file": "src/earsegmentationai/core/predictor.py"
+    },
+    {
+      "severity": "medium",
+      "type": "complexity",
+      "message": "High complexity (11) in load_model",
+      "file": "src/earsegmentationai/core/model.py"
+    },
+    {
+      "severity": "medium",
+      "type": "complexity",
+      "message": "High complexity (11) in _process_list",
+      "file": "src/earsegmentationai/api/image.py"
+    },
+    {
+      "severity": "info",
+      "type": "model",
+      "message": "No trained model files found in the project"
+    },
+    {
+      "severity": "medium",
+      "type": "training",
+      "message": "No training scripts detected"
+    }
+  ],
+  "suggestions": [
+    "Create a Dockerfile for containerized deployment",
+    "Add a REST API or web interface for model deployment",
+    "Organize data into train/validation/test splits for proper evaluation",
+    "Consider using a web framework for better structure"
+  ]
+}
