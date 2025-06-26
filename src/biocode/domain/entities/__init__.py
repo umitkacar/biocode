@@ -1,17 +1,15 @@
-"""Domain entities exports"""
+"""
+Domain Entities (Legacy - Moved to ECS Architecture)
+Copyright (c) 2024 Umit Kacar, PhD. All rights reserved.
 
-from biocode.domain.entities.base_cell import CodeCell as Cell
-from biocode.domain.entities.tissue import AdvancedCodeTissue as Tissue
-from biocode.domain.entities.organ import CodeOrgan as Organ
-from biocode.domain.entities.system import CodeSystem as System
+NOTE: The old OOP-based entities (Cell, Tissue, Organ, System) have been 
+archived and replaced with the new Entity-Component-System (ECS) architecture.
 
-from biocode.domain.entities.cell import CellState, EnhancedCodeCell
-from biocode.domain.entities.organ import OrganType, CompatibilityType
-from biocode.domain.entities.system import ConsciousnessLevel
+For the new architecture, see:
+- src/biocode/ecs/ - Core ECS implementation
+- src/biocode/factories/ - Entity creation factories
+- src/biocode/mixins/ - Framework capabilities
+- src/biocode/aspects/ - Cross-cutting concerns
 
-__all__ = [
-    'Cell', 'Tissue', 'Organ', 'System',
-    'CellState', 'EnhancedCodeCell',
-    'OrganType', 'CompatibilityType', 
-    'ConsciousnessLevel'
-]
+The old files have been moved to: archive/old_domain_entities/
+"""
