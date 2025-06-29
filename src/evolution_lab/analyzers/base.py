@@ -5,8 +5,9 @@ Copyright (c) 2024 Umit Kacar, PhD. All rights reserved.
 import os
 import json
 import time
+import logging
 from abc import ABC, abstractmethod
-from typing import Any, Optional
+from typing import Any, Dict, List, Optional
 from pathlib import Path
 from dataclasses import dataclass, field
 from datetime import datetime
@@ -17,12 +18,12 @@ class AnalysisResult:
     """Result of an analysis operation"""
     analyzer_name: str
     timestamp: datetime = field(default_factory=datetime.now)
-    metrics: dict[str, Any] = field(default_factory=dict)
-    issues: list[dict[str, Any]] = field(default_factory=list)
-    suggestions: list[str] = field(default_factory=list)
-    metadata: dict[str, Any] = field(default_factory=dict)
+    metrics: Dict[str, Any] = field(default_factory=dict)
+    issues: List[Dict[str, Any]] = field(default_factory=list)
+    suggestions: List[str] = field(default_factory=list)
+    metadata: Dict[str, Any] = field(default_factory=dict)
     
-    def to_dict(self) -> dict[str, Any]:
+    def to_dict(self) -> Dict[str, Any]:
         """Convert to dictionary"""
         return {
             'analyzer': self.analyzer_name,
@@ -51,6 +52,7 @@ class BaseAnalyzer(ABC):
         self.name = self.__class__.__name__
         self._cache = {}
         self._start_time = None
+        self.logger = logging.getLogger(self.name)
         
     @abstractmethod
     def analyze(self) -> AnalysisResult:
@@ -62,7 +64,7 @@ class BaseAnalyzer(ABC):
         """
         pass
         
-    def scan_files(self, extensions: Optional[list[str]] = None) -> list[Path]:
+    def scan_files(self, extensions: Optional[List[str]] = None) -> List[Path]:
         """
         Scan project for files with given extensions
         
@@ -87,7 +89,7 @@ class BaseAnalyzer(ABC):
                     
         return files
         
-    def count_lines(self, file_path: Path) -> dict[str, int]:
+    def count_lines(self, file_path: Path) -> Dict[str, int]:
         """
         Count lines in a file
         
@@ -115,7 +117,7 @@ class BaseAnalyzer(ABC):
         except Exception:
             return {'total': 0, 'code': 0, 'blank': 0, 'comment': 0}
             
-    def get_file_info(self, file_path: Path) -> dict[str, Any]:
+    def get_file_info(self, file_path: Path) -> Dict[str, Any]:
         """
         Get file information
         
@@ -144,7 +146,7 @@ class BaseAnalyzer(ABC):
             return 0.0
         return time.time() - self._start_time
         
-    def load_json_file(self, file_path: Path) -> Optional[dict[str, Any]]:
+    def load_json_file(self, file_path: Path) -> Optional[Dict[str, Any]]:
         """
         Load and parse JSON file
         
@@ -160,7 +162,7 @@ class BaseAnalyzer(ABC):
         except Exception:
             return None
             
-    def find_pattern_in_file(self, file_path: Path, pattern: str) -> list[int]:
+    def find_pattern_in_file(self, file_path: Path, pattern: str) -> List[int]:
         """
         Find pattern in file and return line numbers
         

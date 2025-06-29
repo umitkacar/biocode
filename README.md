@@ -34,13 +34,18 @@
 ## 🎉 What's New in v0.4.0
 
 ### 🔬 Evolution Lab - Project Intelligence System
-- **6 Powerful Analyzers** working as a living colony:
+- **9 Powerful Analyzers + 2 Optimizers** working as a living colony:
   - 🛡️ **SecurityAnalyzer**: Vulnerability detection, authentication, encryption analysis
   - ⚡ **PerformanceAnalyzer**: Bottlenecks, memory leaks, async issues detection
   - 🧪 **TestCoverageAnalyzer**: Coverage metrics, test quality, CI/CD integration
   - 💡 **InnovationAnalyzer**: Design patterns, modern features, tech stack analysis
   - 📝 **CodeAnalyzer**: Structure, complexity, dependencies mapping
   - 🤖 **AIModelAnalyzer**: ML frameworks, models, datasets detection
+  - 🕸️ **DependencyGraphAnalyzer**: Module/class/function graphs, circular deps, coupling analysis
+  - 🧬 **CodeEmbeddingAnalyzer**: Semantic code search, clone detection (Type 1-4), similarity analysis
+  - 🎯 **ParetoHealthOptimizer**: Multi-objective optimization for balanced code health
+  - 🦜 **SwarmSearchCV**: Particle swarm optimization for ML hyperparameter tuning
+  - 🦨 **CodeSmellAnalyzer**: Detects anti-patterns with auto-fix capabilities
 
 ### 🌐 Realtime Dashboard
 - **WebSocket Streaming**: Live updates every 5 seconds
@@ -105,7 +110,7 @@ python run_dashboard.py
 ```
 
 ### What You'll See:
-- **Live Colony Status**: Health of 6 analyzer cells
+- **Live Colony Status**: Health of 9 analyzer cells
 - **Project Metrics**: Security, Performance, Test, Innovation scores
 - **Issue Tracking**: Critical, High, Medium, Low severity issues
 - **Smart Suggestions**: AI-powered improvement recommendations
@@ -133,6 +138,76 @@ async def analyze_project():
 asyncio.run(analyze_project())
 ```
 
+### Optimize Analyzer Balance with Pareto
+
+```python
+from src.evolution_lab.optimizers.pareto_health import ParetoHealthOptimizer
+
+async def optimize_health():
+    colony = EvolutionLabColony()
+    snapshot = await colony.analyze_project("/path/to/project")
+    
+    # Find optimal analyzer weights
+    optimizer = ParetoHealthOptimizer()
+    solutions = optimizer.optimize(
+        snapshot.metrics,
+        n_gen=100,
+        algorithm="nsga3"
+    )
+    
+    # Get balanced solution
+    balanced = optimizer.select_balanced_solution()
+    print(f"Optimal weights: {balanced.weights}")
+
+asyncio.run(optimize_health())
+```
+
+### ML Hyperparameter Tuning with Swarm Intelligence
+
+```python
+from src.evolution_lab.optimizers.swarm_search import SwarmSearchCV
+from sklearn.svm import SVC
+
+# Define search space
+param_distributions = {
+    'C': (0.01, 100.0, 'log'),
+    'gamma': (0.001, 1.0, 'log'),
+    'kernel': ['rbf', 'poly', 'sigmoid']
+}
+
+# Optimize with PSO
+swarm = SwarmSearchCV(
+    SVC(),
+    param_distributions,
+    n_particles=30,
+    n_iterations=50,
+    cv=5
+)
+
+swarm.fit(X_train, y_train)
+print(f"Best params: {swarm.best_params_}")
+print(f"Best score: {swarm.best_score_}")
+```
+
+### Automated Code Smell Detection and Fixing
+
+```python
+from src.evolution_lab.analyzers.code_smell_analyzer import CodeSmellAnalyzer
+from src.evolution_lab.fixers.smell_fixer import SmellFixer
+
+# Analyze code quality
+analyzer = CodeSmellAnalyzer("./my_project")
+results = analyzer.analyze()
+
+print(f"Health Score: {results['health_score']}%")
+print(f"Total Smells: {results['total_smells']}")
+
+# Auto-fix simple issues
+fixer = SmellFixer()
+fixable = [s for s in results['smells'] if s['auto_fixable']]
+fixer.apply_fixes(fixable, dry_run=False)
+```
+
 ---
 
 ## 🏗️ Architecture
@@ -147,7 +222,9 @@ biocode/
 │   ├── systems/       # Logic systems
 │   └── world.py       # ECS coordinator
 ├── evolution_lab/     # Project analysis system
-│   ├── analyzers/     # 6 specialized analyzers
+│   ├── analyzers/     # 9 specialized analyzers
+│   ├── optimizers/    # Multi-objective optimizers
+│   ├── fixers/        # Auto-fix engines
 │   ├── colony.py      # Living colony manager
 │   └── dashboard_demo.py  # Realtime dashboard
 ├── mixins/            # Framework capabilities
@@ -266,7 +343,7 @@ mypy src
 ## 📊 Project Status
 
 ### Current Release: v0.4.0 (December 2024)
-- ✅ **Evolution Lab**: 6 analyzers for project intelligence
+- ✅ **Evolution Lab**: 9 analyzers + 2 optimizers for project intelligence
 - ✅ **Realtime Dashboard**: WebSocket-based monitoring
 - ✅ **ECS Architecture**: Complete implementation
 - ✅ **Test Coverage**: 100% (104/104 tests)
@@ -279,12 +356,23 @@ mypy src
 - Analyzes 10,000 files in < 5 seconds
 - Dashboard updates at 60 FPS
 
+### Recent Additions
+- [x] Dependency graph visualization (NetworkX)
+- [x] Semantic code search and clone detection
+- [x] Code embedding analysis with TF-IDF fallback
+- [x] Pareto Health Optimizer with NSGA-III algorithm
+- [x] Multi-objective trade-off visualization
+- [x] SwarmSearchCV - PSO for hyperparameter optimization
+- [x] Continuous parameter space exploration
+- [x] Code Smell Detector with 10+ smell types
+- [x] Auto-fix engine for simple code issues
+
 ### Roadmap v0.5.0
-- [ ] Dependency graph visualization
+- [ ] Interactive D3.js visualizations
 - [ ] Bug prediction ML model
-- [ ] Code smell detection
+- [ ] Advanced code smell detection
 - [ ] Multi-project comparison
-- [ ] Export analysis reports
+- [ ] Export analysis reports (PDF/HTML)
 - [ ] Docker containerization
 
 ---

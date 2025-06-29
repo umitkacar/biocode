@@ -1,0 +1,38 @@
+{
+  "metadata": {
+    "project_name": "Ear Segmentation AI",
+    "timestamp": "2025-06-27T11:39:27.981029",
+    "generator": "BioCode Analysis Engine v1.0"
+  },
+  "summary": {
+    "health_score": 3.08,
+    "total_issues": 286,
+    "auto_fixable": 237,
+    "files_analyzed": 42
+  },
+  "code_smells": {
+    "magic_number": 234,
+    "long_method": 28,
+    "long_parameter_list": 16,
+    "commented_code": 3,
+    "long_line": 3,
+    "global_variable": 2
+  },
+  "recommendations": [
+    {
+      "priority": "High",
+      "title": "Extract Magic Numbers",
+      "description": "Convert 234 hardcoded values"
+    },
+    {
+      "priority": "Medium",
+      "title": "Refactor Long Methods",
+      "description": "Break down 28 complex functions"
+    },
+    {
+      "priority": "High",
+      "title": "Improve Test Coverage",
+      "description": "Add unit tests for critical paths"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "solutions": [
+    {
+      "id": 0,
+      "weights": {
+        "CodeAnalyzer": 0.06533696064427423,
+        "AIModelAnalyzer": 0.06869211986057809,
+        "SecurityAnalyzer": 0.1411525950917464,
+        "PerformanceAnalyzer": 0.0670847579026551,
+        "TestCoverageAnalyzer": 0.5851803131961835,
+        "InnovationAnalyzer": 0.07255325330456278
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 46.81442505569468,
+        "code_complexity": 0.37307404527880583,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 1,
+      "weights": {
+        "CodeAnalyzer": 0.0276951582903208,
+        "AIModelAnalyzer": 0.22152137881056413,
+        "SecurityAnalyzer": 0.2475593390727502,
+        "PerformanceAnalyzer": 0.2213803578933279,
+        "TestCoverageAnalyzer": 0.24756541460106077,
+        "InnovationAnalyzer": 0.034278351331976216
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 19.80523316808486,
+        "code_complexity": 0.15813935383773176,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 2,
+      "weights": {
+        "CodeAnalyzer": 0.042739511749778636,
+        "AIModelAnalyzer": 0.04933358131754052,
+        "SecurityAnalyzer": 0.13878301516858238,
+        "PerformanceAnalyzer": 0.3227974963005782,
+        "TestCoverageAnalyzer": 0.3822237834849525,
+        "InnovationAnalyzer": 0.06412261197856774
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 30.5779026787962,
+        "code_complexity": 0.244042612091236,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 3,
+      "weights": {
+        "CodeAnalyzer": 0.031256590309750705,
+        "AIModelAnalyzer": 0.25011458075679677,
+        "SecurityAnalyzer": 0.11339142811174449,
+        "PerformanceAnalyzer": 0.2433684138781837,
+        "TestCoverageAnalyzer": 0.2801182835051561,
+        "InnovationAnalyzer": 0.08175070343836814
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 22.40946268041249,
+        "code_complexity": 0.1784751306686765,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 4,
+      "weights": {
+        "CodeAnalyzer": 0.054194002366838696,
+        "AIModelAnalyzer": 0.08984816719793885,
+        "SecurityAnalyzer": 0.19816390807968323,
+        "PerformanceAnalyzer": 0.0673864641168476,
+        "TestCoverageAnalyzer": 0.4860697049374153,
+        "InnovationAnalyzer": 0.10433775330127625
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 38.88557639499322,
+        "code_complexity": 0.3094477535146489,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 5,
+      "weights": {
+        "CodeAnalyzer": 0.03905086085258381,
+        "AIModelAnalyzer": 0.2970702662947706,
+        "SecurityAnalyzer": 0.1437966575828586,
+        "PerformanceAnalyzer": 0.06385723356013513,
+        "TestCoverageAnalyzer": 0.3495462730160789,
+        "InnovationAnalyzer": 0.10667870869357288
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 27.96370184128631,
+        "code_complexity": 0.22298041546825353,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 6,
+      "weights": {
+        "CodeAnalyzer": 0.04656019520068916,
+        "AIModelAnalyzer": 0.358596411858139,
+        "SecurityAnalyzer": 0.06689089093286577,
+        "PerformanceAnalyzer": 0.04752682743417497,
+        "TestCoverageAnalyzer": 0.4160404902844107,
+        "InnovationAnalyzer": 0.06438518428972038
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 33.283239222752854,
+        "code_complexity": 0.2658587145959351,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 7,
+      "weights": {
+        "CodeAnalyzer": 0.06159736900125582,
+        "AIModelAnalyzer": 0.06227243112134161,
+        "SecurityAnalyzer": 0.08598994877798813,
+        "PerformanceAnalyzer": 0.08230307033082158,
+        "TestCoverageAnalyzer": 0.5495741901912341,
+        "InnovationAnalyzer": 0.15826299057735863
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 43.96593521529873,
+        "code_complexity": 0.35172097699717075,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 8,
+      "weights": {
+        "CodeAnalyzer": 0.035264295141294644,
+        "AIModelAnalyzer": 0.038063167218477786,
+        "SecurityAnalyzer": 0.3124730112343187,
+        "PerformanceAnalyzer": 0.06311053723944819,
+        "TestCoverageAnalyzer": 0.3153512495638088,
+        "InnovationAnalyzer": 0.23573773960265207
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 25.228099965104704,
+        "code_complexity": 0.20135912525679242,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 9,
+      "weights": {
+        "CodeAnalyzer": 0.057549549843796996,
+        "AIModelAnalyzer": 0.0715257801746823,
+        "SecurityAnalyzer": 0.1668986570508453,
+        "PerformanceAnalyzer": 0.07799859848202108,
+        "TestCoverageAnalyzer": 0.516138581755341,
+        "InnovationAnalyzer": 0.10988883269331323
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 41.29108654042728,
+        "code_complexity": 0.32860792960808083,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 10,
+      "weights": {
+        "CodeAnalyzer": 0.06914569098725334,
+        "AIModelAnalyzer": 0.07116262010631941,
+        "SecurityAnalyzer": 0.09772731426153393,
+        "PerformanceAnalyzer": 0.07058017597089045,
+        "TestCoverageAnalyzer": 0.6178491761922043,
+        "InnovationAnalyzer": 0.07353502248179868
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 49.427934095376344,
+        "code_complexity": 0.3948218955372166,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": true
+    },
+    {
+      "id": 11,
+      "weights": {
+        "CodeAnalyzer": 0.050087798877634045,
+        "AIModelAnalyzer": 0.19202255774736754,
+        "SecurityAnalyzer": 0.14293756236200514,
+        "PerformanceAnalyzer": 0.06782491079131389,
+        "TestCoverageAnalyzer": 0.4492456346783375,
+        "InnovationAnalyzer": 0.09788153554334184
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 35.939650774267,
+        "code_complexity": 0.2860013315912904,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    },
+    {
+      "id": 12,
+      "weights": {
+        "CodeAnalyzer": 0.023960351813416103,
+        "AIModelAnalyzer": 0.1913940253808127,
+        "SecurityAnalyzer": 0.21440847701022997,
+        "PerformanceAnalyzer": 0.1917351433950117,
+        "TestCoverageAnalyzer": 0.21464830728030831,
+        "InnovationAnalyzer": 0.1638536951202211
+      },
+      "objectives": {
+        "security_score": 0.0,
+        "performance_score": 0.0,
+        "test_coverage": 17.171864582424664,
+        "code_complexity": 0.13681360885460594,
+        "duplication_ratio": 0.0
+      },
+      "is_selected": false
+    }
+  ],
+  "problem": {
+    "analyzers": [
+      "CodeAnalyzer",
+      "AIModelAnalyzer",
+      "SecurityAnalyzer",
+      "PerformanceAnalyzer",
+      "TestCoverageAnalyzer",
+      "InnovationAnalyzer"
+    ],
+    "objectives": [
+      {
+        "name": "security_score",
+        "direction": "maximize"
+      },
+      {
+        "name": "performance_score",
+        "direction": "maximize"
+      },
+      {
+        "name": "test_coverage",
+        "direction": "maximize"
+      },
+      {
+        "name": "code_complexity",
+        "direction": "minimize"
+      },
+      {
+        "name": "duplication_ratio",
+        "direction": "minimize"
+      }
+    ]
+  }
+}

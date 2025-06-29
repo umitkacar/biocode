@@ -9,6 +9,8 @@ from .security_analyzer import SecurityAnalyzer
 from .performance_analyzer import PerformanceAnalyzer
 from .test_coverage_analyzer import TestCoverageAnalyzer
 from .innovation_analyzer import InnovationAnalyzer
+from .dependency_graph_analyzer import DependencyGraphAnalyzer
+from .code_embedding_analyzer import CodeEmbeddingAnalyzer
 from .base import BaseAnalyzer, AnalysisResult
 
 __all__ = [
@@ -20,4 +22,6 @@ __all__ = [
     'PerformanceAnalyzer',
     'TestCoverageAnalyzer',
     'InnovationAnalyzer',
+    'DependencyGraphAnalyzer',
+    'CodeEmbeddingAnalyzer',
 ]

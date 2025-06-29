@@ -4,7 +4,7 @@ Copyright (c) 2024 Umit Kacar, PhD. All rights reserved.
 """
 import re
 import ast
-from typing import Any
+from typing import Any, Dict, List
 from pathlib import Path
 from collections import defaultdict
 
@@ -46,7 +46,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
             },
         )
     
-    def _analyze_test_statistics(self) -> dict[str, Any]:
+    def _analyze_test_statistics(self) -> Dict[str, Any]:
         """Analyze basic test statistics"""
         test_stats = {
             'total_test_files': 0,
@@ -111,7 +111,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return test_stats
     
-    def _categorize_test_types(self) -> dict[str, Any]:
+    def _categorize_test_types(self) -> Dict[str, Any]:
         """Categorize different types of tests"""
         test_types = {
             'unit_tests': 0,
@@ -163,7 +163,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return test_types
     
-    def _analyze_coverage_report(self) -> dict[str, Any]:
+    def _analyze_coverage_report(self) -> Dict[str, Any]:
         """Analyze test coverage reports"""
         coverage_info = {
             'total_coverage': 0.0,
@@ -221,7 +221,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return coverage_info
     
-    def _analyze_test_quality(self) -> dict[str, Any]:
+    def _analyze_test_quality(self) -> Dict[str, Any]:
         """Analyze test quality metrics"""
         quality_info = {
             'avg_assertions_per_test': 0.0,
@@ -296,7 +296,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return quality_info
     
-    def _analyze_mocking_patterns(self) -> dict[str, Any]:
+    def _analyze_mocking_patterns(self) -> Dict[str, Any]:
         """Analyze mocking and stubbing patterns"""
         mocking_info = {
             'mock_library': None,
@@ -347,7 +347,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return mocking_info
     
-    def _analyze_test_fixtures(self) -> dict[str, Any]:
+    def _analyze_test_fixtures(self) -> Dict[str, Any]:
         """Analyze test fixtures and setup"""
         fixture_info = {
             'fixture_count': 0,
@@ -402,7 +402,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return fixture_info
     
-    def _analyze_test_performance(self) -> dict[str, Any]:
+    def _analyze_test_performance(self) -> Dict[str, Any]:
         """Analyze test performance characteristics"""
         perf_info = {
             'slow_test_markers': 0,
@@ -457,7 +457,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return perf_info
     
-    def _check_ci_integration(self) -> dict[str, Any]:
+    def _check_ci_integration(self) -> Dict[str, Any]:
         """Check CI/CD integration for tests"""
         ci_info = {
             'ci_configured': False,
@@ -520,7 +520,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return ci_info
     
-    def _calculate_test_score(self, metrics: dict[str, Any]) -> float:
+    def _calculate_test_score(self, metrics: Dict[str, Any]) -> float:
         """Calculate overall test score"""
         score = 0.0
         
@@ -560,7 +560,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return min(score, 100.0)
     
-    def _detect_test_issues(self, metrics: dict[str, Any]) -> list[dict[str, Any]]:
+    def _detect_test_issues(self, metrics: Dict[str, Any]) -> List[Dict[str, Any]]:
         """Detect testing issues"""
         issues = []
         
@@ -647,7 +647,7 @@ class TestCoverageAnalyzer(BaseAnalyzer):
         
         return issues
     
-    def _generate_test_suggestions(self, metrics: dict[str, Any]) -> list[str]:
+    def _generate_test_suggestions(self, metrics: Dict[str, Any]) -> List[str]:
         """Generate testing improvement suggestions"""
         suggestions = []
         

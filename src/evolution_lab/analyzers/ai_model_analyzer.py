@@ -4,7 +4,7 @@ Copyright (c) 2024 Umit Kacar, PhD. All rights reserved.
 """
 import os
 import re
-from typing import Any, Optional
+from typing import Any, Dict, List, Optional
 from pathlib import Path
 from collections import defaultdict
 
@@ -74,7 +74,7 @@ class AIModelAnalyzer(BaseAnalyzer):
             },
         )
         
-    def _find_model_files(self) -> dict[str, Any]:
+    def _find_model_files(self) -> Dict[str, Any]:
         """Find and analyze model files"""
         model_info = {
             'count': 0,
@@ -99,7 +99,7 @@ class AIModelAnalyzer(BaseAnalyzer):
         model_info['frameworks_detected'] = list(model_info['frameworks_detected'])
         return model_info
         
-    def _detect_ml_frameworks(self) -> dict[str, bool]:
+    def _detect_ml_frameworks(self) -> Dict[str, bool]:
         """Detect which ML frameworks are used"""
         frameworks = {
             'tensorflow': False,
@@ -152,7 +152,7 @@ class AIModelAnalyzer(BaseAnalyzer):
                     
         return frameworks
         
-    def _analyze_datasets(self) -> dict[str, Any]:
+    def _analyze_datasets(self) -> Dict[str, Any]:
         """Analyze dataset structure and properties"""
         dataset_info = {
             'data_directories': [],
@@ -194,7 +194,7 @@ class AIModelAnalyzer(BaseAnalyzer):
                     
         return dataset_info
         
-    def _find_training_scripts(self) -> list[dict[str, Any]]:
+    def _find_training_scripts(self) -> List[Dict[str, Any]]:
         """Find and analyze training scripts"""
         training_scripts = []
         training_patterns = ['train', 'training', 'fit', 'model.fit', 'trainer', 'experiment']
@@ -209,7 +209,7 @@ class AIModelAnalyzer(BaseAnalyzer):
                     
         return training_scripts
         
-    def _analyze_training_script(self, file_path: Path) -> Optional[dict[str, Any]]:
+    def _analyze_training_script(self, file_path: Path) -> Optional[Dict[str, Any]]:
         """Analyze a potential training script"""
         try:
             with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
@@ -251,7 +251,7 @@ class AIModelAnalyzer(BaseAnalyzer):
         except Exception:
             return None
             
-    def _analyze_preprocessing(self) -> dict[str, Any]:
+    def _analyze_preprocessing(self) -> Dict[str, Any]:
         """Analyze data preprocessing methods"""
         preprocessing_info = {
             'augmentation': [],
@@ -287,7 +287,7 @@ class AIModelAnalyzer(BaseAnalyzer):
                     
         return preprocessing_info
         
-    def _analyze_architecture(self) -> dict[str, Any]:
+    def _analyze_architecture(self) -> Dict[str, Any]:
         """Analyze model architecture"""
         architecture_info = {
             'type': 'unknown',
@@ -338,7 +338,7 @@ class AIModelAnalyzer(BaseAnalyzer):
                     
         return architecture_info
         
-    def _find_metrics(self) -> dict[str, list[str]]:
+    def _find_metrics(self) -> Dict[str, List[str]]:
         """Find evaluation metrics used in the project"""
         metrics_found = {
             'classification': [],
@@ -375,7 +375,7 @@ class AIModelAnalyzer(BaseAnalyzer):
             
         return metrics_found
         
-    def _analyze_deployment_readiness(self) -> dict[str, Any]:
+    def _analyze_deployment_readiness(self) -> Dict[str, Any]:
         """Analyze if the model is ready for deployment"""
         deployment_info = {
             'api_found': False,
@@ -417,7 +417,7 @@ class AIModelAnalyzer(BaseAnalyzer):
                 
         return deployment_info
         
-    def _analyze_segmentation_project(self) -> dict[str, Any]:
+    def _analyze_segmentation_project(self) -> Dict[str, Any]:
         """Specific analysis for segmentation projects"""
         seg_info = {
             'mask_format': None,
@@ -452,7 +452,7 @@ class AIModelAnalyzer(BaseAnalyzer):
                 
         return seg_info
         
-    def _detect_ml_issues(self, metrics: dict[str, Any]) -> list[dict[str, Any]]:
+    def _detect_ml_issues(self, metrics: Dict[str, Any]) -> List[Dict[str, Any]]:
         """Detect ML-specific issues"""
         issues = []
         
@@ -491,7 +491,7 @@ class AIModelAnalyzer(BaseAnalyzer):
             
         return issues
         
-    def _generate_ml_suggestions(self, metrics: dict[str, Any]) -> list[str]:
+    def _generate_ml_suggestions(self, metrics: Dict[str, Any]) -> List[str]:
         """Generate ML-specific suggestions"""
         suggestions = []
         

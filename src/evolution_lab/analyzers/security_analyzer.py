@@ -4,7 +4,7 @@ Copyright (c) 2024 Umit Kacar, PhD. All rights reserved.
 """
 import re
 import ast
-from typing import Any
+from typing import Any, Dict, List
 from pathlib import Path
 from collections import defaultdict
 
@@ -84,7 +84,7 @@ class SecurityAnalyzer(BaseAnalyzer):
             },
         )
     
-    def _scan_vulnerabilities(self) -> dict[str, Any]:
+    def _scan_vulnerabilities(self) -> Dict[str, Any]:
         """Scan for common vulnerabilities"""
         vulnerabilities = defaultdict(list)
         
@@ -109,7 +109,7 @@ class SecurityAnalyzer(BaseAnalyzer):
         
         return dict(vulnerabilities)
     
-    def _analyze_authentication(self) -> dict[str, Any]:
+    def _analyze_authentication(self) -> Dict[str, Any]:
         """Analyze authentication mechanisms"""
         auth_info = {
             'methods': [],
@@ -152,7 +152,7 @@ class SecurityAnalyzer(BaseAnalyzer):
         
         return auth_info
     
-    def _analyze_authorization(self) -> dict[str, Any]:
+    def _analyze_authorization(self) -> Dict[str, Any]:
         """Analyze authorization mechanisms"""
         authz_info = {
             'rbac': False,
@@ -192,7 +192,7 @@ class SecurityAnalyzer(BaseAnalyzer):
         authz_info['decorators'] = list(set(authz_info['decorators']))
         return authz_info
     
-    def _analyze_encryption(self) -> dict[str, Any]:
+    def _analyze_encryption(self) -> Dict[str, Any]:
         """Analyze encryption usage"""
         encryption_info = {
             'tls_ssl': False,
@@ -230,7 +230,7 @@ class SecurityAnalyzer(BaseAnalyzer):
         encryption_info['algorithms'] = list(set(encryption_info['algorithms']))
         return encryption_info
     
-    def _analyze_input_validation(self) -> dict[str, Any]:
+    def _analyze_input_validation(self) -> Dict[str, Any]:
         """Analyze input validation practices"""
         validation_info = {
             'validators_count': 0,
@@ -274,7 +274,7 @@ class SecurityAnalyzer(BaseAnalyzer):
         validation_info['frameworks'] = list(set(validation_info['frameworks']))
         return validation_info
     
-    def _check_dependencies(self) -> dict[str, Any]:
+    def _check_dependencies(self) -> Dict[str, Any]:
         """Check for vulnerable dependencies"""
         dep_info = {
             'outdated_packages': [],
@@ -306,7 +306,7 @@ class SecurityAnalyzer(BaseAnalyzer):
         
         return dep_info
     
-    def _check_security_headers(self) -> dict[str, Any]:
+    def _check_security_headers(self) -> Dict[str, Any]:
         """Check for security headers implementation"""
         headers_info = {
             'csp': False,
@@ -338,7 +338,7 @@ class SecurityAnalyzer(BaseAnalyzer):
         
         return headers_info
     
-    def _analyze_api_security(self) -> dict[str, Any]:
+    def _analyze_api_security(self) -> Dict[str, Any]:
         """Analyze API security measures"""
         api_info = {
             'rate_limiting': False,
@@ -379,7 +379,7 @@ class SecurityAnalyzer(BaseAnalyzer):
         
         return api_info
     
-    def _calculate_security_score(self, metrics: dict[str, Any]) -> float:
+    def _calculate_security_score(self, metrics: Dict[str, Any]) -> float:
         """Calculate overall security score"""
         score = 100.0
         
@@ -423,7 +423,7 @@ class SecurityAnalyzer(BaseAnalyzer):
             
         return max(0.0, score)
     
-    def _detect_security_issues(self, metrics: dict[str, Any]) -> list[dict[str, Any]]:
+    def _detect_security_issues(self, metrics: Dict[str, Any]) -> List[Dict[str, Any]]:
         """Detect security issues"""
         issues = []
         
@@ -496,7 +496,7 @@ class SecurityAnalyzer(BaseAnalyzer):
         
         return issues
     
-    def _generate_security_suggestions(self, metrics: dict[str, Any]) -> list[str]:
+    def _generate_security_suggestions(self, metrics: Dict[str, Any]) -> List[str]:
         """Generate security improvement suggestions"""
         suggestions = []
         

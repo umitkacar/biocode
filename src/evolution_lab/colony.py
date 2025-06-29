@@ -22,8 +22,9 @@ from biocode.aspects import LoggingAspect, PerformanceAspect, AspectWeaver
 from .analyzers import (
     CodeAnalyzer, AIModelAnalyzer,
     SecurityAnalyzer, PerformanceAnalyzer,
-    TestCoverageAnalyzer, InnovationAnalyzer
-    # DependencyAnalyzer, HealthAnalyzer, DocumentationAnalyzer
+    TestCoverageAnalyzer, InnovationAnalyzer,
+    DependencyGraphAnalyzer
+    # HealthAnalyzer, DocumentationAnalyzer
 )
 
 
@@ -180,6 +181,7 @@ class EvolutionLabColony:
             PerformanceAnalyzer,
             TestCoverageAnalyzer,
             InnovationAnalyzer,
+            DependencyGraphAnalyzer,
             # Add more analyzers as implemented
             # DependencyAnalyzer,
             # HealthAnalyzer,

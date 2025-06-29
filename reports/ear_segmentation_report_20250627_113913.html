@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🧬 BioCode Analysis Report - Ear Segmentation AI</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .metric-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .metric-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+        }
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .bio-visual {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            border-radius: 12px;
+        }
+        .colony-cell {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            margin: 5px;
+            border-radius: 50%;
+            line-height: 60px;
+            font-size: 2rem;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 0.8; }
+        }
+        .healthy { background: #48bb78; }
+        .warning { background: #ed8936; }
+        .critical { background: #f56565; }
+        .smell-bar {
+            margin: 15px 0;
+        }
+        .smell-label {
+            display: inline-block;
+            width: 150px;
+        }
+        .smell-progress {
+            display: inline-block;
+            width: 300px;
+            height: 25px;
+            background: #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .smell-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f56565 0%, #ed8936 100%);
+            text-align: right;
+            padding-right: 10px;
+            color: white;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧬 BioCode Analysis Report</h1>
+        <p>Ear Segmentation AI | Generated: 2025-06-27 11:39</p>
+    </div>
+
+    <div class="container">
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">3.1%</div>
+                <div>Health Score</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">286</div>
+                <div>Total Issues</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">237</div>
+                <div>Auto-fixable</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">42</div>
+                <div>Files Analyzed</div>
+            </div>
+        </div>
+
+        <div class="section bio-visual">
+            <h2>🦠 Code Cell Colony</h2>
+            <div>
+                <span class="colony-cell healthy">🧬</span>
+                <span class="colony-cell healthy">🧬</span>
+                <span class="colony-cell warning">🧬</span>
+                <span class="colony-cell healthy">🧬</span>
+                <span class="colony-cell critical">🧬</span>
+                <span class="colony-cell healthy">🧬</span>
+            </div>
+            <p>Living code cells representing module health</p>
+        </div>
+
+        <div class="section">
+            <h2>🦨 Code Smell Distribution</h2>
+            
+            <div class="smell-bar">
+                <span class="smell-label">Magic Number</span>
+                <span class="smell-progress">
+                    <div class="smell-fill" style="width: 90%">234</div>
+                </span>
+            </div>
+            <div class="smell-bar">
+                <span class="smell-label">Long Method</span>
+                <span class="smell-progress">
+                    <div class="smell-fill" style="width: 29.37062937062937%">28</div>
+                </span>
+            </div>
+            <div class="smell-bar">
+                <span class="smell-label">Long Parameter List</span>
+                <span class="smell-progress">
+                    <div class="smell-fill" style="width: 16.783216783216783%">16</div>
+                </span>
+            </div>
+            <div class="smell-bar">
+                <span class="smell-label">Commented Code</span>
+                <span class="smell-progress">
+                    <div class="smell-fill" style="width: 3.1468531468531467%">3</div>
+                </span>
+            </div>
+            <div class="smell-bar">
+                <span class="smell-label">Long Line</span>
+                <span class="smell-progress">
+                    <div class="smell-fill" style="width: 3.1468531468531467%">3</div>
+                </span>
+            </div>
+            <div class="smell-bar">
+                <span class="smell-label">Global Variable</span>
+                <span class="smell-progress">
+                    <div class="smell-fill" style="width: 2.097902097902098%">2</div>
+                </span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💡 Top Recommendations</h2>
+            <ol>
+                <li><strong>Extract Magic Numbers:</strong> Convert 234 hardcoded values to named constants</li>
+                <li><strong>Refactor Long Methods:</strong> Break down 28 complex functions</li>
+                <li><strong>Improve Test Coverage:</strong> Current coverage needs improvement</li>
+                <li><strong>Use SwarmSearchCV:</strong> Optimize ML hyperparameters for better accuracy</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

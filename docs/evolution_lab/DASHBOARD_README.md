@@ -6,7 +6,7 @@ The Evolution Lab Dashboard provides real-time monitoring and analysis of extern
 
 ## Features
 
-### 🔬 Six Powerful Analyzers
+### 🔬 Seven Powerful Analyzers
 
 1. **CodeAnalyzer** - Analyzes code structure, complexity, languages, and frameworks
 2. **AIModelAnalyzer** - Detects AI/ML models, frameworks, training scripts, and datasets
@@ -14,6 +14,7 @@ The Evolution Lab Dashboard provides real-time monitoring and analysis of extern
 4. **PerformanceAnalyzer** - Identifies bottlenecks, N+1 queries, memory issues, async problems
 5. **TestCoverageAnalyzer** - Analyzes test quality, coverage, CI/CD integration
 6. **InnovationAnalyzer** - Detects design patterns, modern features, architectural decisions
+7. **DependencyGraphAnalyzer** - Maps module/class/function dependencies, detects circular deps, god classes
 
 ### 📊 Real-time Metrics
 
@@ -35,7 +36,7 @@ The Evolution Lab Dashboard provides real-time monitoring and analysis of extern
 
 ```bash
 # Install dashboard dependencies
-pip install websockets aiohttp aiohttp-cors
+pip install websockets aiohttp aiohttp-cors networkx
 
 # Or install all BioCode dashboard features
 pip install -e '.[dashboard]'

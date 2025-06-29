@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key id="d2" for="node" attr.name="complexity" attr.type="long" />
+  <key id="d1" for="node" attr.name="file_path" attr.type="string" />
+  <key id="d0" for="node" attr.name="name" attr.type="string" />
+  <graph edgedefault="directed">
+    <node id="examples.basic.basic_usage">
+      <data key="d0">examples.basic.basic_usage</data>
+      <data key="d1">examples/basic/basic_usage.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="scripts.benchmarks.profile_memory">
+      <data key="d0">scripts.benchmarks.profile_memory</data>
+      <data key="d1">scripts/benchmarks/profile_memory.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="scripts.benchmarks.run_benchmarks">
+      <data key="d0">scripts.benchmarks.run_benchmarks</data>
+      <data key="d1">scripts/benchmarks/run_benchmarks.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="scripts.benchmarks.compare_models">
+      <data key="d0">scripts.benchmarks.compare_models</data>
+      <data key="d1">scripts/benchmarks/compare_models.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="scripts.release.prepare_release">
+      <data key="d0">scripts.release.prepare_release</data>
+      <data key="d1">scripts/release/prepare_release.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="scripts.development.test_model_download">
+      <data key="d0">scripts.development.test_model_download</data>
+      <data key="d1">scripts/development/test_model_download.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="scripts.development.test_backward_compat">
+      <data key="d0">scripts.development.test_backward_compat</data>
+      <data key="d1">scripts/development/test_backward_compat.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.conftest">
+      <data key="d0">tests.conftest</data>
+      <data key="d1">tests/conftest.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.__init__">
+      <data key="d0">tests.__init__</data>
+      <data key="d1">tests/__init__.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.integration.test_cli">
+      <data key="d0">tests.integration.test_cli</data>
+      <data key="d1">tests/integration/test_cli.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.integration.test_api_image">
+      <data key="d0">tests.integration.test_api_image</data>
+      <data key="d1">tests/integration/test_api_image.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.integration.test_api_video">
+      <data key="d0">tests.integration.test_api_video</data>
+      <data key="d1">tests/integration/test_api_video.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.unit.test_config">
+      <data key="d0">tests.unit.test_config</data>
+      <data key="d1">tests/unit/test_config.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.unit.test_predictor">
+      <data key="d0">tests.unit.test_predictor</data>
+      <data key="d1">tests/unit/test_predictor.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.unit.test_transforms">
+      <data key="d0">tests.unit.test_transforms</data>
+      <data key="d1">tests/unit/test_transforms.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.unit.test_model">
+      <data key="d0">tests.unit.test_model</data>
+      <data key="d1">tests/unit/test_model.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="tests.unit.test_validators">
+      <data key="d0">tests.unit.test_validators</data>
+      <data key="d1">tests/unit/test_validators.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.__init__">
+      <data key="d0">src.__init__</data>
+      <data key="d1">src/__init__.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.compat">
+      <data key="d0">src.earsegmentationai.compat</data>
+      <data key="d1">src/earsegmentationai/compat.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.__version__">
+      <data key="d0">src.earsegmentationai.__version__</data>
+      <data key="d1">src/earsegmentationai/__version__.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.__init__">
+      <data key="d0">src.earsegmentationai.__init__</data>
+      <data key="d1">src/earsegmentationai/__init__.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.core.predictor">
+      <data key="d0">src.earsegmentationai.core.predictor</data>
+      <data key="d1">src/earsegmentationai/core/predictor.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.core.__init__">
+      <data key="d0">src.earsegmentationai.core.__init__</data>
+      <data key="d1">src/earsegmentationai/core/__init__.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.core.model">
+      <data key="d0">src.earsegmentationai.core.model</data>
+      <data key="d1">src/earsegmentationai/core/model.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.core.config">
+      <data key="d0">src.earsegmentationai.core.config</data>
+      <data key="d1">src/earsegmentationai/core/config.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.utils.exceptions">
+      <data key="d0">src.earsegmentationai.utils.exceptions</data>
+      <data key="d1">src/earsegmentationai/utils/exceptions.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.utils.__init__">
+      <data key="d0">src.earsegmentationai.utils.__init__</data>
+      <data key="d1">src/earsegmentationai/utils/__init__.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.utils.logging">
+      <data key="d0">src.earsegmentationai.utils.logging</data>
+      <data key="d1">src/earsegmentationai/utils/logging.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.api.video">
+      <data key="d0">src.earsegmentationai.api.video</data>
+      <data key="d1">src/earsegmentationai/api/video.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.api.__init__">
+      <data key="d0">src.earsegmentationai.api.__init__</data>
+      <data key="d1">src/earsegmentationai/api/__init__.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.api.image">
+      <data key="d0">src.earsegmentationai.api.image</data>
+      <data key="d1">src/earsegmentationai/api/image.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.api.base">
+      <data key="d0">src.earsegmentationai.api.base</data>
+      <data key="d1">src/earsegmentationai/api/base.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.cli.__init__">
+      <data key="d0">src.earsegmentationai.cli.__init__</data>
+      <data key="d1">src/earsegmentationai/cli/__init__.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.cli.app">
+      <data key="d0">src.earsegmentationai.cli.app</data>
+      <data key="d1">src/earsegmentationai/cli/app.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.preprocessing.__init__">
+      <data key="d0">src.earsegmentationai.preprocessing.__init__</data>
+      <data key="d1">src/earsegmentationai/preprocessing/__init__.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.preprocessing.validators">
+      <data key="d0">src.earsegmentationai.preprocessing.validators</data>
+      <data key="d1">src/earsegmentationai/preprocessing/validators.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.preprocessing.transforms">
+      <data key="d0">src.earsegmentationai.preprocessing.transforms</data>
+      <data key="d1">src/earsegmentationai/preprocessing/transforms.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.postprocessing.visualization">
+      <data key="d0">src.earsegmentationai.postprocessing.visualization</data>
+      <data key="d1">src/earsegmentationai/postprocessing/visualization.py</data>
+      <data key="d2">1</data>
+    </node>
+    <node id="src.earsegmentationai.postprocessing.__init__">
+      <data key="d0">src.earsegmentationai.postprocessing.__init__</data>
+      <data key="d1">src/earsegmentationai/postprocessing/__init__.py</data>
+      <data key="d2">1</data>
+    </node>
+  </graph>
+</graphml>

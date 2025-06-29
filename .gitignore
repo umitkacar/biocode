@@ -162,6 +162,10 @@ tmp/
 temp/
 *.tmp
 
+# Cache files
+*.pkl
+.biocode_embeddings_cache.pkl
+
 # Archive generated files
 archive/generated/*
 !archive/generated/.gitkeep

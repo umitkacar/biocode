@@ -4,7 +4,7 @@ Copyright (c) 2024 Umit Kacar, PhD. All rights reserved.
 """
 import ast
 import re
-from typing import Any
+from typing import Any, Dict, List
 from pathlib import Path
 from collections import defaultdict
 
@@ -52,7 +52,7 @@ class CodeAnalyzer(BaseAnalyzer):
             metadata={'project_path': str(self.project_path)},
         )
         
-    def _detect_languages(self) -> dict[str, int]:
+    def _detect_languages(self) -> Dict[str, int]:
         """Detect programming languages used"""
         language_map = {
             '.py': 'python',
@@ -81,7 +81,7 @@ class CodeAnalyzer(BaseAnalyzer):
                 
         return dict(language_counts)
         
-    def _analyze_python(self) -> dict[str, Any]:
+    def _analyze_python(self) -> Dict[str, Any]:
         """Analyze Python code"""
         metrics = {
             'total_files': 0,
@@ -171,7 +171,7 @@ class CodeAnalyzer(BaseAnalyzer):
                 
         return complexity
         
-    def _analyze_javascript(self) -> dict[str, Any]:
+    def _analyze_javascript(self) -> Dict[str, Any]:
         """Analyze JavaScript code"""
         metrics = {
             'total_files': 0,
@@ -210,7 +210,7 @@ class CodeAnalyzer(BaseAnalyzer):
                 
         return metrics
         
-    def _analyze_generic(self) -> dict[str, Any]:
+    def _analyze_generic(self) -> Dict[str, Any]:
         """Generic code analysis for any language"""
         metrics = {
             'total_files': 0,
@@ -232,7 +232,7 @@ class CodeAnalyzer(BaseAnalyzer):
             
         return metrics
         
-    def _detect_frameworks(self) -> list[str]:
+    def _detect_frameworks(self) -> List[str]:
         """Detect frameworks and libraries used"""
         frameworks = []
         
@@ -266,7 +266,7 @@ class CodeAnalyzer(BaseAnalyzer):
                     
         return frameworks
         
-    def _detect_issues(self, metrics: dict[str, Any]) -> list[dict[str, Any]]:
+    def _detect_issues(self, metrics: Dict[str, Any]) -> List[Dict[str, Any]]:
         """Detect potential issues in code"""
         issues = []
         
@@ -293,7 +293,7 @@ class CodeAnalyzer(BaseAnalyzer):
                 
         return issues
         
-    def _generate_suggestions(self, metrics: dict[str, Any]) -> list[str]:
+    def _generate_suggestions(self, metrics: Dict[str, Any]) -> List[str]:
         """Generate improvement suggestions"""
         suggestions = []
         

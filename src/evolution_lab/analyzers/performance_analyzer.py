@@ -4,7 +4,7 @@ Copyright (c) 2024 Umit Kacar, PhD. All rights reserved.
 """
 import re
 import ast
-from typing import Any
+from typing import Any, Dict, List
 from pathlib import Path
 from collections import defaultdict
 
@@ -48,7 +48,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
             },
         )
     
-    def _analyze_algorithmic_complexity(self) -> dict[str, Any]:
+    def _analyze_algorithmic_complexity(self) -> Dict[str, Any]:
         """Analyze algorithmic complexity patterns"""
         complexity_info = {
             'nested_loops': [],
@@ -119,7 +119,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
                     return True
         return False
     
-    def _analyze_database_operations(self) -> dict[str, Any]:
+    def _analyze_database_operations(self) -> Dict[str, Any]:
         """Analyze database query patterns"""
         db_info = {
             'n_plus_one_queries': [],
@@ -170,7 +170,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         
         return db_info
     
-    def _analyze_memory_patterns(self) -> dict[str, Any]:
+    def _analyze_memory_patterns(self) -> Dict[str, Any]:
         """Analyze memory usage patterns"""
         memory_info = {
             'large_data_structures': [],
@@ -215,7 +215,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         
         return memory_info
     
-    def _analyze_async_patterns(self) -> dict[str, Any]:
+    def _analyze_async_patterns(self) -> Dict[str, Any]:
         """Analyze asynchronous programming patterns"""
         async_info = {
             'async_functions': 0,
@@ -270,7 +270,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         async_info['async_frameworks'] = list(set(async_info['async_frameworks']))
         return async_info
     
-    def _analyze_caching_strategies(self) -> dict[str, Any]:
+    def _analyze_caching_strategies(self) -> Dict[str, Any]:
         """Analyze caching implementations"""
         cache_info = {
             'cache_decorators': 0,
@@ -322,7 +322,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         cache_info['cache_backends'] = list(set(cache_info['cache_backends']))
         return cache_info
     
-    def _analyze_loops(self) -> dict[str, Any]:
+    def _analyze_loops(self) -> Dict[str, Any]:
         """Analyze loop patterns and efficiency"""
         loop_info = {
             'total_loops': 0,
@@ -371,7 +371,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         
         return loop_info
     
-    def _analyze_api_performance(self) -> dict[str, Any]:
+    def _analyze_api_performance(self) -> Dict[str, Any]:
         """Analyze API performance characteristics"""
         api_info = {
             'pagination': False,
@@ -418,7 +418,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         
         return api_info
     
-    def _analyze_file_operations(self) -> dict[str, Any]:
+    def _analyze_file_operations(self) -> Dict[str, Any]:
         """Analyze file I/O operations"""
         file_info = {
             'streaming_operations': 0,
@@ -470,7 +470,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         
         return file_info
     
-    def _analyze_concurrency(self) -> dict[str, Any]:
+    def _analyze_concurrency(self) -> Dict[str, Any]:
         """Analyze concurrency patterns"""
         concurrency_info = {
             'threading_used': False,
@@ -525,7 +525,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         
         return concurrency_info
     
-    def _check_profiling_tools(self) -> dict[str, Any]:
+    def _check_profiling_tools(self) -> Dict[str, Any]:
         """Check for profiling and monitoring tools"""
         profiling_info = {
             'profilers': [],
@@ -574,7 +574,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         profiling_info['profilers'] = list(set(profiling_info['profilers']))
         return profiling_info
     
-    def _calculate_performance_score(self, metrics: dict[str, Any]) -> float:
+    def _calculate_performance_score(self, metrics: Dict[str, Any]) -> float:
         """Calculate overall performance score"""
         score = 100.0
         
@@ -626,7 +626,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
             
         return max(0.0, min(100.0, score))
     
-    def _detect_performance_issues(self, metrics: dict[str, Any]) -> list[dict[str, Any]]:
+    def _detect_performance_issues(self, metrics: Dict[str, Any]) -> List[Dict[str, Any]]:
         """Detect performance issues"""
         issues = []
         
@@ -689,7 +689,7 @@ class PerformanceAnalyzer(BaseAnalyzer):
         
         return issues
     
-    def _generate_performance_suggestions(self, metrics: dict[str, Any]) -> list[str]:
+    def _generate_performance_suggestions(self, metrics: Dict[str, Any]) -> List[str]:
         """Generate performance improvement suggestions"""
         suggestions = []
         

@@ -4,7 +4,7 @@ Copyright (c) 2024 Umit Kacar, PhD. All rights reserved.
 """
 import re
 import ast
-from typing import Any
+from typing import Any, Dict, List
 from pathlib import Path
 from collections import defaultdict, Counter
 
@@ -46,7 +46,7 @@ class InnovationAnalyzer(BaseAnalyzer):
             },
         )
     
-    def _analyze_design_patterns(self) -> dict[str, Any]:
+    def _analyze_design_patterns(self) -> Dict[str, Any]:
         """Analyze software design patterns usage"""
         patterns = {
             'singleton': [],
@@ -157,7 +157,7 @@ class InnovationAnalyzer(BaseAnalyzer):
             'most_used_patterns': sorted(patterns_used.items(), key=lambda x: x[1], reverse=True)[:5],
         }
     
-    def _analyze_architectural_patterns(self) -> dict[str, Any]:
+    def _analyze_architectural_patterns(self) -> Dict[str, Any]:
         """Analyze architectural patterns and structures"""
         arch_patterns = {
             'layered_architecture': False,
@@ -216,7 +216,7 @@ class InnovationAnalyzer(BaseAnalyzer):
         
         return arch_patterns
     
-    def _analyze_modern_features(self) -> dict[str, Any]:
+    def _analyze_modern_features(self) -> Dict[str, Any]:
         """Analyze usage of modern language features and paradigms"""
         modern_features = {
             'type_hints': 0,
@@ -278,7 +278,7 @@ class InnovationAnalyzer(BaseAnalyzer):
             'adoption_rate': feature_diversity / len(modern_features) * 100,
         }
     
-    def _analyze_code_reusability(self) -> dict[str, Any]:
+    def _analyze_code_reusability(self) -> Dict[str, Any]:
         """Analyze code reusability metrics"""
         reusability = {
             'abstract_classes': 0,
@@ -350,7 +350,7 @@ class InnovationAnalyzer(BaseAnalyzer):
         
         return reusability
     
-    def _analyze_api_design(self) -> dict[str, Any]:
+    def _analyze_api_design(self) -> Dict[str, Any]:
         """Analyze API design quality and patterns"""
         api_design = {
             'rest_endpoints': 0,
@@ -402,7 +402,7 @@ class InnovationAnalyzer(BaseAnalyzer):
         
         return api_design
     
-    def _analyze_innovation_indicators(self) -> dict[str, Any]:
+    def _analyze_innovation_indicators(self) -> Dict[str, Any]:
         """Analyze indicators of innovative practices"""
         innovation = {
             'machine_learning': False,
@@ -455,7 +455,7 @@ class InnovationAnalyzer(BaseAnalyzer):
         
         return innovation
     
-    def _analyze_tech_stack(self) -> dict[str, Any]:
+    def _analyze_tech_stack(self) -> Dict[str, Any]:
         """Analyze technology stack maturity and diversity"""
         tech_stack = {
             'languages': set(),
@@ -539,7 +539,7 @@ class InnovationAnalyzer(BaseAnalyzer):
             'polyglot': len(tech_stack['languages']) > 1,
         }
     
-    def _analyze_best_practices(self) -> dict[str, Any]:
+    def _analyze_best_practices(self) -> Dict[str, Any]:
         """Analyze adherence to best practices"""
         best_practices = {
             'documentation': {
@@ -634,7 +634,7 @@ class InnovationAnalyzer(BaseAnalyzer):
         
         return best_practices
     
-    def _calculate_innovation_score(self, metrics: dict[str, Any]) -> float:
+    def _calculate_innovation_score(self, metrics: Dict[str, Any]) -> float:
         """Calculate overall innovation score"""
         score = 0.0
         
@@ -717,7 +717,7 @@ class InnovationAnalyzer(BaseAnalyzer):
         else:
             return "Legacy"
     
-    def _detect_innovation_issues(self, metrics: dict[str, Any]) -> list[dict[str, Any]]:
+    def _detect_innovation_issues(self, metrics: Dict[str, Any]) -> List[Dict[str, Any]]:
         """Detect issues related to innovation and architecture"""
         issues = []
         
@@ -786,7 +786,7 @@ class InnovationAnalyzer(BaseAnalyzer):
         
         return issues
     
-    def _generate_innovation_suggestions(self, metrics: dict[str, Any]) -> list[str]:
+    def _generate_innovation_suggestions(self, metrics: Dict[str, Any]) -> List[str]:
         """Generate suggestions for improving innovation and architecture"""
         suggestions = []
         

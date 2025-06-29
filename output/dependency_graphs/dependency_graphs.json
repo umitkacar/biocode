@@ -1,0 +1,3255 @@
+{
+  "module_graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "name": "examples.basic.basic_usage",
+        "file_path": "examples/basic/basic_usage.py",
+        "complexity": 1,
+        "id": "examples.basic.basic_usage"
+      },
+      {
+        "name": "scripts.benchmarks.profile_memory",
+        "file_path": "scripts/benchmarks/profile_memory.py",
+        "complexity": 1,
+        "id": "scripts.benchmarks.profile_memory"
+      },
+      {
+        "name": "scripts.benchmarks.run_benchmarks",
+        "file_path": "scripts/benchmarks/run_benchmarks.py",
+        "complexity": 1,
+        "id": "scripts.benchmarks.run_benchmarks"
+      },
+      {
+        "name": "scripts.benchmarks.compare_models",
+        "file_path": "scripts/benchmarks/compare_models.py",
+        "complexity": 1,
+        "id": "scripts.benchmarks.compare_models"
+      },
+      {
+        "name": "scripts.release.prepare_release",
+        "file_path": "scripts/release/prepare_release.py",
+        "complexity": 1,
+        "id": "scripts.release.prepare_release"
+      },
+      {
+        "name": "scripts.development.test_model_download",
+        "file_path": "scripts/development/test_model_download.py",
+        "complexity": 1,
+        "id": "scripts.development.test_model_download"
+      },
+      {
+        "name": "scripts.development.test_backward_compat",
+        "file_path": "scripts/development/test_backward_compat.py",
+        "complexity": 1,
+        "id": "scripts.development.test_backward_compat"
+      },
+      {
+        "name": "tests.conftest",
+        "file_path": "tests/conftest.py",
+        "complexity": 1,
+        "id": "tests.conftest"
+      },
+      {
+        "name": "tests.__init__",
+        "file_path": "tests/__init__.py",
+        "complexity": 1,
+        "id": "tests.__init__"
+      },
+      {
+        "name": "tests.integration.test_cli",
+        "file_path": "tests/integration/test_cli.py",
+        "complexity": 1,
+        "id": "tests.integration.test_cli"
+      },
+      {
+        "name": "tests.integration.test_api_image",
+        "file_path": "tests/integration/test_api_image.py",
+        "complexity": 1,
+        "id": "tests.integration.test_api_image"
+      },
+      {
+        "name": "tests.integration.test_api_video",
+        "file_path": "tests/integration/test_api_video.py",
+        "complexity": 1,
+        "id": "tests.integration.test_api_video"
+      },
+      {
+        "name": "tests.unit.test_config",
+        "file_path": "tests/unit/test_config.py",
+        "complexity": 1,
+        "id": "tests.unit.test_config"
+      },
+      {
+        "name": "tests.unit.test_predictor",
+        "file_path": "tests/unit/test_predictor.py",
+        "complexity": 1,
+        "id": "tests.unit.test_predictor"
+      },
+      {
+        "name": "tests.unit.test_transforms",
+        "file_path": "tests/unit/test_transforms.py",
+        "complexity": 1,
+        "id": "tests.unit.test_transforms"
+      },
+      {
+        "name": "tests.unit.test_model",
+        "file_path": "tests/unit/test_model.py",
+        "complexity": 1,
+        "id": "tests.unit.test_model"
+      },
+      {
+        "name": "tests.unit.test_validators",
+        "file_path": "tests/unit/test_validators.py",
+        "complexity": 1,
+        "id": "tests.unit.test_validators"
+      },
+      {
+        "name": "src.__init__",
+        "file_path": "src/__init__.py",
+        "complexity": 1,
+        "id": "src.__init__"
+      },
+      {
+        "name": "src.earsegmentationai.compat",
+        "file_path": "src/earsegmentationai/compat.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.compat"
+      },
+      {
+        "name": "src.earsegmentationai.__version__",
+        "file_path": "src/earsegmentationai/__version__.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.__version__"
+      },
+      {
+        "name": "src.earsegmentationai.__init__",
+        "file_path": "src/earsegmentationai/__init__.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.__init__"
+      },
+      {
+        "name": "src.earsegmentationai.core.predictor",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.core.predictor"
+      },
+      {
+        "name": "src.earsegmentationai.core.__init__",
+        "file_path": "src/earsegmentationai/core/__init__.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.core.__init__"
+      },
+      {
+        "name": "src.earsegmentationai.core.model",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.core.model"
+      },
+      {
+        "name": "src.earsegmentationai.core.config",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.core.config"
+      },
+      {
+        "name": "src.earsegmentationai.utils.exceptions",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.utils.exceptions"
+      },
+      {
+        "name": "src.earsegmentationai.utils.__init__",
+        "file_path": "src/earsegmentationai/utils/__init__.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.utils.__init__"
+      },
+      {
+        "name": "src.earsegmentationai.utils.logging",
+        "file_path": "src/earsegmentationai/utils/logging.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.utils.logging"
+      },
+      {
+        "name": "src.earsegmentationai.api.video",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.api.video"
+      },
+      {
+        "name": "src.earsegmentationai.api.__init__",
+        "file_path": "src/earsegmentationai/api/__init__.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.api.__init__"
+      },
+      {
+        "name": "src.earsegmentationai.api.image",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.api.image"
+      },
+      {
+        "name": "src.earsegmentationai.api.base",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.api.base"
+      },
+      {
+        "name": "src.earsegmentationai.cli.__init__",
+        "file_path": "src/earsegmentationai/cli/__init__.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.cli.__init__"
+      },
+      {
+        "name": "src.earsegmentationai.cli.app",
+        "file_path": "src/earsegmentationai/cli/app.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.cli.app"
+      },
+      {
+        "name": "src.earsegmentationai.preprocessing.__init__",
+        "file_path": "src/earsegmentationai/preprocessing/__init__.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.preprocessing.__init__"
+      },
+      {
+        "name": "src.earsegmentationai.preprocessing.validators",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.preprocessing.validators"
+      },
+      {
+        "name": "src.earsegmentationai.preprocessing.transforms",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.preprocessing.transforms"
+      },
+      {
+        "name": "src.earsegmentationai.postprocessing.visualization",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.postprocessing.visualization"
+      },
+      {
+        "name": "src.earsegmentationai.postprocessing.__init__",
+        "file_path": "src/earsegmentationai/postprocessing/__init__.py",
+        "complexity": 1,
+        "id": "src.earsegmentationai.postprocessing.__init__"
+      }
+    ],
+    "links": []
+  },
+  "class_graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "name": "MockModel",
+        "file_path": "tests/conftest.py",
+        "line_number": 76,
+        "complexity": 2,
+        "id": "tests.conftest.MockModel"
+      },
+      {
+        "name": "MockModelManager",
+        "file_path": "tests/conftest.py",
+        "line_number": 112,
+        "complexity": 2,
+        "id": "tests.conftest.MockModelManager"
+      },
+      {
+        "name": "TestCLIIntegration",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 16,
+        "complexity": 12,
+        "id": "tests.integration.test_cli.TestCLIIntegration"
+      },
+      {
+        "name": "TestImageProcessorIntegration",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 10,
+        "complexity": 14,
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration"
+      },
+      {
+        "name": "TestVideoProcessorIntegration",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 11,
+        "complexity": 11,
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration"
+      },
+      {
+        "name": "TestModelConfig",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 18,
+        "complexity": 4,
+        "id": "tests.unit.test_config.TestModelConfig"
+      },
+      {
+        "name": "TestProcessingConfig",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 54,
+        "complexity": 4,
+        "id": "tests.unit.test_config.TestProcessingConfig"
+      },
+      {
+        "name": "TestVideoConfig",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 88,
+        "complexity": 3,
+        "id": "tests.unit.test_config.TestVideoConfig"
+      },
+      {
+        "name": "TestConfig",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 113,
+        "complexity": 7,
+        "id": "tests.unit.test_config.TestConfig"
+      },
+      {
+        "name": "TestGlobalConfig",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 186,
+        "complexity": 3,
+        "id": "tests.unit.test_config.TestGlobalConfig"
+      },
+      {
+        "name": "TestEarPredictor",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 10,
+        "complexity": 10,
+        "id": "tests.unit.test_predictor.TestEarPredictor"
+      },
+      {
+        "name": "TestStreamPredictor",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 118,
+        "complexity": 7,
+        "id": "tests.unit.test_predictor.TestStreamPredictor"
+      },
+      {
+        "name": "TestImageTransform",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 14,
+        "complexity": 10,
+        "id": "tests.unit.test_transforms.TestImageTransform"
+      },
+      {
+        "name": "TestBatchTransform",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 135,
+        "complexity": 5,
+        "id": "tests.unit.test_transforms.TestBatchTransform"
+      },
+      {
+        "name": "TestAugmentationPipeline",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 184,
+        "complexity": 6,
+        "id": "tests.unit.test_transforms.TestAugmentationPipeline"
+      },
+      {
+        "name": "TestModelManager",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 12,
+        "complexity": 15,
+        "id": "tests.unit.test_model.TestModelManager"
+      },
+      {
+        "name": "TestImagePathValidation",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 24,
+        "complexity": 5,
+        "id": "tests.unit.test_validators.TestImagePathValidation"
+      },
+      {
+        "name": "TestVideoPathValidation",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 53,
+        "complexity": 4,
+        "id": "tests.unit.test_validators.TestVideoPathValidation"
+      },
+      {
+        "name": "TestDirectoryValidation",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 76,
+        "complexity": 5,
+        "id": "tests.unit.test_validators.TestDirectoryValidation"
+      },
+      {
+        "name": "TestImageArrayValidation",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 103,
+        "complexity": 6,
+        "id": "tests.unit.test_validators.TestImageArrayValidation"
+      },
+      {
+        "name": "TestMaskArrayValidation",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 141,
+        "complexity": 7,
+        "id": "tests.unit.test_validators.TestMaskArrayValidation"
+      },
+      {
+        "name": "TestDeviceStringValidation",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 181,
+        "complexity": 5,
+        "id": "tests.unit.test_validators.TestDeviceStringValidation"
+      },
+      {
+        "name": "TestBatchSizeValidation",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 215,
+        "complexity": 5,
+        "id": "tests.unit.test_validators.TestBatchSizeValidation"
+      },
+      {
+        "name": "TestCameraIdValidation",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 245,
+        "complexity": 6,
+        "id": "tests.unit.test_validators.TestCameraIdValidation"
+      },
+      {
+        "name": "TestGetImageFiles",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 297,
+        "complexity": 4,
+        "id": "tests.unit.test_validators.TestGetImageFiles"
+      },
+      {
+        "name": "EarModel",
+        "file_path": "src/earsegmentationai/compat.py",
+        "line_number": 20,
+        "complexity": 5,
+        "id": "src.earsegmentationai.compat.EarModel"
+      },
+      {
+        "name": "EarPredictor",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 22,
+        "complexity": 8,
+        "id": "src.earsegmentationai.core.predictor.EarPredictor"
+      },
+      {
+        "name": "StreamPredictor",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 283,
+        "complexity": 4,
+        "id": "src.earsegmentationai.core.predictor.StreamPredictor"
+      },
+      {
+        "name": "ModelManager",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 25,
+        "complexity": 17,
+        "id": "src.earsegmentationai.core.model.ModelManager"
+      },
+      {
+        "name": "ModelConfig",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 10,
+        "complexity": 11,
+        "id": "src.earsegmentationai.core.config.ModelConfig"
+      },
+      {
+        "name": "ProcessingConfig",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 53,
+        "complexity": 8,
+        "id": "src.earsegmentationai.core.config.ProcessingConfig"
+      },
+      {
+        "name": "VideoConfig",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 86,
+        "complexity": 7,
+        "id": "src.earsegmentationai.core.config.VideoConfig"
+      },
+      {
+        "name": "Config",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 109,
+        "complexity": 13,
+        "id": "src.earsegmentationai.core.config.Config"
+      },
+      {
+        "name": "EarSegmentationError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 4,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.EarSegmentationError"
+      },
+      {
+        "name": "ModelError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 10,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.ModelError"
+      },
+      {
+        "name": "ModelNotFoundError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 16,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.ModelNotFoundError"
+      },
+      {
+        "name": "ModelLoadError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 22,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.ModelLoadError"
+      },
+      {
+        "name": "InvalidModelError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 28,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.InvalidModelError"
+      },
+      {
+        "name": "ProcessingError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 34,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.ProcessingError"
+      },
+      {
+        "name": "InvalidInputError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 40,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.InvalidInputError"
+      },
+      {
+        "name": "DeviceError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 46,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.DeviceError"
+      },
+      {
+        "name": "VideoError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 52,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.VideoError"
+      },
+      {
+        "name": "ConfigurationError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 58,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.ConfigurationError"
+      },
+      {
+        "name": "ValidationError",
+        "file_path": "src/earsegmentationai/utils/exceptions.py",
+        "line_number": 64,
+        "complexity": 2,
+        "id": "src.earsegmentationai.utils.exceptions.ValidationError"
+      },
+      {
+        "name": "ColoredFormatter",
+        "file_path": "src/earsegmentationai/utils/logging.py",
+        "line_number": 14,
+        "complexity": 4,
+        "id": "src.earsegmentationai.utils.logging.ColoredFormatter"
+      },
+      {
+        "name": "VideoProcessor",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 21,
+        "complexity": 11,
+        "id": "src.earsegmentationai.api.video.VideoProcessor"
+      },
+      {
+        "name": "ImageProcessor",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "line_number": 26,
+        "complexity": 9,
+        "id": "src.earsegmentationai.api.image.ImageProcessor"
+      },
+      {
+        "name": "BaseProcessor",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 18,
+        "complexity": 8,
+        "id": "src.earsegmentationai.api.base.BaseProcessor"
+      },
+      {
+        "name": "ProcessingResult",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 114,
+        "complexity": 8,
+        "id": "src.earsegmentationai.api.base.ProcessingResult"
+      },
+      {
+        "name": "BatchProcessingResult",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 204,
+        "complexity": 9,
+        "id": "src.earsegmentationai.api.base.BatchProcessingResult"
+      },
+      {
+        "name": "ImageTransform",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 17,
+        "complexity": 5,
+        "id": "src.earsegmentationai.preprocessing.transforms.ImageTransform"
+      },
+      {
+        "name": "BatchTransform",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 150,
+        "complexity": 4,
+        "id": "src.earsegmentationai.preprocessing.transforms.BatchTransform"
+      },
+      {
+        "name": "MaskVisualizer",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "line_number": 24,
+        "complexity": 8,
+        "id": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer"
+      }
+    ],
+    "links": [
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.core.predictor.StreamPredictor",
+        "target": "src.earsegmentationai.core.predictor.EarPredictor"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.ModelError",
+        "target": "src.earsegmentationai.utils.exceptions.EarSegmentationError"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.ModelNotFoundError",
+        "target": "src.earsegmentationai.utils.exceptions.ModelError"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.ModelLoadError",
+        "target": "src.earsegmentationai.utils.exceptions.ModelError"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.InvalidModelError",
+        "target": "src.earsegmentationai.utils.exceptions.ModelError"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.ProcessingError",
+        "target": "src.earsegmentationai.utils.exceptions.EarSegmentationError"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.InvalidInputError",
+        "target": "src.earsegmentationai.utils.exceptions.ProcessingError"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.DeviceError",
+        "target": "src.earsegmentationai.utils.exceptions.ProcessingError"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.VideoError",
+        "target": "src.earsegmentationai.utils.exceptions.ProcessingError"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.ConfigurationError",
+        "target": "src.earsegmentationai.utils.exceptions.EarSegmentationError"
+      },
+      {
+        "edge_type": "inheritance",
+        "weight": 2.0,
+        "source": "src.earsegmentationai.utils.exceptions.ValidationError",
+        "target": "src.earsegmentationai.utils.exceptions.EarSegmentationError"
+      }
+    ]
+  },
+  "function_graph": {
+    "directed": true,
+    "multigraph": false,
+    "graph": {},
+    "nodes": [
+      {
+        "name": "process_single_image",
+        "file_path": "examples/basic/basic_usage.py",
+        "line_number": 12,
+        "complexity": 4,
+        "parent_class": null,
+        "id": "examples.basic.basic_usage.process_single_image"
+      },
+      {
+        "name": "process_image_directory",
+        "file_path": "examples/basic/basic_usage.py",
+        "line_number": 56,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "examples.basic.basic_usage.process_image_directory"
+      },
+      {
+        "name": "process_webcam",
+        "file_path": "examples/basic/basic_usage.py",
+        "line_number": 82,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "examples.basic.basic_usage.process_webcam"
+      },
+      {
+        "name": "frame_callback",
+        "file_path": "examples/basic/basic_usage.py",
+        "line_number": 95,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "examples.basic.basic_usage.frame_callback"
+      },
+      {
+        "name": "process_with_custom_threshold",
+        "file_path": "examples/basic/basic_usage.py",
+        "line_number": 122,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "examples.basic.basic_usage.process_with_custom_threshold"
+      },
+      {
+        "name": "process_from_url",
+        "file_path": "examples/basic/basic_usage.py",
+        "line_number": 147,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "examples.basic.basic_usage.process_from_url"
+      },
+      {
+        "name": "main",
+        "file_path": "examples/basic/basic_usage.py",
+        "line_number": 169,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "examples.basic.basic_usage.main"
+      },
+      {
+        "name": "get_memory_info",
+        "file_path": "scripts/benchmarks/profile_memory.py",
+        "line_number": 20,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "scripts.benchmarks.profile_memory.get_memory_info"
+      },
+      {
+        "name": "profile_single_image_memory",
+        "file_path": "scripts/benchmarks/profile_memory.py",
+        "line_number": 47,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.benchmarks.profile_memory.profile_single_image_memory"
+      },
+      {
+        "name": "profile_batch_memory",
+        "file_path": "scripts/benchmarks/profile_memory.py",
+        "line_number": 94,
+        "complexity": 4,
+        "parent_class": null,
+        "id": "scripts.benchmarks.profile_memory.profile_batch_memory"
+      },
+      {
+        "name": "detailed_memory_profile",
+        "file_path": "scripts/benchmarks/profile_memory.py",
+        "line_number": 138,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "scripts.benchmarks.profile_memory.detailed_memory_profile"
+      },
+      {
+        "name": "profile_model_loading",
+        "file_path": "scripts/benchmarks/profile_memory.py",
+        "line_number": 167,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "scripts.benchmarks.profile_memory.profile_model_loading"
+      },
+      {
+        "name": "main",
+        "file_path": "scripts/benchmarks/profile_memory.py",
+        "line_number": 216,
+        "complexity": 5,
+        "parent_class": null,
+        "id": "scripts.benchmarks.profile_memory.main"
+      },
+      {
+        "name": "benchmark_single_image",
+        "file_path": "scripts/benchmarks/run_benchmarks.py",
+        "line_number": 24,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.benchmarks.run_benchmarks.benchmark_single_image"
+      },
+      {
+        "name": "benchmark_batch_processing",
+        "file_path": "scripts/benchmarks/run_benchmarks.py",
+        "line_number": 54,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.benchmarks.run_benchmarks.benchmark_batch_processing"
+      },
+      {
+        "name": "benchmark_image_sizes",
+        "file_path": "scripts/benchmarks/run_benchmarks.py",
+        "line_number": 86,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.benchmarks.run_benchmarks.benchmark_image_sizes"
+      },
+      {
+        "name": "benchmark_memory_usage",
+        "file_path": "scripts/benchmarks/run_benchmarks.py",
+        "line_number": 123,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "scripts.benchmarks.run_benchmarks.benchmark_memory_usage"
+      },
+      {
+        "name": "main",
+        "file_path": "scripts/benchmarks/run_benchmarks.py",
+        "line_number": 157,
+        "complexity": 9,
+        "parent_class": null,
+        "id": "scripts.benchmarks.run_benchmarks.main"
+      },
+      {
+        "name": "benchmark_model_config",
+        "file_path": "scripts/benchmarks/compare_models.py",
+        "line_number": 23,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.benchmarks.compare_models.benchmark_model_config"
+      },
+      {
+        "name": "compare_architectures",
+        "file_path": "scripts/benchmarks/compare_models.py",
+        "line_number": 78,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.benchmarks.compare_models.compare_architectures"
+      },
+      {
+        "name": "compare_input_sizes",
+        "file_path": "scripts/benchmarks/compare_models.py",
+        "line_number": 118,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.benchmarks.compare_models.compare_input_sizes"
+      },
+      {
+        "name": "compare_quantization",
+        "file_path": "scripts/benchmarks/compare_models.py",
+        "line_number": 159,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "scripts.benchmarks.compare_models.compare_quantization"
+      },
+      {
+        "name": "main",
+        "file_path": "scripts/benchmarks/compare_models.py",
+        "line_number": 172,
+        "complexity": 7,
+        "parent_class": null,
+        "id": "scripts.benchmarks.compare_models.main"
+      },
+      {
+        "name": "run_command",
+        "file_path": "scripts/release/prepare_release.py",
+        "line_number": 10,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "scripts.release.prepare_release.run_command"
+      },
+      {
+        "name": "check_git_status",
+        "file_path": "scripts/release/prepare_release.py",
+        "line_number": 22,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "scripts.release.prepare_release.check_git_status"
+      },
+      {
+        "name": "run_tests",
+        "file_path": "scripts/release/prepare_release.py",
+        "line_number": 37,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.release.prepare_release.run_tests"
+      },
+      {
+        "name": "run_linting",
+        "file_path": "scripts/release/prepare_release.py",
+        "line_number": 62,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.release.prepare_release.run_linting"
+      },
+      {
+        "name": "check_version",
+        "file_path": "scripts/release/prepare_release.py",
+        "line_number": 86,
+        "complexity": 5,
+        "parent_class": null,
+        "id": "scripts.release.prepare_release.check_version"
+      },
+      {
+        "name": "build_package",
+        "file_path": "scripts/release/prepare_release.py",
+        "line_number": 113,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.release.prepare_release.build_package"
+      },
+      {
+        "name": "check_documentation",
+        "file_path": "scripts/release/prepare_release.py",
+        "line_number": 135,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.release.prepare_release.check_documentation"
+      },
+      {
+        "name": "create_release_notes",
+        "file_path": "scripts/release/prepare_release.py",
+        "line_number": 158,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "scripts.release.prepare_release.create_release_notes"
+      },
+      {
+        "name": "main",
+        "file_path": "scripts/release/prepare_release.py",
+        "line_number": 220,
+        "complexity": 5,
+        "parent_class": null,
+        "id": "scripts.release.prepare_release.main"
+      },
+      {
+        "name": "test_model_download",
+        "file_path": "scripts/development/test_model_download.py",
+        "line_number": 17,
+        "complexity": 4,
+        "parent_class": null,
+        "id": "scripts.development.test_model_download.test_model_download"
+      },
+      {
+        "name": "test_cli_download",
+        "file_path": "scripts/development/test_model_download.py",
+        "line_number": 89,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.development.test_model_download.test_cli_download"
+      },
+      {
+        "name": "test_different_devices",
+        "file_path": "scripts/development/test_model_download.py",
+        "line_number": 119,
+        "complexity": 4,
+        "parent_class": null,
+        "id": "scripts.development.test_model_download.test_different_devices"
+      },
+      {
+        "name": "test_legacy_imports",
+        "file_path": "scripts/development/test_backward_compat.py",
+        "line_number": 15,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "scripts.development.test_backward_compat.test_legacy_imports"
+      },
+      {
+        "name": "test_legacy_ear_model",
+        "file_path": "scripts/development/test_backward_compat.py",
+        "line_number": 37,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.development.test_backward_compat.test_legacy_ear_model"
+      },
+      {
+        "name": "test_legacy_cli_commands",
+        "file_path": "scripts/development/test_backward_compat.py",
+        "line_number": 91,
+        "complexity": 4,
+        "parent_class": null,
+        "id": "scripts.development.test_backward_compat.test_legacy_cli_commands"
+      },
+      {
+        "name": "test_deprecation_warnings",
+        "file_path": "scripts/development/test_backward_compat.py",
+        "line_number": 146,
+        "complexity": 4,
+        "parent_class": null,
+        "id": "scripts.development.test_backward_compat.test_deprecation_warnings"
+      },
+      {
+        "name": "test_migration_guide",
+        "file_path": "scripts/development/test_backward_compat.py",
+        "line_number": 172,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "scripts.development.test_backward_compat.test_migration_guide"
+      },
+      {
+        "name": "compare_outputs",
+        "file_path": "scripts/development/test_backward_compat.py",
+        "line_number": 204,
+        "complexity": 5,
+        "parent_class": null,
+        "id": "scripts.development.test_backward_compat.compare_outputs"
+      },
+      {
+        "name": "test_image",
+        "file_path": "tests/conftest.py",
+        "line_number": 22,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "tests.conftest.test_image"
+      },
+      {
+        "name": "test_mask",
+        "file_path": "tests/conftest.py",
+        "line_number": 31,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "tests.conftest.test_mask"
+      },
+      {
+        "name": "test_batch_images",
+        "file_path": "tests/conftest.py",
+        "line_number": 40,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "tests.conftest.test_batch_images"
+      },
+      {
+        "name": "temp_dir",
+        "file_path": "tests/conftest.py",
+        "line_number": 54,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "tests.conftest.temp_dir"
+      },
+      {
+        "name": "test_config",
+        "file_path": "tests/conftest.py",
+        "line_number": 62,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "tests.conftest.test_config"
+      },
+      {
+        "name": "mock_model",
+        "file_path": "tests/conftest.py",
+        "line_number": 73,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "tests.conftest.mock_model"
+      },
+      {
+        "name": "__init__",
+        "file_path": "tests/conftest.py",
+        "line_number": 77,
+        "complexity": 1,
+        "parent_class": "tests.conftest.MockModel",
+        "id": "tests.conftest.MockModel.__init__"
+      },
+      {
+        "name": "forward",
+        "file_path": "tests/conftest.py",
+        "line_number": 80,
+        "complexity": 2,
+        "parent_class": "tests.conftest.MockModel",
+        "id": "tests.conftest.MockModel.forward"
+      },
+      {
+        "name": "mock_model_manager",
+        "file_path": "tests/conftest.py",
+        "line_number": 109,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "tests.conftest.mock_model_manager"
+      },
+      {
+        "name": "__init__",
+        "file_path": "tests/conftest.py",
+        "line_number": 113,
+        "complexity": 1,
+        "parent_class": "tests.conftest.MockModelManager",
+        "id": "tests.conftest.MockModelManager.__init__"
+      },
+      {
+        "name": "load_model",
+        "file_path": "tests/conftest.py",
+        "line_number": 120,
+        "complexity": 1,
+        "parent_class": "tests.conftest.MockModelManager",
+        "id": "tests.conftest.MockModelManager.load_model"
+      },
+      {
+        "name": "sample_image_files",
+        "file_path": "tests/conftest.py",
+        "line_number": 127,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "tests.conftest.sample_image_files"
+      },
+      {
+        "name": "sample_video_file",
+        "file_path": "tests/conftest.py",
+        "line_number": 148,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "tests.conftest.sample_video_file"
+      },
+      {
+        "name": "cleanup_gpu",
+        "file_path": "tests/conftest.py",
+        "line_number": 170,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "tests.conftest.cleanup_gpu"
+      },
+      {
+        "name": "disable_logging",
+        "file_path": "tests/conftest.py",
+        "line_number": 178,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "tests.conftest.disable_logging"
+      },
+      {
+        "name": "runner",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 11,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "tests.integration.test_cli.runner"
+      },
+      {
+        "name": "test_version_command",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 19,
+        "complexity": 4,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_version_command"
+      },
+      {
+        "name": "test_help_command",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 26,
+        "complexity": 6,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_help_command"
+      },
+      {
+        "name": "test_process_image_help",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 35,
+        "complexity": 5,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_process_image_help"
+      },
+      {
+        "name": "test_download_model_command",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 45,
+        "complexity": 4,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_download_model_command"
+      },
+      {
+        "name": "test_process_image_single_file",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 65,
+        "complexity": 4,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_process_image_single_file"
+      },
+      {
+        "name": "test_process_image_directory",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 104,
+        "complexity": 6,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_process_image_directory"
+      },
+      {
+        "name": "test_process_video_command",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 150,
+        "complexity": 5,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_process_video_command"
+      },
+      {
+        "name": "test_webcam_command",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 182,
+        "complexity": 4,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_webcam_command"
+      },
+      {
+        "name": "test_benchmark_command",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 198,
+        "complexity": 6,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_benchmark_command"
+      },
+      {
+        "name": "test_error_handling_invalid_file",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 236,
+        "complexity": 3,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_error_handling_invalid_file"
+      },
+      {
+        "name": "test_backward_compatibility_aliases",
+        "file_path": "tests/integration/test_cli.py",
+        "line_number": 245,
+        "complexity": 3,
+        "parent_class": "tests.integration.test_cli.TestCLIIntegration",
+        "id": "tests.integration.test_cli.TestCLIIntegration.test_backward_compatibility_aliases"
+      },
+      {
+        "name": "test_process_single_image_file",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 13,
+        "complexity": 5,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_process_single_image_file"
+      },
+      {
+        "name": "test_process_numpy_array",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 26,
+        "complexity": 4,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_process_numpy_array"
+      },
+      {
+        "name": "test_process_directory",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 36,
+        "complexity": 4,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_process_directory"
+      },
+      {
+        "name": "test_process_list_of_images",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 47,
+        "complexity": 3,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_process_list_of_images"
+      },
+      {
+        "name": "test_return_probability_map",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 65,
+        "complexity": 4,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_return_probability_map"
+      },
+      {
+        "name": "test_return_visualization",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 75,
+        "complexity": 3,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_return_visualization"
+      },
+      {
+        "name": "test_save_results",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 85,
+        "complexity": 5,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_save_results"
+      },
+      {
+        "name": "test_save_batch_results",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 104,
+        "complexity": 5,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_save_batch_results"
+      },
+      {
+        "name": "test_error_handling_invalid_path",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 124,
+        "complexity": 2,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_error_handling_invalid_path"
+      },
+      {
+        "name": "test_error_handling_empty_directory",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 131,
+        "complexity": 3,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_error_handling_empty_directory"
+      },
+      {
+        "name": "test_different_image_formats",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 144,
+        "complexity": 4,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_different_image_formats"
+      },
+      {
+        "name": "test_processing_result_methods",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 167,
+        "complexity": 8,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_processing_result_methods"
+      },
+      {
+        "name": "test_batch_result_methods",
+        "file_path": "tests/integration/test_api_image.py",
+        "line_number": 189,
+        "complexity": 5,
+        "parent_class": "tests.integration.test_api_image.TestImageProcessorIntegration",
+        "id": "tests.integration.test_api_image.TestImageProcessorIntegration.test_batch_result_methods"
+      },
+      {
+        "name": "test_process_video_file",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 14,
+        "complexity": 6,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_process_video_file"
+      },
+      {
+        "name": "test_process_with_output",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 30,
+        "complexity": 3,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_process_with_output"
+      },
+      {
+        "name": "test_process_camera",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 48,
+        "complexity": 4,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_process_camera"
+      },
+      {
+        "name": "test_process_with_callback",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 70,
+        "complexity": 3,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_process_with_callback"
+      },
+      {
+        "name": "frame_callback",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 79,
+        "complexity": 1,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.frame_callback"
+      },
+      {
+        "name": "test_frame_skipping",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 92,
+        "complexity": 3,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_frame_skipping"
+      },
+      {
+        "name": "test_temporal_smoothing",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 110,
+        "complexity": 5,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_temporal_smoothing"
+      },
+      {
+        "name": "test_stream_url",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 135,
+        "complexity": 3,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_stream_url"
+      },
+      {
+        "name": "test_error_handling_invalid_video",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 154,
+        "complexity": 2,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_error_handling_invalid_video"
+      },
+      {
+        "name": "test_stats_calculation",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 161,
+        "complexity": 6,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_stats_calculation"
+      },
+      {
+        "name": "test_display_overlay",
+        "file_path": "tests/integration/test_api_video.py",
+        "line_number": 175,
+        "complexity": 2,
+        "parent_class": "tests.integration.test_api_video.TestVideoProcessorIntegration",
+        "id": "tests.integration.test_api_video.TestVideoProcessorIntegration.test_display_overlay"
+      },
+      {
+        "name": "test_default_values",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 21,
+        "complexity": 6,
+        "parent_class": "tests.unit.test_config.TestModelConfig",
+        "id": "tests.unit.test_config.TestModelConfig.test_default_values"
+      },
+      {
+        "name": "test_architecture_validation",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 30,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_config.TestModelConfig",
+        "id": "tests.unit.test_config.TestModelConfig.test_architecture_validation"
+      },
+      {
+        "name": "test_custom_values",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 40,
+        "complexity": 5,
+        "parent_class": "tests.unit.test_config.TestModelConfig",
+        "id": "tests.unit.test_config.TestModelConfig.test_custom_values"
+      },
+      {
+        "name": "test_default_values",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 57,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_config.TestProcessingConfig",
+        "id": "tests.unit.test_config.TestProcessingConfig.test_default_values"
+      },
+      {
+        "name": "test_device_validation",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 64,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_config.TestProcessingConfig",
+        "id": "tests.unit.test_config.TestProcessingConfig.test_device_validation"
+      },
+      {
+        "name": "test_input_size_validation",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 77,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_config.TestProcessingConfig",
+        "id": "tests.unit.test_config.TestProcessingConfig.test_input_size_validation"
+      },
+      {
+        "name": "test_default_values",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 91,
+        "complexity": 5,
+        "parent_class": "tests.unit.test_config.TestVideoConfig",
+        "id": "tests.unit.test_config.TestVideoConfig.test_default_values"
+      },
+      {
+        "name": "test_fps_validation",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 99,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_config.TestVideoConfig",
+        "id": "tests.unit.test_config.TestVideoConfig.test_fps_validation"
+      },
+      {
+        "name": "test_default_values",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 116,
+        "complexity": 5,
+        "parent_class": "tests.unit.test_config.TestConfig",
+        "id": "tests.unit.test_config.TestConfig.test_default_values"
+      },
+      {
+        "name": "test_directory_creation",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 124,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_config.TestConfig",
+        "id": "tests.unit.test_config.TestConfig.test_directory_creation"
+      },
+      {
+        "name": "test_model_path_property",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 134,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_config.TestConfig",
+        "id": "tests.unit.test_config.TestConfig.test_model_path_property"
+      },
+      {
+        "name": "test_from_yaml",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 140,
+        "complexity": 6,
+        "parent_class": "tests.unit.test_config.TestConfig",
+        "id": "tests.unit.test_config.TestConfig.test_from_yaml"
+      },
+      {
+        "name": "test_to_yaml",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 161,
+        "complexity": 5,
+        "parent_class": "tests.unit.test_config.TestConfig",
+        "id": "tests.unit.test_config.TestConfig.test_to_yaml"
+      },
+      {
+        "name": "test_yaml_file_not_found",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 180,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_config.TestConfig",
+        "id": "tests.unit.test_config.TestConfig.test_yaml_file_not_found"
+      },
+      {
+        "name": "test_get_set_config",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 189,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_config.TestGlobalConfig",
+        "id": "tests.unit.test_config.TestGlobalConfig.test_get_set_config"
+      },
+      {
+        "name": "test_load_config",
+        "file_path": "tests/unit/test_config.py",
+        "line_number": 204,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_config.TestGlobalConfig",
+        "id": "tests.unit.test_config.TestGlobalConfig.test_load_config"
+      },
+      {
+        "name": "test_initialization",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 13,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_predictor.TestEarPredictor",
+        "id": "tests.unit.test_predictor.TestEarPredictor.test_initialization"
+      },
+      {
+        "name": "test_predict_single_image",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 20,
+        "complexity": 5,
+        "parent_class": "tests.unit.test_predictor.TestEarPredictor",
+        "id": "tests.unit.test_predictor.TestEarPredictor.test_predict_single_image"
+      },
+      {
+        "name": "test_predict_with_probability",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 31,
+        "complexity": 6,
+        "parent_class": "tests.unit.test_predictor.TestEarPredictor",
+        "id": "tests.unit.test_predictor.TestEarPredictor.test_predict_with_probability"
+      },
+      {
+        "name": "test_predict_batch",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 43,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_predictor.TestEarPredictor",
+        "id": "tests.unit.test_predictor.TestEarPredictor.test_predict_batch"
+      },
+      {
+        "name": "test_predict_empty_batch",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 56,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_predictor.TestEarPredictor",
+        "id": "tests.unit.test_predictor.TestEarPredictor.test_predict_empty_batch"
+      },
+      {
+        "name": "test_set_threshold",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 64,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_predictor.TestEarPredictor",
+        "id": "tests.unit.test_predictor.TestEarPredictor.test_set_threshold"
+      },
+      {
+        "name": "test_warmup",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 78,
+        "complexity": 1,
+        "parent_class": "tests.unit.test_predictor.TestEarPredictor",
+        "id": "tests.unit.test_predictor.TestEarPredictor.test_warmup"
+      },
+      {
+        "name": "test_resize_mask",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 88,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_predictor.TestEarPredictor",
+        "id": "tests.unit.test_predictor.TestEarPredictor.test_resize_mask"
+      },
+      {
+        "name": "test_error_handling",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 104,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_predictor.TestEarPredictor",
+        "id": "tests.unit.test_predictor.TestEarPredictor.test_error_handling"
+      },
+      {
+        "name": "test_initialization",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 121,
+        "complexity": 5,
+        "parent_class": "tests.unit.test_predictor.TestStreamPredictor",
+        "id": "tests.unit.test_predictor.TestStreamPredictor.test_initialization"
+      },
+      {
+        "name": "test_predict_frame_no_skip",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 132,
+        "complexity": 5,
+        "parent_class": "tests.unit.test_predictor.TestStreamPredictor",
+        "id": "tests.unit.test_predictor.TestStreamPredictor.test_predict_frame_no_skip"
+      },
+      {
+        "name": "test_predict_frame_with_skip",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 145,
+        "complexity": 8,
+        "parent_class": "tests.unit.test_predictor.TestStreamPredictor",
+        "id": "tests.unit.test_predictor.TestStreamPredictor.test_predict_frame_with_skip"
+      },
+      {
+        "name": "test_predict_frame_with_probability",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 165,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_predictor.TestStreamPredictor",
+        "id": "tests.unit.test_predictor.TestStreamPredictor.test_predict_frame_with_probability"
+      },
+      {
+        "name": "test_temporal_smoothing",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 181,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_predictor.TestStreamPredictor",
+        "id": "tests.unit.test_predictor.TestStreamPredictor.test_temporal_smoothing"
+      },
+      {
+        "name": "test_reset",
+        "file_path": "tests/unit/test_predictor.py",
+        "line_number": 199,
+        "complexity": 6,
+        "parent_class": "tests.unit.test_predictor.TestStreamPredictor",
+        "id": "tests.unit.test_predictor.TestStreamPredictor.test_reset"
+      },
+      {
+        "name": "test_initialization",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 17,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_transforms.TestImageTransform",
+        "id": "tests.unit.test_transforms.TestImageTransform.test_initialization"
+      },
+      {
+        "name": "test_basic_transform",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 24,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_transforms.TestImageTransform",
+        "id": "tests.unit.test_transforms.TestImageTransform.test_basic_transform"
+      },
+      {
+        "name": "test_grayscale_input",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 36,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_transforms.TestImageTransform",
+        "id": "tests.unit.test_transforms.TestImageTransform.test_grayscale_input"
+      },
+      {
+        "name": "test_rgba_input",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 47,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_transforms.TestImageTransform",
+        "id": "tests.unit.test_transforms.TestImageTransform.test_rgba_input"
+      },
+      {
+        "name": "test_with_mask",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 58,
+        "complexity": 5,
+        "parent_class": "tests.unit.test_transforms.TestImageTransform",
+        "id": "tests.unit.test_transforms.TestImageTransform.test_with_mask"
+      },
+      {
+        "name": "test_no_normalization",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 71,
+        "complexity": 6,
+        "parent_class": "tests.unit.test_transforms.TestImageTransform",
+        "id": "tests.unit.test_transforms.TestImageTransform.test_no_normalization"
+      },
+      {
+        "name": "test_with_augmentation",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 85,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_transforms.TestImageTransform",
+        "id": "tests.unit.test_transforms.TestImageTransform.test_with_augmentation"
+      },
+      {
+        "name": "test_inverse_transform",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 96,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_transforms.TestImageTransform",
+        "id": "tests.unit.test_transforms.TestImageTransform.test_inverse_transform"
+      },
+      {
+        "name": "test_inverse_transform_batch",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 116,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_transforms.TestImageTransform",
+        "id": "tests.unit.test_transforms.TestImageTransform.test_inverse_transform_batch"
+      },
+      {
+        "name": "test_initialization",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 138,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_transforms.TestBatchTransform",
+        "id": "tests.unit.test_transforms.TestBatchTransform.test_initialization"
+      },
+      {
+        "name": "test_batch_processing",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 143,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_transforms.TestBatchTransform",
+        "id": "tests.unit.test_transforms.TestBatchTransform.test_batch_processing"
+      },
+      {
+        "name": "test_custom_transform",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 155,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_transforms.TestBatchTransform",
+        "id": "tests.unit.test_transforms.TestBatchTransform.test_custom_transform"
+      },
+      {
+        "name": "test_collate_fn",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 166,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_transforms.TestBatchTransform",
+        "id": "tests.unit.test_transforms.TestBatchTransform.test_collate_fn"
+      },
+      {
+        "name": "test_create_light_augmentation",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 187,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_transforms.TestAugmentationPipeline",
+        "id": "tests.unit.test_transforms.TestAugmentationPipeline.test_create_light_augmentation"
+      },
+      {
+        "name": "test_create_medium_augmentation",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 201,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_transforms.TestAugmentationPipeline",
+        "id": "tests.unit.test_transforms.TestAugmentationPipeline.test_create_medium_augmentation"
+      },
+      {
+        "name": "test_create_heavy_augmentation",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 210,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_transforms.TestAugmentationPipeline",
+        "id": "tests.unit.test_transforms.TestAugmentationPipeline.test_create_heavy_augmentation"
+      },
+      {
+        "name": "test_invalid_strength",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 219,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_transforms.TestAugmentationPipeline",
+        "id": "tests.unit.test_transforms.TestAugmentationPipeline.test_invalid_strength"
+      },
+      {
+        "name": "test_augmentation_with_mask",
+        "file_path": "tests/unit/test_transforms.py",
+        "line_number": 224,
+        "complexity": 5,
+        "parent_class": "tests.unit.test_transforms.TestAugmentationPipeline",
+        "id": "tests.unit.test_transforms.TestAugmentationPipeline.test_augmentation_with_mask"
+      },
+      {
+        "name": "reset_singleton",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 16,
+        "complexity": 1,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.reset_singleton"
+      },
+      {
+        "name": "test_singleton_pattern",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 27,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_singleton_pattern"
+      },
+      {
+        "name": "test_device_selection_cpu",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 33,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_device_selection_cpu"
+      },
+      {
+        "name": "test_device_fallback_to_cpu",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 43,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_device_fallback_to_cpu"
+      },
+      {
+        "name": "test_invalid_device_string",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 53,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_invalid_device_string"
+      },
+      {
+        "name": "test_download_model",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 64,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_download_model"
+      },
+      {
+        "name": "test_download_model_failure",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 92,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_download_model_failure"
+      },
+      {
+        "name": "test_verify_model_exists",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 110,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_verify_model_exists"
+      },
+      {
+        "name": "test_verify_model_not_exists",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 118,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_verify_model_not_exists"
+      },
+      {
+        "name": "test_create_model",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 126,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_create_model"
+      },
+      {
+        "name": "test_get_model_info",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 145,
+        "complexity": 6,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_get_model_info"
+      },
+      {
+        "name": "test_clear_cache_gpu",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 163,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_clear_cache_gpu"
+      },
+      {
+        "name": "test_clear_cache_cpu",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 178,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_clear_cache_cpu"
+      },
+      {
+        "name": "test_set_device",
+        "file_path": "tests/unit/test_model.py",
+        "line_number": 189,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_model.TestModelManager",
+        "id": "tests.unit.test_model.TestModelManager.test_set_device"
+      },
+      {
+        "name": "test_valid_image_path",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 27,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestImagePathValidation",
+        "id": "tests.unit.test_validators.TestImagePathValidation.test_valid_image_path"
+      },
+      {
+        "name": "test_invalid_image_path",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 33,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestImagePathValidation",
+        "id": "tests.unit.test_validators.TestImagePathValidation.test_invalid_image_path"
+      },
+      {
+        "name": "test_directory_as_image_path",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 38,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestImagePathValidation",
+        "id": "tests.unit.test_validators.TestImagePathValidation.test_directory_as_image_path"
+      },
+      {
+        "name": "test_unsupported_image_format",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 43,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestImagePathValidation",
+        "id": "tests.unit.test_validators.TestImagePathValidation.test_unsupported_image_format"
+      },
+      {
+        "name": "test_valid_video_path",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 56,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestVideoPathValidation",
+        "id": "tests.unit.test_validators.TestVideoPathValidation.test_valid_video_path"
+      },
+      {
+        "name": "test_invalid_video_path",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 61,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestVideoPathValidation",
+        "id": "tests.unit.test_validators.TestVideoPathValidation.test_invalid_video_path"
+      },
+      {
+        "name": "test_unsupported_video_format",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 66,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestVideoPathValidation",
+        "id": "tests.unit.test_validators.TestVideoPathValidation.test_unsupported_video_format"
+      },
+      {
+        "name": "test_valid_directory",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 79,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestDirectoryValidation",
+        "id": "tests.unit.test_validators.TestDirectoryValidation.test_valid_directory"
+      },
+      {
+        "name": "test_create_directory",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 84,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_validators.TestDirectoryValidation",
+        "id": "tests.unit.test_validators.TestDirectoryValidation.test_create_directory"
+      },
+      {
+        "name": "test_non_existent_directory",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 92,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestDirectoryValidation",
+        "id": "tests.unit.test_validators.TestDirectoryValidation.test_non_existent_directory"
+      },
+      {
+        "name": "test_file_as_directory",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 97,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestDirectoryValidation",
+        "id": "tests.unit.test_validators.TestDirectoryValidation.test_file_as_directory"
+      },
+      {
+        "name": "test_valid_image_array",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 106,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestImageArrayValidation",
+        "id": "tests.unit.test_validators.TestImageArrayValidation.test_valid_image_array"
+      },
+      {
+        "name": "test_invalid_type",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 111,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestImageArrayValidation",
+        "id": "tests.unit.test_validators.TestImageArrayValidation.test_invalid_type"
+      },
+      {
+        "name": "test_empty_array",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 118,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestImageArrayValidation",
+        "id": "tests.unit.test_validators.TestImageArrayValidation.test_empty_array"
+      },
+      {
+        "name": "test_invalid_dimensions",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 123,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_validators.TestImageArrayValidation",
+        "id": "tests.unit.test_validators.TestImageArrayValidation.test_invalid_dimensions"
+      },
+      {
+        "name": "test_invalid_channels",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 133,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestImageArrayValidation",
+        "id": "tests.unit.test_validators.TestImageArrayValidation.test_invalid_channels"
+      },
+      {
+        "name": "test_valid_binary_mask",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 144,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestMaskArrayValidation",
+        "id": "tests.unit.test_validators.TestMaskArrayValidation.test_valid_binary_mask"
+      },
+      {
+        "name": "test_invalid_type",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 149,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestMaskArrayValidation",
+        "id": "tests.unit.test_validators.TestMaskArrayValidation.test_invalid_type"
+      },
+      {
+        "name": "test_empty_mask",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 156,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestMaskArrayValidation",
+        "id": "tests.unit.test_validators.TestMaskArrayValidation.test_empty_mask"
+      },
+      {
+        "name": "test_invalid_dimensions",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 161,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestMaskArrayValidation",
+        "id": "tests.unit.test_validators.TestMaskArrayValidation.test_invalid_dimensions"
+      },
+      {
+        "name": "test_multi_class_mask",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 166,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestMaskArrayValidation",
+        "id": "tests.unit.test_validators.TestMaskArrayValidation.test_multi_class_mask"
+      },
+      {
+        "name": "test_invalid_class_values",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 173,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestMaskArrayValidation",
+        "id": "tests.unit.test_validators.TestMaskArrayValidation.test_invalid_class_values"
+      },
+      {
+        "name": "test_cpu_device",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 184,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestDeviceStringValidation",
+        "id": "tests.unit.test_validators.TestDeviceStringValidation.test_cpu_device"
+      },
+      {
+        "name": "test_cuda_device",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 189,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_validators.TestDeviceStringValidation",
+        "id": "tests.unit.test_validators.TestDeviceStringValidation.test_cuda_device"
+      },
+      {
+        "name": "test_invalid_cuda_format",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 201,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestDeviceStringValidation",
+        "id": "tests.unit.test_validators.TestDeviceStringValidation.test_invalid_cuda_format"
+      },
+      {
+        "name": "test_invalid_device",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 209,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestDeviceStringValidation",
+        "id": "tests.unit.test_validators.TestDeviceStringValidation.test_invalid_device"
+      },
+      {
+        "name": "test_valid_batch_size",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 218,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestBatchSizeValidation",
+        "id": "tests.unit.test_validators.TestBatchSizeValidation.test_valid_batch_size"
+      },
+      {
+        "name": "test_invalid_type",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 223,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestBatchSizeValidation",
+        "id": "tests.unit.test_validators.TestBatchSizeValidation.test_invalid_type"
+      },
+      {
+        "name": "test_negative_batch_size",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 230,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestBatchSizeValidation",
+        "id": "tests.unit.test_validators.TestBatchSizeValidation.test_negative_batch_size"
+      },
+      {
+        "name": "test_zero_batch_size",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 237,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestBatchSizeValidation",
+        "id": "tests.unit.test_validators.TestBatchSizeValidation.test_zero_batch_size"
+      },
+      {
+        "name": "test_valid_integer_camera_id",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 248,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_validators.TestCameraIdValidation",
+        "id": "tests.unit.test_validators.TestCameraIdValidation.test_valid_integer_camera_id"
+      },
+      {
+        "name": "test_negative_camera_id",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 267,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestCameraIdValidation",
+        "id": "tests.unit.test_validators.TestCameraIdValidation.test_negative_camera_id"
+      },
+      {
+        "name": "test_device_path_camera_id",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 274,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestCameraIdValidation",
+        "id": "tests.unit.test_validators.TestCameraIdValidation.test_device_path_camera_id"
+      },
+      {
+        "name": "test_url_camera_id",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 280,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_validators.TestCameraIdValidation",
+        "id": "tests.unit.test_validators.TestCameraIdValidation.test_url_camera_id"
+      },
+      {
+        "name": "test_invalid_camera_id_type",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 289,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestCameraIdValidation",
+        "id": "tests.unit.test_validators.TestCameraIdValidation.test_invalid_camera_id_type"
+      },
+      {
+        "name": "test_get_image_files",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 300,
+        "complexity": 3,
+        "parent_class": "tests.unit.test_validators.TestGetImageFiles",
+        "id": "tests.unit.test_validators.TestGetImageFiles.test_get_image_files"
+      },
+      {
+        "name": "test_empty_directory",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 308,
+        "complexity": 2,
+        "parent_class": "tests.unit.test_validators.TestGetImageFiles",
+        "id": "tests.unit.test_validators.TestGetImageFiles.test_empty_directory"
+      },
+      {
+        "name": "test_mixed_files",
+        "file_path": "tests/unit/test_validators.py",
+        "line_number": 316,
+        "complexity": 4,
+        "parent_class": "tests.unit.test_validators.TestGetImageFiles",
+        "id": "tests.unit.test_validators.TestGetImageFiles.test_mixed_files"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/compat.py",
+        "line_number": 30,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.compat.EarModel",
+        "id": "src.earsegmentationai.compat.EarModel.__init__"
+      },
+      {
+        "name": "download_models",
+        "file_path": "src/earsegmentationai/compat.py",
+        "line_number": 49,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.compat.EarModel",
+        "id": "src.earsegmentationai.compat.EarModel.download_models"
+      },
+      {
+        "name": "load_model",
+        "file_path": "src/earsegmentationai/compat.py",
+        "line_number": 65,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.compat.EarModel",
+        "id": "src.earsegmentationai.compat.EarModel.load_model"
+      },
+      {
+        "name": "predict",
+        "file_path": "src/earsegmentationai/compat.py",
+        "line_number": 82,
+        "complexity": 6,
+        "parent_class": "src.earsegmentationai.compat.EarModel",
+        "id": "src.earsegmentationai.compat.EarModel.predict"
+      },
+      {
+        "name": "process_image_mode",
+        "file_path": "src/earsegmentationai/compat.py",
+        "line_number": 123,
+        "complexity": 5,
+        "parent_class": null,
+        "id": "src.earsegmentationai.compat.process_image_mode"
+      },
+      {
+        "name": "process_camera_mode",
+        "file_path": "src/earsegmentationai/compat.py",
+        "line_number": 158,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "src.earsegmentationai.compat.process_camera_mode"
+      },
+      {
+        "name": "migrate_v1_to_v2",
+        "file_path": "src/earsegmentationai/compat.py",
+        "line_number": 188,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "src.earsegmentationai.compat.migrate_v1_to_v2"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 29,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.core.predictor.EarPredictor",
+        "id": "src.earsegmentationai.core.predictor.EarPredictor.__init__"
+      },
+      {
+        "name": "predict",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 51,
+        "complexity": 6,
+        "parent_class": "src.earsegmentationai.core.predictor.EarPredictor",
+        "id": "src.earsegmentationai.core.predictor.EarPredictor.predict"
+      },
+      {
+        "name": "predict_batch",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 112,
+        "complexity": 5,
+        "parent_class": "src.earsegmentationai.core.predictor.EarPredictor",
+        "id": "src.earsegmentationai.core.predictor.EarPredictor.predict_batch"
+      },
+      {
+        "name": "_predict_batch",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 152,
+        "complexity": 5,
+        "parent_class": "src.earsegmentationai.core.predictor.EarPredictor",
+        "id": "src.earsegmentationai.core.predictor.EarPredictor._predict_batch"
+      },
+      {
+        "name": "_resize_mask",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 210,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.core.predictor.EarPredictor",
+        "id": "src.earsegmentationai.core.predictor.EarPredictor._resize_mask"
+      },
+      {
+        "name": "set_threshold",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 243,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.core.predictor.EarPredictor",
+        "id": "src.earsegmentationai.core.predictor.EarPredictor.set_threshold"
+      },
+      {
+        "name": "warmup",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 257,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.core.predictor.EarPredictor",
+        "id": "src.earsegmentationai.core.predictor.EarPredictor.warmup"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 290,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.core.predictor.StreamPredictor",
+        "id": "src.earsegmentationai.core.predictor.StreamPredictor.__init__"
+      },
+      {
+        "name": "predict_frame",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 314,
+        "complexity": 7,
+        "parent_class": "src.earsegmentationai.core.predictor.StreamPredictor",
+        "id": "src.earsegmentationai.core.predictor.StreamPredictor.predict_frame"
+      },
+      {
+        "name": "reset",
+        "file_path": "src/earsegmentationai/core/predictor.py",
+        "line_number": 374,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.core.predictor.StreamPredictor",
+        "id": "src.earsegmentationai.core.predictor.StreamPredictor.reset"
+      },
+      {
+        "name": "__new__",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 36,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager.__new__"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 42,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager.__init__"
+      },
+      {
+        "name": "device",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 50,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager.device"
+      },
+      {
+        "name": "model",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 57,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager.model"
+      },
+      {
+        "name": "_get_device",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 63,
+        "complexity": 7,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager._get_device"
+      },
+      {
+        "name": "_download_model",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 97,
+        "complexity": 12,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager._download_model"
+      },
+      {
+        "name": "_verify_model",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 160,
+        "complexity": 6,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager._verify_model"
+      },
+      {
+        "name": "_create_model",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 190,
+        "complexity": 5,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager._create_model"
+      },
+      {
+        "name": "load_model",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 225,
+        "complexity": 13,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager.load_model"
+      },
+      {
+        "name": "reload_model",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 296,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager.reload_model"
+      },
+      {
+        "name": "set_device",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 306,
+        "complexity": 4,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager.set_device"
+      },
+      {
+        "name": "get_model_info",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 321,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager.get_model_info"
+      },
+      {
+        "name": "clear_cache",
+        "file_path": "src/earsegmentationai/core/model.py",
+        "line_number": 356,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.core.model.ModelManager",
+        "id": "src.earsegmentationai.core.model.ModelManager.clear_cache"
+      },
+      {
+        "name": "validate_architecture",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 37,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.core.config.ModelConfig",
+        "id": "src.earsegmentationai.core.config.ModelConfig.validate_architecture"
+      },
+      {
+        "name": "validate_device",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 69,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.core.config.ProcessingConfig",
+        "id": "src.earsegmentationai.core.config.ProcessingConfig.validate_device"
+      },
+      {
+        "name": "validate_input_size",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 79,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.core.config.ProcessingConfig",
+        "id": "src.earsegmentationai.core.config.ProcessingConfig.validate_input_size"
+      },
+      {
+        "name": "validate_fps",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 102,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.core.config.VideoConfig",
+        "id": "src.earsegmentationai.core.config.VideoConfig.validate_fps"
+      },
+      {
+        "name": "create_directories",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 137,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.core.config.Config",
+        "id": "src.earsegmentationai.core.config.Config.create_directories"
+      },
+      {
+        "name": "from_yaml",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 144,
+        "complexity": 4,
+        "parent_class": "src.earsegmentationai.core.config.Config",
+        "id": "src.earsegmentationai.core.config.Config.from_yaml"
+      },
+      {
+        "name": "to_yaml",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 155,
+        "complexity": 6,
+        "parent_class": "src.earsegmentationai.core.config.Config",
+        "id": "src.earsegmentationai.core.config.Config.to_yaml"
+      },
+      {
+        "name": "convert_for_yaml",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 164,
+        "complexity": 5,
+        "parent_class": "src.earsegmentationai.core.config.Config",
+        "id": "src.earsegmentationai.core.config.Config.convert_for_yaml"
+      },
+      {
+        "name": "model_path",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 181,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.core.config.Config",
+        "id": "src.earsegmentationai.core.config.Config.model_path"
+      },
+      {
+        "name": "get_config",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 190,
+        "complexity": 2,
+        "parent_class": null,
+        "id": "src.earsegmentationai.core.config.get_config"
+      },
+      {
+        "name": "set_config",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 198,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "src.earsegmentationai.core.config.set_config"
+      },
+      {
+        "name": "load_config",
+        "file_path": "src/earsegmentationai/core/config.py",
+        "line_number": 204,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "src.earsegmentationai.core.config.load_config"
+      },
+      {
+        "name": "format",
+        "file_path": "src/earsegmentationai/utils/logging.py",
+        "line_number": 26,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.utils.logging.ColoredFormatter",
+        "id": "src.earsegmentationai.utils.logging.ColoredFormatter.format"
+      },
+      {
+        "name": "setup_logging",
+        "file_path": "src/earsegmentationai/utils/logging.py",
+        "line_number": 33,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "src.earsegmentationai.utils.logging.setup_logging"
+      },
+      {
+        "name": "get_logger",
+        "file_path": "src/earsegmentationai/utils/logging.py",
+        "line_number": 88,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "src.earsegmentationai.utils.logging.get_logger"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 28,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor.__init__"
+      },
+      {
+        "name": "process",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 61,
+        "complexity": 7,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor.process"
+      },
+      {
+        "name": "process_video_file",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 120,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor.process_video_file"
+      },
+      {
+        "name": "process_camera",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 174,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor.process_camera"
+      },
+      {
+        "name": "process_stream",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 222,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor.process_stream"
+      },
+      {
+        "name": "_process_video_capture",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 265,
+        "complexity": 17,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor._process_video_capture"
+      },
+      {
+        "name": "_process_frame",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 410,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor._process_frame"
+      },
+      {
+        "name": "_add_overlay",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 439,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor._add_overlay"
+      },
+      {
+        "name": "set_skip_frames",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 477,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor.set_skip_frames"
+      },
+      {
+        "name": "set_smooth_masks",
+        "file_path": "src/earsegmentationai/api/video.py",
+        "line_number": 486,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.video.VideoProcessor",
+        "id": "src.earsegmentationai.api.video.VideoProcessor.set_smooth_masks"
+      },
+      {
+        "name": "process",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "line_number": 33,
+        "complexity": 10,
+        "parent_class": "src.earsegmentationai.api.image.ImageProcessor",
+        "id": "src.earsegmentationai.api.image.ImageProcessor.process"
+      },
+      {
+        "name": "_process_single_file",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "line_number": 116,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.api.image.ImageProcessor",
+        "id": "src.earsegmentationai.api.image.ImageProcessor._process_single_file"
+      },
+      {
+        "name": "_process_single_array",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "line_number": 150,
+        "complexity": 4,
+        "parent_class": "src.earsegmentationai.api.image.ImageProcessor",
+        "id": "src.earsegmentationai.api.image.ImageProcessor._process_single_array"
+      },
+      {
+        "name": "_process_directory",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "line_number": 191,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.api.image.ImageProcessor",
+        "id": "src.earsegmentationai.api.image.ImageProcessor._process_directory"
+      },
+      {
+        "name": "_process_list",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "line_number": 220,
+        "complexity": 10,
+        "parent_class": "src.earsegmentationai.api.image.ImageProcessor",
+        "id": "src.earsegmentationai.api.image.ImageProcessor._process_list"
+      },
+      {
+        "name": "_save_result",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "line_number": 315,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.api.image.ImageProcessor",
+        "id": "src.earsegmentationai.api.image.ImageProcessor._save_result"
+      },
+      {
+        "name": "_save_batch_results",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "line_number": 341,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.api.image.ImageProcessor",
+        "id": "src.earsegmentationai.api.image.ImageProcessor._save_batch_results"
+      },
+      {
+        "name": "process_from_url",
+        "file_path": "src/earsegmentationai/api/image.py",
+        "line_number": 362,
+        "complexity": 9,
+        "parent_class": "src.earsegmentationai.api.image.ImageProcessor",
+        "id": "src.earsegmentationai.api.image.ImageProcessor.process_from_url"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 21,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.api.base.BaseProcessor",
+        "id": "src.earsegmentationai.api.base.BaseProcessor.__init__"
+      },
+      {
+        "name": "process",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 65,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BaseProcessor",
+        "id": "src.earsegmentationai.api.base.BaseProcessor.process"
+      },
+      {
+        "name": "set_threshold",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 72,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BaseProcessor",
+        "id": "src.earsegmentationai.api.base.BaseProcessor.set_threshold"
+      },
+      {
+        "name": "set_device",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 80,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BaseProcessor",
+        "id": "src.earsegmentationai.api.base.BaseProcessor.set_device"
+      },
+      {
+        "name": "get_info",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 89,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BaseProcessor",
+        "id": "src.earsegmentationai.api.base.BaseProcessor.get_info"
+      },
+      {
+        "name": "warmup",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 105,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BaseProcessor",
+        "id": "src.earsegmentationai.api.base.BaseProcessor.warmup"
+      },
+      {
+        "name": "clear_cache",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 109,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BaseProcessor",
+        "id": "src.earsegmentationai.api.base.BaseProcessor.clear_cache"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 117,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.ProcessingResult",
+        "id": "src.earsegmentationai.api.base.ProcessingResult.__init__"
+      },
+      {
+        "name": "has_ear",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 138,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.ProcessingResult",
+        "id": "src.earsegmentationai.api.base.ProcessingResult.has_ear"
+      },
+      {
+        "name": "ear_area",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 143,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.ProcessingResult",
+        "id": "src.earsegmentationai.api.base.ProcessingResult.ear_area"
+      },
+      {
+        "name": "ear_percentage",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 148,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.ProcessingResult",
+        "id": "src.earsegmentationai.api.base.ProcessingResult.ear_percentage"
+      },
+      {
+        "name": "get_bounding_box",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 153,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.api.base.ProcessingResult",
+        "id": "src.earsegmentationai.api.base.ProcessingResult.get_bounding_box"
+      },
+      {
+        "name": "get_center",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 172,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.api.base.ProcessingResult",
+        "id": "src.earsegmentationai.api.base.ProcessingResult.get_center"
+      },
+      {
+        "name": "to_dict",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 185,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.ProcessingResult",
+        "id": "src.earsegmentationai.api.base.ProcessingResult.to_dict"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 207,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BatchProcessingResult",
+        "id": "src.earsegmentationai.api.base.BatchProcessingResult.__init__"
+      },
+      {
+        "name": "__len__",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 215,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BatchProcessingResult",
+        "id": "src.earsegmentationai.api.base.BatchProcessingResult.__len__"
+      },
+      {
+        "name": "__getitem__",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 219,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BatchProcessingResult",
+        "id": "src.earsegmentationai.api.base.BatchProcessingResult.__getitem__"
+      },
+      {
+        "name": "__iter__",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 223,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BatchProcessingResult",
+        "id": "src.earsegmentationai.api.base.BatchProcessingResult.__iter__"
+      },
+      {
+        "name": "detection_rate",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 228,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.api.base.BatchProcessingResult",
+        "id": "src.earsegmentationai.api.base.BatchProcessingResult.detection_rate"
+      },
+      {
+        "name": "average_ear_area",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 237,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.api.base.BatchProcessingResult",
+        "id": "src.earsegmentationai.api.base.BatchProcessingResult.average_ear_area"
+      },
+      {
+        "name": "filter_by_detection",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 245,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BatchProcessingResult",
+        "id": "src.earsegmentationai.api.base.BatchProcessingResult.filter_by_detection"
+      },
+      {
+        "name": "get_summary",
+        "file_path": "src/earsegmentationai/api/base.py",
+        "line_number": 258,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.api.base.BatchProcessingResult",
+        "id": "src.earsegmentationai.api.base.BatchProcessingResult.get_summary"
+      },
+      {
+        "name": "version",
+        "file_path": "src/earsegmentationai/cli/app.py",
+        "line_number": 33,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "src.earsegmentationai.cli.app.version"
+      },
+      {
+        "name": "process_image",
+        "file_path": "src/earsegmentationai/cli/app.py",
+        "line_number": 46,
+        "complexity": 10,
+        "parent_class": null,
+        "id": "src.earsegmentationai.cli.app.process_image"
+      },
+      {
+        "name": "process_video",
+        "file_path": "src/earsegmentationai/cli/app.py",
+        "line_number": 167,
+        "complexity": 11,
+        "parent_class": null,
+        "id": "src.earsegmentationai.cli.app.process_video"
+      },
+      {
+        "name": "webcam",
+        "file_path": "src/earsegmentationai/cli/app.py",
+        "line_number": 274,
+        "complexity": 1,
+        "parent_class": null,
+        "id": "src.earsegmentationai.cli.app.webcam"
+      },
+      {
+        "name": "benchmark",
+        "file_path": "src/earsegmentationai/cli/app.py",
+        "line_number": 327,
+        "complexity": 9,
+        "parent_class": null,
+        "id": "src.earsegmentationai.cli.app.benchmark"
+      },
+      {
+        "name": "download_model",
+        "file_path": "src/earsegmentationai/cli/app.py",
+        "line_number": 434,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "src.earsegmentationai.cli.app.download_model"
+      },
+      {
+        "name": "validate_image_path",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "line_number": 22,
+        "complexity": 11,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.validators.validate_image_path"
+      },
+      {
+        "name": "validate_video_path",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "line_number": 60,
+        "complexity": 11,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.validators.validate_video_path"
+      },
+      {
+        "name": "validate_directory",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "line_number": 98,
+        "complexity": 6,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.validators.validate_directory"
+      },
+      {
+        "name": "validate_image_array",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "line_number": 126,
+        "complexity": 10,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.validators.validate_image_array"
+      },
+      {
+        "name": "validate_mask_array",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "line_number": 162,
+        "complexity": 13,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.validators.validate_mask_array"
+      },
+      {
+        "name": "validate_device_string",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "line_number": 210,
+        "complexity": 12,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.validators.validate_device_string"
+      },
+      {
+        "name": "validate_batch_size",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "line_number": 257,
+        "complexity": 6,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.validators.validate_batch_size"
+      },
+      {
+        "name": "validate_camera_id",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "line_number": 285,
+        "complexity": 13,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.validators.validate_camera_id"
+      },
+      {
+        "name": "get_image_files",
+        "file_path": "src/earsegmentationai/preprocessing/validators.py",
+        "line_number": 327,
+        "complexity": 3,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.validators.get_image_files"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 24,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.preprocessing.transforms.ImageTransform",
+        "id": "src.earsegmentationai.preprocessing.transforms.ImageTransform.__init__"
+      },
+      {
+        "name": "_build_transform",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 45,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.preprocessing.transforms.ImageTransform",
+        "id": "src.earsegmentationai.preprocessing.transforms.ImageTransform._build_transform"
+      },
+      {
+        "name": "__call__",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 90,
+        "complexity": 5,
+        "parent_class": "src.earsegmentationai.preprocessing.transforms.ImageTransform",
+        "id": "src.earsegmentationai.preprocessing.transforms.ImageTransform.__call__"
+      },
+      {
+        "name": "inverse_transform",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 119,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.preprocessing.transforms.ImageTransform",
+        "id": "src.earsegmentationai.preprocessing.transforms.ImageTransform.inverse_transform"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 153,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.preprocessing.transforms.BatchTransform",
+        "id": "src.earsegmentationai.preprocessing.transforms.BatchTransform.__init__"
+      },
+      {
+        "name": "__call__",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 161,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.preprocessing.transforms.BatchTransform",
+        "id": "src.earsegmentationai.preprocessing.transforms.BatchTransform.__call__"
+      },
+      {
+        "name": "collate_fn",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 173,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.preprocessing.transforms.BatchTransform",
+        "id": "src.earsegmentationai.preprocessing.transforms.BatchTransform.collate_fn"
+      },
+      {
+        "name": "create_augmentation_pipeline",
+        "file_path": "src/earsegmentationai/preprocessing/transforms.py",
+        "line_number": 189,
+        "complexity": 5,
+        "parent_class": null,
+        "id": "src.earsegmentationai.preprocessing.transforms.create_augmentation_pipeline"
+      },
+      {
+        "name": "__init__",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "line_number": 27,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer",
+        "id": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer.__init__"
+      },
+      {
+        "name": "visualize_mask",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "line_number": 47,
+        "complexity": 8,
+        "parent_class": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer",
+        "id": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer.visualize_mask"
+      },
+      {
+        "name": "visualize_probability",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "line_number": 103,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer",
+        "id": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer.visualize_probability"
+      },
+      {
+        "name": "visualize_comparison",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "line_number": 134,
+        "complexity": 2,
+        "parent_class": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer",
+        "id": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer.visualize_comparison"
+      },
+      {
+        "name": "_add_contours",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "line_number": 205,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer",
+        "id": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer._add_contours"
+      },
+      {
+        "name": "_add_legend",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "line_number": 243,
+        "complexity": 3,
+        "parent_class": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer",
+        "id": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer._add_legend"
+      },
+      {
+        "name": "_add_text",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "line_number": 300,
+        "complexity": 1,
+        "parent_class": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer",
+        "id": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer._add_text"
+      },
+      {
+        "name": "create_grid_visualization",
+        "file_path": "src/earsegmentationai/postprocessing/visualization.py",
+        "line_number": 349,
+        "complexity": 7,
+        "parent_class": null,
+        "id": "src.earsegmentationai.postprocessing.visualization.create_grid_visualization"
+      }
+    ],
+    "links": [
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.compat.EarModel.predict",
+        "target": "src.earsegmentationai.compat.EarModel.load_model"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.core.predictor.EarPredictor.warmup",
+        "target": "src.earsegmentationai.core.predictor.EarPredictor.predict"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.core.model.ModelManager._get_device",
+        "target": "src.earsegmentationai.core.model.ModelManager.device"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.core.model.ModelManager.load_model",
+        "target": "src.earsegmentationai.core.model.ModelManager._create_model"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.core.model.ModelManager.load_model",
+        "target": "src.earsegmentationai.core.model.ModelManager._verify_model"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.core.model.ModelManager.load_model",
+        "target": "src.earsegmentationai.core.model.ModelManager._download_model"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.core.model.ModelManager.set_device",
+        "target": "src.earsegmentationai.core.model.ModelManager._get_device"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.core.config.Config.to_yaml",
+        "target": "src.earsegmentationai.core.config.Config.convert_for_yaml"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.api.image.ImageProcessor._save_batch_results",
+        "target": "src.earsegmentationai.api.image.ImageProcessor._save_result"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.api.image.ImageProcessor.process_from_url",
+        "target": "src.earsegmentationai.api.image.ImageProcessor._process_single_array"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.api.base.ProcessingResult.get_center",
+        "target": "src.earsegmentationai.api.base.ProcessingResult.get_bounding_box"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.api.base.ProcessingResult.to_dict",
+        "target": "src.earsegmentationai.api.base.ProcessingResult.get_center"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.api.base.ProcessingResult.to_dict",
+        "target": "src.earsegmentationai.api.base.ProcessingResult.get_bounding_box"
+      },
+      {
+        "edge_type": "call",
+        "weight": 1.0,
+        "source": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer.visualize_comparison",
+        "target": "src.earsegmentationai.postprocessing.visualization.MaskVisualizer.visualize_mask"
+      }
+    ]
+  }
+}

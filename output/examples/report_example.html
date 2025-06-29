@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>🧬 BioCode Analysis Report - Ear Segmentation AI</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .metric-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.2s;
+        }
+        .metric-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        }
+        .metric-value {
+            font-size: 3rem;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .metric-label {
+            color: #666;
+            margin-top: 10px;
+            font-size: 1.1rem;
+        }
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+        .section h2 {
+            color: #2d3748;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+        }
+        .smell-bar {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .smell-label {
+            width: 150px;
+            color: #4a5568;
+        }
+        .smell-progress {
+            flex: 1;
+            height: 25px;
+            background: #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 0 10px;
+        }
+        .smell-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #f56565 0%, #ed8936 100%);
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        .finding {
+            background: #f7fafc;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .finding h3 {
+            margin: 0 0 10px 0;
+            color: #2d3748;
+        }
+        .recommendation {
+            background: #e6fffa;
+            border-left: 4px solid #38b2ac;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+        }
+        .bio-visual {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%);
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+        .dna-helix {
+            font-size: 4rem;
+            animation: rotate 10s linear infinite;
+        }
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .colony-visual {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .cell {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        .cell-healthy { background: #48bb78; }
+        .cell-warning { background: #ed8936; }
+        .cell-critical { background: #f56565; }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: #718096;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🧬 BioCode Analysis Report</h1>
+        <p>Ear Segmentation AI | Generated: 2024-01-15 14:30</p>
+    </div>
+
+    <div class="container">
+        <!-- Key Metrics -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-value">73.5%</div>
+                <div class="metric-label">Overall Health Score</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">286</div>
+                <div class="metric-label">Total Issues</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">65%</div>
+                <div class="metric-label">Code Coverage</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-value">48h</div>
+                <div class="metric-label">Technical Debt</div>
+            </div>
+        </div>
+
+        <!-- Biological Visualization -->
+        <div class="section bio-visual">
+            <h2>🧬 Code Cell Colony Status</h2>
+            <div class="colony-visual">
+                <div class="cell cell-healthy">🦠</div>
+                <div class="cell cell-healthy">🦠</div>
+                <div class="cell cell-warning">🦠</div>
+                <div class="cell cell-healthy">🦠</div>
+                <div class="cell cell-critical">🦠</div>
+                <div class="cell cell-healthy">🦠</div>
+                <div class="cell cell-warning">🦠</div>
+            </div>
+            <p>Living code cells showing health status across modules</p>
+            <div class="dna-helix">🧬</div>
+            <p>Code DNA Structure Analysis</p>
+        </div>
+
+        <!-- Code Smell Distribution -->
+        <div class="section">
+            <h2>🦨 Code Smell Distribution</h2>
+            <div class="smell-bar">
+                <div class="smell-label">Magic Numbers</div>
+                <div class="smell-progress">
+                    <div class="smell-fill" style="width: 82%">234</div>
+                </div>
+            </div>
+            <div class="smell-bar">
+                <div class="smell-label">Long Methods</div>
+                <div class="smell-progress">
+                    <div class="smell-fill" style="width: 10%">28</div>
+                </div>
+            </div>
+            <div class="smell-bar">
+                <div class="smell-label">Deep Nesting</div>
+                <div class="smell-progress">
+                    <div class="smell-fill" style="width: 6%">17</div>
+                </div>
+            </div>
+            <div class="smell-bar">
+                <div class="smell-label">God Classes</div>
+                <div class="smell-progress">
+                    <div class="smell-fill" style="width: 2%">7</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Findings -->
+        <div class="section">
+            <h2>🔍 Key Findings</h2>
+            <div class="finding">
+                <h3>High Number of Magic Numbers</h3>
+                <p>234 magic numbers found across the codebase. These hardcoded values reduce maintainability and should be extracted to named constants.</p>
+            </div>
+            <div class="finding">
+                <h3>Code Coverage Below Target</h3>
+                <p>Current test coverage is 65%, below the recommended 80% threshold. Critical paths in the segmentation algorithm lack proper test coverage.</p>
+            </div>
+            <div class="finding">
+                <h3>Performance Optimization Opportunities</h3>
+                <p>SwarmSearchCV analysis suggests potential 5-10% accuracy improvement through hyperparameter optimization.</p>
+            </div>
+        </div>
+
+        <!-- Recommendations -->
+        <div class="section">
+            <h2>💡 Recommendations</h2>
+            <div class="recommendation">
+                <h3>1. Apply Auto-fixes</h3>
+                <p>Use BioCode's auto-fix feature to resolve 237 issues automatically, focusing on magic numbers and formatting issues.</p>
+            </div>
+            <div class="recommendation">
+                <h3>2. Implement SwarmSearchCV</h3>
+                <p>Integrate Particle Swarm Optimization for CNN hyperparameter tuning. Expected improvement: 5-10% accuracy gain.</p>
+            </div>
+            <div class="recommendation">
+                <h3>3. Increase Test Coverage</h3>
+                <p>Add unit tests for critical segmentation functions. Focus on edge detection and preprocessing modules.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Generated by BioCode Analysis Engine v1.0 | © 2024 Umit Kacar, PhD</p>
+        <p>🧬 Living Code Analysis Platform</p>
+    </div>
+</body>
+</html>
