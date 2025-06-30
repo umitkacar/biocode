@@ -3,13 +3,13 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "biocode-swarm-intelligence"
+name = "biocode"
 version = "0.4.0"
-description = "BioCode Swarm Intelligence - Autonomous Problem-Solving Framework with biological architecture"
+description = "BioCode - Autonomous Problem-Solving Framework with biological architecture"
 authors = ["Umit Kacar, PhD <[Contact information to be provided]>"]
 maintainers = ["Umit Kacar, PhD <[Contact information to be provided]>"]
 readme = "README.md"
-repository = "https://github.com/umitkacar/biocode-swarm-intelligence"
+repository = "https://github.com/umitkacar/BioCode"
 documentation = "https://biocode.readthedocs.io"
 license = "Proprietary"
 keywords = [

@@ -41,7 +41,7 @@ async def lifespan(app: FastAPI):
 
 # Create FastAPI app
 app = FastAPI(
-    title="BioCode Swarm Intelligence API",
+    title="BioCode API",
     description="""
 ## Autonomous Problem-Solving Framework API
 

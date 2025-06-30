@@ -62,7 +62,7 @@ class UnifiedBioCodeDemo:
     def show_welcome(self):
         """Display welcome screen"""
         welcome_text = """
-[bold cyan]🧬 BioCode Swarm Intelligence - Unified Demo[/bold cyan]
+[bold cyan]🧬 BioCode - Unified Demo[/bold cyan]
         
 [yellow]This demo will showcase:[/yellow]
 • Evolution Lab Colony with 9 analyzers

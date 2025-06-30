@@ -1,4 +1,4 @@
-# 🧬 BioCode Swarm Intelligence: Evrimsel Yazılım Mimarisi Tasarım Kılavuzu
+# 🧬 BioCode: Evrimsel Yazılım Mimarisi Tasarım Kılavuzu
 
 > *"Kodun Yaşadığı, Evrimleştiği ve Kolektif Zeka ile Problem Çözdüğü Bir Dünya"*
 
@@ -25,7 +25,7 @@
 
 ### Vizyon
 
-BioCode Swarm Intelligence, yazılım geliştirmede devrim niteliğinde bir yaklaşım sunuyor: **Yaşayan, nefes alan, evrimleşen kod**. Geleneksel statik yazılım mimarilerinin aksine, BioCode'da her kod parçası bir hücre gibi davranır - doğar, büyür, çoğalır, öğrenir ve gerektiğinde ölür.
+BioCode, yazılım geliştirmede devrim niteliğinde bir yaklaşım sunuyor: **Yaşayan, nefes alan, evrimleşen kod**. Geleneksel statik yazılım mimarilerinin aksine, BioCode'da her kod parçası bir hücre gibi davranır - doğar, büyür, çoğalır, öğrenir ve gerektiğinde ölür.
 
 ### Motivasyon
 
@@ -1435,7 +1435,7 @@ class NeuralSystem(System):
 ### Proje Yapısı
 
 ```
-biocode-swarm-intelligence/
+BioCode/
 ├── src/
 │   └── biocode/
 │       ├── ecs/
@@ -1759,7 +1759,7 @@ INTEGRATIONS = {
 
 ```
 ┌──────────────────────────────────────────┐
-│         BioCode Swarm Intelligence       │
+│              BioCode                    │
 ├──────────────────────────────────────────┤
 │  Future Layer                            │
 │  ┌──────────┐ ┌──────────┐ ┌─────────┐ │
@@ -1782,7 +1782,7 @@ INTEGRATIONS = {
 
 ### Kapanış
 
-BioCode Swarm Intelligence, yazılım mimarisinde yeni bir paradigma sunuyor. Geleneksel OOP'nin sınırlarını aşarak, yaşayan, evrimleşen ve kendi kendine organize olan sistemler yaratmayı mümkün kılıyor.
+BioCode, yazılım mimarisinde yeni bir paradigma sunuyor. Geleneksel OOP'nin sınırlarını aşarak, yaşayan, evrimleşen ve kendi kendine organize olan sistemler yaratmayı mümkün kılıyor.
 
 Bu dokümantasyon, yolculuğumuzun sadece başlangıcı. Her gün yeni şeyler öğreniyor, sistemimizi geliştiriyor ve sınırları zorluyoruz.
 
@@ -1820,4 +1820,4 @@ Bu dokümantasyon, yolculuğumuzun sadece başlangıcı. Her gün yeni şeyler �
 
 **© 2024 Umit Kacar, PhD. All Rights Reserved.**
 
-*Bu doküman BioCode Swarm Intelligence projesinin integral bir parçasıdır ve telif hakları Umit Kacar, PhD'ye aittir.*
+*Bu doküman BioCode projesinin integral bir parçasıdır ve telif hakları Umit Kacar, PhD'ye aittir.*

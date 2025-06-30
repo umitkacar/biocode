@@ -1,4 +1,4 @@
-# 🧬 BioCode Swarm Intelligence - Autonomous Problem-Solving Framework
+# 🧬 BioCode - Autonomous Problem-Solving Framework
 
 ## 🚀 Evolution Lab with Realtime Dashboard
 
@@ -85,8 +85,8 @@
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/umitkacar/biocode-swarm-intelligence.git
-cd biocode-swarm-intelligence
+git clone https://github.com/umitkacar/BioCode.git
+cd BioCode
 
 # 2. Create conda environment
 conda create -n biocode python=3.11
@@ -396,7 +396,7 @@ This project is the proprietary software of **Umit Kacar, PhD**. All rights rese
 ---
 
 <p align="center">
-  <strong>BioCode Swarm Intelligence</strong><br>
+  <strong>BioCode</strong><br>
   Created by <strong>Umit Kacar, PhD</strong><br>
   <em>Where Code Comes Alive</em> 🧬<br>
   <small>© 2024 All Rights Reserved</small>
